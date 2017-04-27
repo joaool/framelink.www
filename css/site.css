@@ -59,17 +59,21 @@ aside {
   background-color: transparent;
 }
 #homeHeading {
+  font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 30px;
 }
 #homeHeadingComment{
   font-weight: 300;
   color: rgba(255, 255, 255, 0.7);
-  font-size: 16px;
+  font-size: 24px;
   margin-bottom: 50px;
+}
+.textContainer h3 {
+    vertical-align: left;
+    display: inline-block;
 }
 .bg-dark {
   background-color: #222222;
