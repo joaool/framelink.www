@@ -13,9 +13,10 @@ hr {
 
 
 h1 {
-  color:white;
+  color:Khaki;
   /*font-family:Indie Flower;*/
   /*font-family:Bangers;*/
+  text-transform: uppercase;
   font-family:Love Ya Like A Sister;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   font-size:66px;
@@ -61,13 +62,6 @@ aside {
 .navbar-default .nav > li.active > a:focus {
   color: #F05F40 !important;
   background-color: transparent;
-}
-#homeHeading {
-  /*font-size: 60px;*/
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-top: 50;
-  margin-bottom: 0;
 }
 #homeHeadingComment{
   font-family: 'HankenBook'; 
@@ -130,9 +124,6 @@ aside {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-  }
-  header .header-content .header-content-inner h1 {
-    /*font-size: 66px;*/
   }
   header .header-content .header-content-inner p {
     font-size: 18px;
