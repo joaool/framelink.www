@@ -16,11 +16,12 @@ h1 {
   color:Khaki;
   /*font-family:Indie Flower;*/
   /*font-family:Bangers;*/
-  text-transform: uppercase;
+  text-transform:uppercase;
+  /*text-transform: none !important;*/
   /*font-family:Love Ya Like A Sister;*/
   font-family: "Kaleko 105 Round W01 Bold";  
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-  font-size:50px;
+  font-size: 48px;
 }
 h2{
   /*font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;*/
@@ -63,7 +64,7 @@ aside {
   }
 .navbar-default .nav > li > a,
 .navbar-default .nav > li > a:focus {
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-weight: 700;
   font-size: 13px;
   color: #222222;
