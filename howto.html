@@ -1,0 +1,199 @@
+You will want to copy all this and remove the comment-->
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1,  user-scalable=no"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1,  user-scalable=no">
+    <!-- <meta name="viewport" content="width=device-width" /> -->
+    <!-- <meta charset="utf-8"> -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <title>FrameLink Operation</title>
+    <meta name="description" content="Framelink is a zero code app that connects to your business environment. Define permissions to your users and let them share documents and personalized messages across Email, Mobile, and SMS.Sign up for free.">
+    <meta name="keywords" content="app builder, spreadsheet, excel template, online database, relational database, zero code, VLOOKUP, HLOOKUP">
+    <meta name="author" content="">
+    <link rel="icon" href="img/framelink.ico" type="image/x-icon">
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- <link href="http://fonts.googleapis.com/css?family=Indie Flower" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="http://fonts.googleapis.com/css?family=Bangers" rel="stylesheet" type="text/css"> -->
+    <link href="http://fonts.googleapis.com/css?family=Love Ya Like A Sister" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Average" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/1a8d4ff3cf8a0fceded5a7d806c9726e?family=Kaleko+105+Round+W01+Bold" rel="stylesheet" type="text/css"/>
+    <!-- <link href="css/scrolling-nav.css" rel="stylesheet"> -->
+    <link href="css/site.css" rel="stylesheet">
+    <!-- Hotjar Tracking Code for www.framelink.co -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:764876,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    <meta name="p:domain_verify" content="5d037a9546cf4d54e971c807ebaae81a"/>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-47881952-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script>
+    var onImg1= "img/FL_login.gif";
+    var offImg1= "img/FL_login0.png";
+    var onImg2= "img/FL_importSpreadsheet.gif";
+    var offImg2= "img/FL_importSpreadsheet.png";
+    var onImg3= "img/FL_Chat.gif";
+    var offImg3= "img/FL_Chat0.png";
+</script>
+</head>
+  <body id="page-top">
+    <!-- <header>
+      <h1>Example Page</h1>
+      <ul id="nav">
+        <li><a href="index.html" class="selected">Home</a></li>
+      </ul>
+    </header>
+    <main> -->
+      <div class="container">
+      <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="row">
+        <div class="navbar-header">
+                  <button type="button" data-target="#navbarCollapse" data-toggle="collapse"  class="navbar-toggle collapsed" >
+                      <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
+                  </button>
+                  <a href="./index.html" class="pull-left"><img style="margin-left:20px;margin-top:10px;width:150px;height:30px" class="brand" src="img/logo.png"></a> 
+              </div>
+              <div id="navbarCollapse" class="collapse navbar-collapse navbar-default" style="margin-right:30px;" >
+                  <ul class="nav navbar-nav navbar-right">
+                      <li>
+                          <a class="active page-scroll" href="index.html#about">What is it ?</a>
+                      </li>
+                      <li>
+                          <a class="page-scroll" href="index.html#works">How does it work ?</a>
+                      </li>
+                      <li>
+                            <a  class="page-scroll" href="index.html#services">Services</a>
+                      </li>
+                      <li>
+                           <a id="_pricing" class="page-scroll" href="pricing.html">Pricing</a>
+                      </li>
+                      <li>
+                        <a id="_demo_now" class="page-scroll" href="index.html#demoNow">Demo now</a>
+                      </li>
+                      <li>
+                        <a class="page-scroll" href="contact.html">Contact</a>
+                      </li>
+                  </ul>
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+        </div>
+    </nav>
+  </div>
+ <!--  <header>
+    
+  </header> -->
+      <section id="howto">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-lg-5">
+                    <div class="service-box">
+                        <h3><span><i class="fa fa-2x fa-sign-in text-primary sr-icons"></i></span> Create an account</h3>
+                        <p class="text-muted">If this is your first time with Framelink, please register yourself introducing your email and choosing a password (you may change it at any time). In the login box, enable 'Remember me', to save your credentials in the device, for a direct entry in your next access. Disable 'Remember me' to force Framelink to ask email/password every time you try to access it.</p>
+                    </div>
+                </div>
+                <div class="service-box">
+                    <!-- <img src="img/FL_login.gif" style="display:block;max-width:50%;height:auto"/> -->
+                    <img src="img/fl_login0.png" onclick="this.src = (this.src.endsWith(offImg1)? onImg1: offImg1);" style="display:block;max-width:50%;height:auto"/> 
+                </div>
+            </div>
+            <br>   
+            <div class="row justify-content-md-center">
+                <div class="col-lg-5">
+                    <h3><span><i class="fa fa-2x fa-cloud-upload text-primary sr-icons"></i></span>  Import a Spreadsheet</h3>
+                    <p class="text-muted">Select the settings icon and choose 'import Spreadsheet'. Framelink will load the data from your Spreadsheet using the spreadsheet content to decide the titles and types for every column.</p>
+                </div>
+                <div class="service-box">
+                        <!-- <img src="img/FL_Chat.png" style="display:block;max-width:50%;height:auto"/> -->
+                        <img src="img/fl_importspreadsheet.png" onclick="this.src = (this.src.endsWith(offImg2)? onImg2: offImg2);" style="display:block;max-width:50%;height:auto"/> 
+                </div>
+            </div>
+            <br>
+            <div class="row justify-content-md-center">
+                <div id="howto_chat" class="col-lg-5">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h3><span><i class="fa fa-2x fa-phone text-primary sr-icons"></i></span>  Video chat with any team member</h3>
+                    <p class="text-muted">Click the phone icon to show up all the members of your team. Select the member you want to speak to and imediately you will enter in a video-conference with that member.</p>
+                </div>
+                <div class="service-box">
+                        <!-- <img src="img/FL_Chat.png" style="display:block;max-width:50%;height:auto"/> -->
+                        <img src="img/fl_chat0.png" onclick="this.src = (this.src.endsWith(offImg3)? onImg3: offImg3);" style="display:block;max-width:50%;height:auto"/> 
+                </div>
+            </div>
+            <br>
+            <div class="row justify-content-md-center">
+                <div class="col-lg-5">
+                    <h3><span><i class="fa fa-2x fa-table text-primary sr-icons"></i></span>  Rename a table</h3>
+                    <p class="text-muted">Select the settings icon and choose 'import Spreadsheet'. Framelink will load the data from your Spreadsheet using the spreadsheet content to decide the titles and types for every column.</p>
+                </div>
+                <div class="service-box">
+                        <!-- <img src="img/FL_Chat.png" style="display:block;max-width:50%;height:auto"/> -->
+                        <img src="img/fl_importspreadsheet.png" onclick="this.src = (this.src.endsWith(offImg2)? onImg2: offImg2);" style="display:block;max-width:50%;height:auto"/> 
+                </div>
+            </div>
+            <br>
+            <div class="row justify-content-md-center">
+                <div class="col-lg-5">
+                    <h3><span><i class="fa fa-2x fa-columns text-primary sr-icons"></i></span>  Rename a column</h3>
+                    <p class="text-muted">Select the settings icon and choose 'import Spreadsheet'. Framelink will load the data from your Spreadsheet using the spreadsheet content to decide the titles and types for every column.</p>
+                </div>
+                <div class="service-box">
+                        <!-- <img src="img/FL_Chat.png" style="display:block;max-width:50%;height:auto"/> -->
+                        <img src="img/fl_importSpreadsheet.png" onclick="this.src = (this.src.endsWith(offImg2)? onImg2: offImg2);" style="display:block;max-width:50%;height:auto"/> 
+                </div>
+            </div>
+            <br>
+            <div class="row justify-content-md-center">
+                <div class="col-lg-5">
+                    <h3><span><i class="fa fa-2x fa-envelope-o text-primary sr-icons"></i></span>  Send Emails</h3>
+                    <p class="text-muted">Select the settings icon and choose 'import Spreadsheet'. Framelink will load the data from your Spreadsheet using the spreadsheet content to decide the titles and types for every column.</p>
+                </div>
+                <div class="service-box">
+                        <!-- <img src="img/FL_Chat.png" style="display:block;max-width:50%;height:auto"/> -->
+                        <img src="img/fl_importSpreadsheet.png" onclick="this.src = (this.src.endsWith(offImg2)? onImg2: offImg2);" style="display:block;max-width:50%;height:auto"/> 
+                </div>
+            </div>
+            <br>
+            <body>
+            <div id="howto_sendSMSs" class="row justify-content-md-center">
+                <div  class="col-lg-5">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h3><span><i class="fa fa-2x fa-comment text-primary sr-icons"></i></span>  Send SMSs</h3>
+                    <p class="text-muted">Select the settings icon and choose 'import Spreadsheet'. Framelink will load the data from your Spreadsheet using the spreadsheet content to decide the titles and types for every column.</p>
+                </div>
+                <div class="service-box">
+                        <!-- <img src="img/FL_Chat.png" style="display:block;max-width:50%;height:auto"/> -->
+                        <img src="img/fl_importSpreadsheet.png" onclick="this.src = (this.src.endsWith(offImg2)? onImg2: offImg2);" style="display:block;max-width:50%;height:auto"/> 
+                </div>
+            </div>
+            </body>
+            <br>
+        </div>
+    </section>      
+    </main>
+  </body>
+</html>
+<!--End copying here
