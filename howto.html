@@ -46,12 +46,12 @@ You will want to copy all this and remove the comment-->
     ga('send', 'pageview');
   </script>
   <script>
-    var onImg1= "img/FL_login.gif";
-    var offImg1= "img/FL_login0.png";
-    var onImg2= "img/FL_importSpreadsheet.gif";
-    var offImg2= "img/FL_importSpreadsheet.png";
-    var onImg3= "img/FL_Chat.gif";
-    var offImg3= "img/FL_Chat0.png";
+    var onImg1= "img/fl_login0.gif";
+    var offImg1= "img/fl_login0.png";
+    var onImg2= "img/fl_importSpreadsheet.gif";
+    var offImg2= "img/fl_importSpreadsheet.png";
+    var onImg3= "img/fl_chat0.gif";
+    var offImg3= "img/fl_chat0.png";
 </script>
 </head>
   <body id="page-top">
@@ -100,98 +100,138 @@ You will want to copy all this and remove the comment-->
  <!--  <header>
     
   </header> -->
-      <section id="howto">
-        <div class="container">
+      <section id="howto1">
+          <div class="container" style="margin-top:30px;">
             <div class="row justify-content-md-center">
-                <div class="col-lg-5">
-                    <div class="service-box">
+                <div class="col-lg-3">
+                    <div class="service-box" style="margin-top:-30px;">
                         <h3><span><i class="fa fa-2x fa-sign-in text-primary sr-icons"></i></span> Create an account</h3>
-                        <p class="text-muted">If this is your first time with Framelink, please register yourself introducing your email and choosing a password (you may change it at any time). In the login box, enable 'Remember me', to save your credentials in the device, for a direct entry in your next access. Disable 'Remember me' to force Framelink to ask email/password every time you try to access it.</p>
+                        <p>If this is your first time with Framelink, please register yourself introducing your email and choosing a password (you may change it at any time).</p>
+                        <p> In the login box, enable 'Remember me', to save your credentials in the device, for a direct entry in your next access. Disable 'Remember me' to force Framelink to ask email/password every time you try to access it.</p>
                     </div>
                 </div>
-                <div class="service-box">
-                    <!-- <img src="img/FL_login.gif" style="display:block;max-width:50%;height:auto"/> -->
-                    <img src="img/fl_login0.png" onclick="this.src = (this.src.endsWith(offImg1)? onImg1: offImg1);" style="display:block;max-width:50%;height:auto"/> 
+                <div class="col-lg-9">
+                  <div class="service-box">
+                      <!-- <img src="img/FL_login.gif" style="display:block;max-width:50%;height:auto"/> -->
+                      <img src="img/fl_login0.png" onclick="this.src = (this.src.endsWith(offImg1)? onImg1: offImg1);" style="display:block;max-width:100%;height:auto"/> 
+                  </div>
                 </div>
             </div>
-            <br>   
+          </div>
+      </section>    
+      <section id="howto2">    
+          <div class="container" style="margin-top:80px;">
             <div class="row justify-content-md-center">
-                <div class="col-lg-5">
-                    <h3><span><i class="fa fa-2x fa-cloud-upload text-primary sr-icons"></i></span>  Import a Spreadsheet</h3>
-                    <p class="text-muted">Select the settings icon and choose 'import Spreadsheet'. Framelink will load the data from your Spreadsheet using the spreadsheet content to decide the titles and types for every column.</p>
+                <div class="col-lg-3">
+                    <div class="service-box" style="margin-top:-30px;">
+                        <h3><span><i class="fa fa-2x fa-cloud-upload text-primary sr-icons"></i></span>  Import a Spreadsheet</h3>
+                        <p>Select the settings icon and choose 'import Spreadsheet'. Framelink will load the data from your Spreadsheet using the spreadsheet content to decide the titles and types for every column.</p>
+                    </div>
                 </div>
-                <div class="service-box">
-                        <!-- <img src="img/FL_Chat.png" style="display:block;max-width:50%;height:auto"/> -->
-                        <img src="img/fl_importspreadsheet.png" onclick="this.src = (this.src.endsWith(offImg2)? onImg2: offImg2);" style="display:block;max-width:50%;height:auto"/> 
+                <div class="col-lg-9">
+                  <div class="service-box">
+                      <!-- <img src="img/FL_login.gif" style="display:block;max-width:50%;height:auto"/> -->
+                      <img src="img/fl_importspreadsheet.png" onclick="this.src = (this.src.endsWith(offImg2)? onImg2: offImg2);" style="display:block;max-width:100%;height:auto"/> 
+                  </div>
                 </div>
             </div>
-            <br>
+         </div>
+      </section>    
+      <section id="howto3"> 
+         <div class="container" style="margin-top:80px;">
             <div class="row justify-content-md-center">
-                <div id="howto_chat" class="col-lg-5">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <h3><span><i class="fa fa-2x fa-phone text-primary sr-icons"></i></span>  Video chat with any team member</h3>
-                    <p class="text-muted">Click the phone icon to show up all the members of your team. Select the member you want to speak to and imediately you will enter in a video-conference with that member.</p>
+                <div class="col-lg-3">
+                    <div class="service-box" style="margin-top:-30px;">
+                        <h3><span><i class="fa fa-2x fa-phone text-primary sr-icons"></i></span>  Video chat with any team member</h3>
+                         <p>Click the phone icon to show up all the members of your team. Select the member you want to speak to and imediately you will enter in a video-conference with that member.</p>
+                    </div>
                 </div>
-                <div class="service-box">
-                        <!-- <img src="img/FL_Chat.png" style="display:block;max-width:50%;height:auto"/> -->
-                        <img src="img/fl_chat0.png" onclick="this.src = (this.src.endsWith(offImg3)? onImg3: offImg3);" style="display:block;max-width:50%;height:auto"/> 
+                <div class="col-lg-9">
+                  <div class="service-box">
+                      <!-- <img src="img/FL_login.gif" style="display:block;max-width:50%;height:auto"/> -->
+                      <img src="img/fl_chat0.png" onclick="this.src = (this.src.endsWith(offImg3)? onImg3: offImg3);" style="display:block;max-width:100%;height:auto"/> 
+                  </div>
                 </div>
             </div>
-            <br>
+         </div>
+      </section>    
+      <section id="howto4"> 
+         <div class="container" style="margin-top:80px;">
             <div class="row justify-content-md-center">
-                <div class="col-lg-5">
-                    <h3><span><i class="fa fa-2x fa-table text-primary sr-icons"></i></span>  Rename a table</h3>
-                    <p class="text-muted">Select the settings icon and choose 'import Spreadsheet'. Framelink will load the data from your Spreadsheet using the spreadsheet content to decide the titles and types for every column.</p>
+                <div class="col-lg-3">
+                    <div class="service-box" style="margin-top:-30px;">
+                        <h3><span><i class="fa fa-2x fa-table text-primary sr-icons"></i></span>  Rename a table</h3>
+                        <p>Click the table name and replace it by the name you want. The new name will be used instead of the old name, all over FrameLink.</p>
+                    </div>
                 </div>
-                <div class="service-box">
-                        <!-- <img src="img/FL_Chat.png" style="display:block;max-width:50%;height:auto"/> -->
-                        <img src="img/fl_importspreadsheet.png" onclick="this.src = (this.src.endsWith(offImg2)? onImg2: offImg2);" style="display:block;max-width:50%;height:auto"/> 
+                <div class="col-lg-9">
+                  <div class="service-box">
+                      <!-- <img src="img/FL_login.gif" style="display:block;max-width:50%;height:auto"/> -->
+                      <img src="img/fl_chat0.png" onclick="this.src = (this.src.endsWith(offImg3)? onImg3: offImg3);" style="display:block;max-width:100%;height:auto"/> 
+                  </div>
                 </div>
             </div>
-            <br>
+         </div>
+      </section>    
+      <section id="howto5">          
+         <div class="container" style="margin-top:80px;">
             <div class="row justify-content-md-center">
-                <div class="col-lg-5">
-                    <h3><span><i class="fa fa-2x fa-columns text-primary sr-icons"></i></span>  Rename a column</h3>
-                    <p class="text-muted">Select the settings icon and choose 'import Spreadsheet'. Framelink will load the data from your Spreadsheet using the spreadsheet content to decide the titles and types for every column.</p>
+                <div class="col-lg-3">
+                    <div class="service-box" style="margin-top:-30px;">
+                        <h3><span><i class="fa fa-2x fa-columns text-primary sr-icons"></i></span>  Rename a column</h3>
+                        <p>Click the column name and replace it by the name you want. The new name will be used instead of the old name, all over FrameLink.</p>
+                    </div>
                 </div>
-                <div class="service-box">
-                        <!-- <img src="img/FL_Chat.png" style="display:block;max-width:50%;height:auto"/> -->
-                        <img src="img/fl_importSpreadsheet.png" onclick="this.src = (this.src.endsWith(offImg2)? onImg2: offImg2);" style="display:block;max-width:50%;height:auto"/> 
+                <div class="col-lg-9">
+                  <div class="service-box">
+                      <!-- <img src="img/FL_login.gif" style="display:block;max-width:50%;height:auto"/> -->
+                      <img src="img/fl_chat0.png" onclick="this.src = (this.src.endsWith(offImg3)? onImg3: offImg3);" style="display:block;max-width:100%;height:auto"/> 
+                  </div>
                 </div>
             </div>
-            <br>
+         </div>
+      </section>    
+      <section id="howto6">          
+         <div class="container" style="margin-top:80px;">
             <div class="row justify-content-md-center">
-                <div class="col-lg-5">
-                    <h3><span><i class="fa fa-2x fa-envelope-o text-primary sr-icons"></i></span>  Send Emails</h3>
-                    <p class="text-muted">Select the settings icon and choose 'import Spreadsheet'. Framelink will load the data from your Spreadsheet using the spreadsheet content to decide the titles and types for every column.</p>
+                <div class="col-lg-3">
+                    <div class="service-box" style="margin-top:-30px;">
+                        <h3><span><i class="fa fa-2x fa-envelope-o text-primary sr-icons"></i></span>  Send Emails</h3>
+                        <p>You can send Emails from any Framelink grid, whenever at least one email path is possible. FrameLink will automatically detect any columns of type Email from the current table or any of the related tables in order to establish all possible paths to Email fields.</p>
+                        <p>If the sent Email icon is available you can send Emails.</p>
+                        <p>To send Emails, select the rows you want, or select all rows and exclude the rows that you do not want to use to sent the emails.</p>
+                        <p>The above rule applies to all table rows, or only the rows resulting from a prepared query (presets).</p>
+                    </div>
                 </div>
-                <div class="service-box">
-                        <!-- <img src="img/FL_Chat.png" style="display:block;max-width:50%;height:auto"/> -->
-                        <img src="img/fl_importSpreadsheet.png" onclick="this.src = (this.src.endsWith(offImg2)? onImg2: offImg2);" style="display:block;max-width:50%;height:auto"/> 
-                </div>
-            </div>
-            <br>
-            <body>
-            <div id="howto_sendSMSs" class="row justify-content-md-center">
-                <div  class="col-lg-5">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <h3><span><i class="fa fa-2x fa-comment text-primary sr-icons"></i></span>  Send SMSs</h3>
-                    <p class="text-muted">Select the settings icon and choose 'import Spreadsheet'. Framelink will load the data from your Spreadsheet using the spreadsheet content to decide the titles and types for every column.</p>
-                </div>
-                <div class="service-box">
-                        <!-- <img src="img/FL_Chat.png" style="display:block;max-width:50%;height:auto"/> -->
-                        <img src="img/fl_importSpreadsheet.png" onclick="this.src = (this.src.endsWith(offImg2)? onImg2: offImg2);" style="display:block;max-width:50%;height:auto"/> 
+                <div class="col-lg-9">
+                  <div class="service-box">
+                      <!-- <img src="img/FL_login.gif" style="display:block;max-width:50%;height:auto"/> -->
+                      <img src="img/fl_chat0.png" onclick="this.src = (this.src.endsWith(offImg3)? onImg3: offImg3);" style="display:block;max-width:100%;height:auto"/> 
+                  </div>
                 </div>
             </div>
-            </body>
-            <br>
-        </div>
+         </div>
+      </section>    
+      <section id="howto7">          
+         <div class="container" style="margin-top:80px;">
+            <div class="row justify-content-md-center">
+                <div class="col-lg-3">
+                    <div class="service-box" style="margin-top:-30px;">
+                        <h3><span><i class="fa fa-2x fa-comment text-primary sr-icons"></i></span>  Send SMSs</h3>
+                        <p>You can send SMSs from any Framelink grid, whenever at least one 'Phone' path is possible. FrameLink will automatically detect any columns of type 'Phone' from the current table or any of the related tables in order to establish all possible paths to 'Phone' fields.</p>
+                        <p>If the SMS icon is available you can send SMSs.</p>
+                        <p>To send SMSs, select the rows you want, or select all rows and exclude the rows that you do not want to use to sent the SMSs.</p>
+                        <p>The above rule applies to all table rows, or only the rows resulting from a prepared query (presets).</p>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                  <div class="service-box">
+                      <!-- <img src="img/FL_login.gif" style="display:block;max-width:50%;height:auto"/> -->
+                      <img src="img/fl_chat0.png" onclick="this.src = (this.src.endsWith(offImg3)? onImg3: offImg3);" style="display:block;max-width:100%;height:auto"/> 
+                  </div>
+                </div>
+            </div>
+         </div>
     </section>      
     </main>
   </body>
