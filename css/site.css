@@ -254,54 +254,54 @@ aside {
 
 
 
-.pricingtable .green
+.pricingtable .yellow
 {
-    background-image: linear-gradient(bottom, #bbdd77 0%, #9fc25d 100%);
-    background-image: -o-linear-gradient(bottom, #bbdd77 0%, #9fc25d 100%);
-    background-image: -moz-linear-gradient(bottom, #bbdd77 0%, #9fc25d 100%);
-    background-image: -webkit-linear-gradient(bottom, #bbdd77 0%, #9fc25d 100%);
-    background-image: -ms-linear-gradient(bottom, #bbdd77 0%, #9fc25d 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9fc25d', endColorstr='#bbdd77',GradientType=0); 
+    background-image: linear-gradient(bottom, #fdc22d 0%, #fcb603 100%);
+    background-image: -o-linear-gradient(bottom, #fdc22d 0%, #fcb603 100%);
+    background-image: -moz-linear-gradient(bottom, #fdc22d 0%, #fcb603 100%);
+    background-image: -webkit-linear-gradient(bottom, #fdc22d 0%, #fcb603 100%);
+    background-image: -ms-linear-gradient(bottom, #fdc22d 0%, #fcb603 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcb603', endColorstr='#fdc22d',GradientType=0); 
 }
-.pricingtable .green2
+.pricingtable .yellow2
 {
-    background-image: linear-gradient(top, #bbdd77 0%, #9fc25d 100%);
-    background-image: -o-linear-gradient(top, #bbdd77 0%, #9fc25d 100%);
-    background-image: -moz-linear-gradient(top, #bbdd77 0%, #9fc25d 100%);
-    background-image: -webkit-linear-gradient(top, #bbdd77 0%, #9fc25d 100%);
-    background-image: -ms-linear-gradient(top, #bbdd77 0%, #9fc25d 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bbdd77', endColorstr='#9fc25d',GradientType=0); 
+    background-image: linear-gradient(top, #fcb603 0%, #fdc22d 100%);
+    background-image: -o-linear-gradient(top, #fcb603 0%, #fdc22d 100%);
+    background-image: -moz-linear-gradient(top, #fcb603 0%, #fdc22d 100%);
+    background-image: -webkit-linear-gradient(top, #fcb603 0%, #fdc22d 100%);
+    background-image: -ms-linear-gradient(top, #fcb603 0%, #fdc22d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcb603', endColorstr='#fdc22d',GradientType=0); 
 }
 
-.pricingtable .green2:hover
+.pricingtable .yellow2:hover
 {
-    background: #bbdd77 !important;;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bbdd77', endColorstr='#bbdd77',GradientType=0); 
+    background: #fcb603 !important;;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcb603', endColorstr='#fcb603',GradientType=0); 
 }
 .pricingtable .blue
 {
-    background-image: linear-gradient(bottom, #64cdf2 0%, #3ba3c9 100%);
-    background-image: -o-linear-gradient(bottom, #64cdf2 0%, #3ba3c9 100%);
-    background-image: -moz-linear-gradient(bottom, #64cdf2 0%, #3ba3c9 100%);
-    background-image: -webkit-linear-gradient(bottom, #64cdf2 0%, #3ba3c9 100%);
-    background-image: -ms-linear-gradient(bottom, #64cdf2 0%, #3ba3c9 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3ba3c9', endColorstr='#64cdf2',GradientType=0); 
+    background-image: linear-gradient(bottom, #98abcd 0%, #516ea4 100%);
+    background-image: -o-linear-gradient(bottom, #98abcd 0%, #516ea4 100%);
+    background-image: -moz-linear-gradient(bottom, #98abcd 0%, #516ea4 100%);
+    background-image: -webkit-linear-gradient(bottom, #98abcd 0%, #516ea4 100%);
+    background-image: -ms-linear-gradient(bottom, #98abcd 0%, #516ea4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#516ea4', endColorstr='#98abcd',GradientType=0); 
 }
 
 .pricingtable .blue2
 {
-    background-image: linear-gradient(top, #64cdf2 0%, #3ba3c9 100%);
-    background-image: -o-linear-gradient(top, #64cdf2 0%, #3ba3c9 100%);
-    background-image: -moz-linear-gradient(top, #64cdf2 0%, #3ba3c9 100%);
-    background-image: -webkit-linear-gradient(top, #64cdf2 0%, #3ba3c9 100%);
-    background-image: -ms-linear-gradient(top, #64cdf2 0%, #3ba3c9 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#64cdf2', endColorstr='#3ba3c9',GradientType=0); 
+    background-image: linear-gradient(top, #516ea4 0%, #516ea4 100%);
+    background-image: -o-linear-gradient(top, #516ea4 0%, #516ea4 100%);
+    background-image: -moz-linear-gradient(top, #516ea4 0%, #516ea4 100%);
+    background-image: -webkit-linear-gradient(top, #516ea4 0%, #516ea4 100%);
+    background-image: -ms-linear-gradient(top, #516ea4 0%, #516ea4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#516ea4', endColorstr='#516ea4',GradientType=0); 
 }
 
 .pricingtable .blue2:hover
 {
-    background: #64cdf2 !important;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#64cdf2', endColorstr='#64cdf2',GradientType=0); 
+    background: #516ea4 !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#98abcd', endColorstr='#98abcd',GradientType=0); 
 }
 .pricingtable > .column > .cl
 {
