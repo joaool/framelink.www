@@ -13,34 +13,37 @@ hr {
 
 
 h1 {
-  color:Khaki;
-  /*font-family:Indie Flower;*/
-  /*font-family:Bangers;*/
-  text-transform:uppercase;
-  /*text-transform: none !important;*/
-  /*font-family:Love Ya Like A Sister;*/
-  font-family: "Kaleko 105 Round W01 Bold";  
-  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-  font-size: 48px;
+  font-family: "Nunito";  
+  font-weight: 700;
+  /*text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;*/
+  font-size: 60px;
 }
 h2{
   /*font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;*/
-  font-family: 'Average', serif;
-  font-size:35px;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size:40px;
+  font-weight: bold;
 }
 h3{
   /*font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;*/
-  font-family: 'Average', serif;
+  font-family: 'Nunito', sans-serif;
   font-size:25px;
 }
 h4{
   /*font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;*/
-  font-family: "Kaleko 105 Round W01 Bold";  
-  font-size:28px;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: "Open Sans";  
+  font-size:14px;
+  /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
 }
 .text-muted{
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
   font-size:13px;
+}
+.text-muted2{
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size:18px;
 }
 .bg-primary {
   background-color: #5E79AE;
@@ -59,7 +62,8 @@ aside {
 .navbar-default {
   background-color: white;
   border-color: rgba(34, 34, 34, 0.05);
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  /*font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;*/
+  font-family: 'Nunito';
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -73,23 +77,12 @@ aside {
   /*text-transform: uppercase;*/
   font-weight: 700;
   font-size: 18px;
-  color: #222222;
+  color: #999999;
 }
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
   color: #F05F40 !important;
   background-color: transparent;
-}
-#homeHeadingComment{
-  /*font-family: 'HankenBook';*/
-  font-family: "Kaleko 105 Round W01 Bold";  
-   /*font-weight: normal; */
-   /*font-style: normal; */
-  font-weight: 300;
-  color: white;/*rgba(255, 255, 255, 0.7);*/
-  font-size: 60px;
-  margin-bottom: 50px;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .textContainer h3 {
     vertical-align: left;
@@ -98,6 +91,15 @@ aside {
 .bg-dark {
   background-color: #222222;
   color: white;
+}
+.section-heading {
+  font-family: 'Nunito';
+  font-size: 30px;
+  font-weight: bold;
+  border: none;
+  border-radius: 300px;
+  /*font-weight: 700;*/
+  /*text-transform: uppercase;*/
 }
 .btn {
   font-family: 'Average', serif;
