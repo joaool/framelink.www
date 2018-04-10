@@ -18,4 +18,19 @@
         $('#framelink-registration-email-send').prop('disabled', !valid);
     };
 
+    document.onEmailSendSubmit = function (e) {
+        e.preventDefault();
+        var toemail = $('#framelink-registration-email').val(),
+            modalEl = $('#framelink-registration-modal'),
+            valid = EmailRegex.test(toemail);
+        if (valid && emailjs) {
+            emailjs.send('default_service', 'fllogin', {
+                toemail: toemail
+            });
+            if (modalEl.modal) {
+                modalEl.modal('hide');
+            }
+        }
+    };
+
 }(document));

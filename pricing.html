@@ -220,34 +220,44 @@
     <div id="framelink-registration-modal" class="modal left fade">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Start Free Trial</h4>
-                </div>
-                <div class="modal-body">
-                    <div>
-                        Please, provide us your email and we will send you registration link
+                <form method="post" onsubmit="document.onEmailSendSubmit(event);">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Start Free Trial</h4>
                     </div>
-                    <input
-                        id="framelink-registration-email"
-                        class="input-material input-form"
-                        type="text"
-                        placeholder="Email"
-                        onchange="document.validateEmail()"
-                        onkeyup="document.validateEmail()"
-                        oninput="document.validateEmail()"
-                         />
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="cancel" data-dismiss="modal">
-                        CANCEL
-                    </button>
-                    <button id="framelink-registration-email-send" type="button" class="action">
-                        START
-                    </button>
+                    <div class="modal-body">
+                        <div>
+                            Please, provide us your email and we will send you registration link
+                        </div>
+                        <input
+                            id="framelink-registration-email"
+                            class="input-material input-form"
+                            type="text"
+                            placeholder="Email"
+                            name="toemail"
+                            onchange="document.validateEmail()"
+                            onkeyup="document.validateEmail()"
+                            oninput="document.validateEmail()"
+                             />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="cancel" data-dismiss="modal">
+                            CANCEL
+                        </button>
+                        <button id="framelink-registration-email-send" onclick="document.onEmailSendSubmit(event);" type="button" class="action">
+                            START
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_xvkggykECnktytkiSuUo6");
+       })();
+    </script>
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     // <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     // <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
