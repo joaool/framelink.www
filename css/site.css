@@ -356,7 +356,7 @@ aside {
 {
     background-image: url(../img/yes.png);
     background-repeat: no-repeat;
-    /*margin-bottom: 15px;*/
+    /*margin-top: -25px;*/
 }
 
 .pricingtable > .column > .body > .no
