@@ -3,7 +3,9 @@
 <html>
 <head>
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1,  user-scalable=no"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1,  user-scalable=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1,  user-scalable=no"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <!-- <meta name="viewport" content="width=device-width" /> -->
     <!-- <meta charset="utf-8"> -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -12,14 +14,18 @@
     <meta name="description" content="Framelink is a zero code app that connects to your business environment. Define permissions to your users and let them share documents and personalized messages across Email, Mobile, and SMS.Sign up for free.">
     <meta name="keywords" content="app builder, spreadsheet, excel template, online database, relational database, zero code, VLOOKUP, HLOOKUP">
     <meta name="author" content="">
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> 
+
     <link rel="icon" href="img/framelink.ico" type="image/x-icon">
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- // <script src="vendor/jquery/jquery.min.js"></script> -->
+    <!-- // <script src="vendor/bootstrap/js/bootstrap.min.js"></script> -->
+    <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!-- <link href="http://fonts.googleapis.com/css?family=Indie Flower" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="http://fonts.googleapis.com/css?family=Bangers" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="http://fonts.googleapis.com/css?family=Love Ya Like A Sister" rel="stylesheet" type="text/css"> -->
     <link href="http://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Average" rel="stylesheet">
     <link href="//db.onlinewebfonts.com/c/1a8d4ff3cf8a0fceded5a7d806c9726e?family=Kaleko+105+Round+W01+Bold" rel="stylesheet" type="text/css"/>
@@ -54,49 +60,30 @@
       </ul>
     </header>
     <main> -->
-      <div class="container">
-      <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="row">
-        <div class="navbar-header">
-                  <button type="button" data-target="#navbarCollapse" data-toggle="collapse"  class="navbar-toggle collapsed" >
-                      <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
-                  </button>
-                  <a href="./index.html" class="pull-left"><img style="margin-left:20px;margin-top:10px;width:150px;height:30px" class="brand" src="img/logo.png"></a> 
-              </div>
-              <!-- <div id="navbarCollapse" class="collapse navbar-collapse navbar-default" style="margin-right:30px;" > -->
-              <div id="navbarCollapse" class="collapse navbar-collapse navbar-default" style="margin-right:185px;">
-                  <ul class="nav navbar-nav navbar-right">
-                      <li>
-                          <a class="active page-scroll" href="index.html#about">What is it ?</a>
-                      </li>
-                      <li>
-                          <a class="page-scroll" href="index.html#works">How does it work ?</a>
-                      </li>
-                      <li>
-                            <a  class="page-scroll" href="index.html#services">Services</a>
-                      </li>
-                      <li>
-                          <a  class="page-scroll" href="#pricing">Pricing</a>
-                      </li>
-                      <li>
-                          <a id="_demo_now" class="page-scroll" href="index.html#demoNow">Demo now</a>
-                      </li>
-                      <li>
-                          <a class="page-scroll" href="contact.html">Contact</a>
-                      </li>
-                  </ul>
-              </div>
-              <!-- Collect the nav links, forms, and other content for toggling -->
-        </div>
-    </nav>
-  </div>
+    <nav class="navbar fixed-top navbar-expand-md navbar-toggleable-md navbar-light bg-light">    
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="nav-brand" href="./index.html"><img style="height:30px" src="img/logo.png"></a>
+            <div class="navbar-collapse collapse justify-content-end" id="collapsingNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a id="_about" class="nav-link" href="index.html#about">What is it?</a></li>
+                    <li class="nav-item"><a id="_works" class="nav-link" href="index.html#works">&nbsp;How does it work?</a></li>
+                    <li class="nav-item"><a id="_services" class="nav-link" href="index.html#services">&nbsp;Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">&nbsp;Pricing</a></li>
+                    <li class="nav-item"><a id="_demo_now" class="nav-link" href="index.html#demoNow">&nbsp;Demo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">&nbsp;Contact</a></li>
+                </ul>
+            </div>
+    </nav>  
+      
  <!--  <header>
     
   </header> -->
       <section id="pricing2">
-              <!-- <div class="container"> -->
+          <div class="container">
                   <!-- <div class="row" style="margin-top:60px;"> -->
-                  <div class="row" >
+              <div class="row" >
                     <div class="col-lg-12 text-center">
                         <div class="col-lg-12 text-center">
                           <h2 style="margin-top:10px;color:gray">Simple pricing</h2>
@@ -106,84 +93,88 @@
                           <hr class="primary">
                         </div>
                     </div>
-                  </div>
+              </div>
               <!-- </div> -->
               <!-- <div class="container"> -->
-              <aside  style="margin-top:-40px;">
-                  <div class="pricingtable" style="margin-left: 400px;margin-top:10px;">
-                      <div class="column">
-                          <!-- <div class="head yellow">S<br/>t<br/>a<br/>n<br/>d<br/>a<br/>r<br/>d</div> -->
-                          <div class="body">
-                              <h2 class="price" style="margin-left:15px;">Standard</h2>
-                              <div class="row pricerow">
-                                  <!-- <div class="price" style="margin-left:-40px;">xx</div> -->
-                                  
-                                  <div class="curency" style="margin-left:-40px;">€</div>
-                                  <div class="price" style="margin-left:-25px;">15</div>
-                                  <!-- <div class="cents">.99</div> -->
-                                  <div class="priceby">monthly</div>
-                                  <div class="curency">or   €</div>
-                                  <div class="price" style="margin-left:-10px;">150</div>
-                                  <!-- <div class="cents">.99</div> -->
-                                  <div class="priceby">yearly</div>
+              <div class="row" style="margin-top:20px;">
+                  <div class="col-sm-6 offset-lg-2 col-lg-4 text-muted2">
+                        <div class="pricingtable" style="margin-left: 0px;margin-top:10px;">
+                          <div class="column">
+                              <!-- <div class="head yellow">S<br/>t<br/>a<br/>n<br/>d<br/>a<br/>r<br/>d</div> -->
+                              <div class="body">
+                                  <h2 class="price" style="margin-left:15px;">Standard</h2>
+                                  <div class="row pricerow">
+                                      <!-- <div class="price" style="margin-left:-40px;">xx</div> -->
+                                      
+                                      <div class="curency" style="margin-left:-40px;">€</div>
+                                      <div class="price" style="margin-left:-25px;">15</div>
+                                      <!-- <div class="cents">.99</div> -->
+                                      <div class="priceby">monthly</div>
+                                      <div class="curency">or   €</div>
+                                      <div class="price" style="margin-left:-10px;">150</div>
+                                      <!-- <div class="cents">.99</div> -->
+                                      <div class="priceby">yearly</div>
+                                  </div>
+                                  <!-- <div class="row feature no"><b>-</b></div> -->
+                                  <div class="row feature yes"><b>5000</b> total rows</div>
+                                  <div class="row feature yes"><b>3</b> users</div>
+                                  <div class="row feature">       (€5 per additional user)</div>
+                                  <div class="row feature yes"><b>6 months</b> Time Machine</div>
+                                  <div class="row feature yes"><b>1000</b> Emails/month*</div>
+                                  <div class="row feature yes"><b>100</b> SMS/month**</div>
+                                  <!-- <div class="row feature no">Free beer for life</div> -->
+                                  <!-- <div class="row feature no">Love, Money & Power</div> -->
+                                  <div class="row signup yellow2" style="margin-top:30px"><a href="/app/#!/login">Start free trial</a></div>
                               </div>
-                              <!-- <div class="row feature no"><b>-</b></div> -->
-                              <div class="row feature yes"><b>5000</b> total rows</div>
-                              <div class="row feature yes"><b>3</b> users</div>
-                              <div class="row feature">       (€5 per additional user)</div>
-                              <div class="row feature yes"><b>6 months</b> Time Machine</div>
-                              <div class="row feature yes"><b>1000</b> Emails/month*</div>
-                              <div class="row feature yes"><b>100</b> SMS/month**</div>
-                              <!-- <div class="row feature no">Free beer for life</div> -->
-                              <!-- <div class="row feature no">Love, Money & Power</div> -->
-                              <div class="row signup yellow2" style="margin-top:30px"><a href="/app/#!/login">Start free trial</a></div>
+                              <!-- <div class="cl"></div> -->
                           </div>
-                          <!-- <div class="cl"></div> -->
-                      </div>
-                      <div class="column">
-                          <!-- <div class="row head blue">P<br/>r<br/>o<br/></div> -->
-                          <div class="body">
-                              <h2 class="price" style="margin-left:15px;">Pro</h2>
-                              <div class="row pricerow">
-                                  <div class="curency" style="margin-left:-40px;">€</div>
-                                  <div class="price" style="margin-left:-25px;">100</div>
-                                  <!-- <div class="cents">.99</div> -->
-                                  <div class="priceby">monthly</div>
-                                  <div class="curency">or   €</div>
-                                  <div class="price" style="margin-left:-10px;">1000</div>
-                                  <!-- <div class="cents">.99</div> -->
-                                  <div class="priceby">yearly</div>
-                              </div>
-                              <div class="row feature yes"><b>No limit</b> for total rows</div>
-                              <div class="row feature yes"><b>Unlimited</b> number of users</div>
-                              <div class="row feature yes"><b>1 year</b> Time Machine</div>
-                              <div class="row feature yes"><b>10000</b> Emails/month*</div>
-                              <div class="row feature yes"><b>500</b> SMSs/month**</div>
-                              <div class="row feature yes"><b>Data model</b> definition</div>
-                              <div style="margin-top:-10px;margin-left:40px">    - (FrameLink consultancy)</div>
-                              <!-- <div class="row feature no"><b>No</b> domains</div> -->
-                              <!-- <div class="row feature no">Free beer for life</div> -->
-                              <!-- <div class="row feature no">Love, Money & Power</div> -->
-                              <div class="row signup blue2" style="margin-top:20px"><a  href="/app/#!/login">Start free trial</a></div>
-                          </div>
-                          <!-- <div class="cl"></div> -->
-                      </div>
-                      <div class="row" >
-                          <div class="col-lg-12 text-center" style="margin-left:-170px;">
-                              <br>
-                              <p>*Extra Pack with +5000 Emails: €10  ---   **Extra Pack with +500 SMS: €10</p>
-                          </div>
-                      </div>
+                        </div>
                   </div>
-                </aside>
-
-                  <!-- <aside class="bg-dark" style="margin-top:-40px;">
-                      <div class="container text-center">
-                      </div>
-                  </aside> -->
+                  <div class="col-sm-6 col-lg-4 text-muted2">
+                        <div class="pricingtable" style="margin-left: 0px;margin-top:10px;">
+                          <div class="column">
+                              <!-- <div class="row head blue">P<br/>r<br/>o<br/></div> -->
+                              <div class="body">
+                                  <h2 class="price" style="margin-left:15px;">Pro</h2>
+                                  <div class="row pricerow">
+                                      <div class="curency" style="margin-left:-40px;">€</div>
+                                      <div class="price" style="margin-left:-25px;">100</div>
+                                      <!-- <div class="cents">.99</div> -->
+                                      <div class="priceby">monthly</div>
+                                      <div class="curency">or   €</div>
+                                      <div class="price" style="margin-left:-10px;">1000</div>
+                                      <!-- <div class="cents">.99</div> -->
+                                      <div class="priceby">yearly</div>
+                                  </div>
+                                  <div class="row feature yes"><b>No limit</b> for total rows</div>
+                                  <div class="row feature yes"><b>Unlimited</b> number of users</div>
+                                  <div class="row feature yes"><b>1 year</b> Time Machine</div>
+                                  <div class="row feature yes"><b>10000</b> Emails/month*</div>
+                                  <div class="row feature yes"><b>500</b> SMSs/month**</div>
+                                  <div class="row feature yes"><b>Data model</b> definition</div>
+                                  <div style="margin-top:-10px;margin-left:40px">    - (FrameLink consultancy)</div>
+                                  <!-- <div class="row feature no"><b>No</b> domains</div> -->
+                                  <!-- <div class="row feature no">Free beer for life</div> -->
+                                  <!-- <div class="row feature no">Love, Money & Power</div> -->
+                                  <div class="row signup blue2" style="margin-top:20px"><a  href="/app/#!/login">Start free trial</a></div>
+                              </div>
+                              <!-- <div class="cl"></div> -->
+                          </div>
+                        </div>
+                  </div>
+              </div>      
+              <div class="row" >
+                  <div class="col-lg-12 text-center" >
+                      <br>
+                      <p>*Extra Pack with +5000 Emails: €10  ---   **Extra Pack with +500 SMS: €10</p>
+                  </div>
               </div>
-          </section>      
+          </div>    
+      </section>      
     </main>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    // <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    // <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
   </body>
 </html>
 <!--End copying here

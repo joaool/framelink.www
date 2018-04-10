@@ -1,8 +1,20 @@
 html,
-body {
+/*body {
+  padding-top: 70px;
   height: 100%;
   width: 100%;
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}*/
+/*body { 
+  padding-top: 10px; 
+  overflow-x: hidden;
+}
+@media screen and (max-width: 768px) {
+    body { padding-top: 0px; }
+}*/
+.main {
+  margin-top: 20px;
+  /*overflow-y: scroll;*/
 }
 hr {
   /*border-color: #F05F40;*/
@@ -59,6 +71,14 @@ aside {
 .no-padding {
   padding: 0;
 }
+.navbar-nav {
+      flex-direction: row;
+      overflow-x: hidden;
+}
+/*.nav-link {
+      padding-right: .5rem !important;
+      padding-left: .5rem !important;
+}*/
 .navbar-default {
   background-color: white;
   border-color: rgba(34, 34, 34, 0.05);
@@ -474,4 +494,10 @@ aside {
       -webkit-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%);
       background-size: cover;
+}
+@media (max-width: 568px) {
+    .container {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }

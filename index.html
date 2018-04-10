@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1,  user-scalable=no"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1,  user-scalable=no">
-    <!-- <meta name="viewport" content="width=device-width" /> -->
-    <!-- <meta charset="utf-8"> -->
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> -->
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <title>Creative web application made easy</title>
     <meta name="description" content="Framelink is a zero code app that connects to your business environment. Define permissions to your users and let them share documents and personalized messages across Email, Mobile, and SMS.Sign up for free.">
     <meta name="keywords" content="app builder, spreadsheet, excel template, online database, relational database, zero code, VLOOKUP, HLOOKUP">
     <meta name="author" content="">
+    
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>                         
+    
+
+
     <link rel="icon" href="img/framelink.ico" type="image/x-icon">
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- // <script src="vendor/jquery/jquery.min.js"></script> -->
+    <!-- // <script src="vendor/bootstrap/js/bootstrap.min.js"></script> -->
+    <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
@@ -46,69 +53,54 @@
 
 
 <body id="page-top">
-	<div class="container">
-	    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-		    <div class="row">
-				<div class="navbar-header">
-	                <button type="button" data-target="#navbarCollapse" data-toggle="collapse"  class="navbar-toggle collapsed" >
-	                    <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
-	                </button>
-	                <a href="./index.html" class="pull-left"><img style="margin-left:105px;margin-top:10px;width:150px;height:30px" class="brand" src="img/logo.png"></a> 
-	            </div>
-	            <div id="navbarCollapse" class="collapse navbar-collapse navbar-default" style="margin-right:150px;">
-	                <ul class="nav navbar-nav navbar-right">
-	                    <li>
-	                        <a id="_about" class="active page-scroll" href="#about">What is it ?</a>
-	                    </li>
-	                    <li>
-	                        <a class="page-scroll" href="#works">How does it work ?</a>
-	                    </li>
-	                    <li>
-                            <a id="_services" class="page-scroll" href="#services">Services</a>
-	                    </li>
-                        <li>
-                            <a id="_pricing" class="page-scroll" href="pricing.html">Pricing</a>
-                        </li>
-                        <li>
-                            <a id="_demo_now" class="page-scroll" href="#demoNow">Demo now</a>
-                        </li>
-	                    <li>
-	                        <a class="page-scroll" href="contact.html">Contact</a>
-	                    </li>
-	                </ul>
-	            </div>
-	            <!-- Collect the nav links, forms, and other content for toggling -->
-		    </div>
-		</nav>
-	</div>
-	<header>
-		<!-- <div class="xfullscreen-bg">
-			<video preload="metadata" class="hidden-xs fullscreen-bg__video" autoplay="autoplay" poster="img/backgroundImg.png" loop="loop" id="video_background">
-				<source src="img/framelink_bg.mov" type="video/mp4">
-		    </video>
-		</div> -->
-        <div class="row">
-            <div class="col-md-5">
-                <h3 style="margin-top:10px;"><img style="margin-left:20px;margin-top:0px;height:650px" src="img/homepage_img1.jpg" border=0></h3>
-                <h2 style="margin-top:20px;margin-left:100px;color:gray">Why FrameLink?</h2>
-                <ul class="text-muted2" style="margin-top:20px;margin-left:100px;margin-right:25px">
-                    <li>Create the fields you need as you go.</li>
-                    <li>Predefine different messages and send them in a personalised way.</li>
-                    <li>Manage your data and services from any device.</li>
+	<!-- <div class="container-fluid"> -->
+        <!-- <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-toggleable-sm navbar-inverse bg-primary"> -->
+        <nav class="navbar fixed-top navbar-expand-md navbar-toggleable-md navbar-light bg-light">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="nav-brand" href="./index.html"><img style="height:30px" src="img/logo.png"></a>
+            <div class="navbar-collapse collapse justify-content-end" id="collapsingNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a id="_about" class="nav-link" href="#about">What is it?</a></li>
+                    <li class="nav-item"><a id="_works" class="nav-link" href="#works">&nbsp;How does it work?</a></li>
+                    <li class="nav-item"><a id="_services" class="nav-link" href="#services">&nbsp;Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">&nbsp;Pricing</a></li>
+                    <li class="nav-item"><a id="_demo_now" class="nav-link" href="#demoNow">&nbsp;Demo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">&nbsp;Contact</a></li>
                 </ul>
             </div>
-            <div class="col-md-7">
-                <h1 style="margin-top:180px;">Get things done with your data!</h1>
-                <ul class="text-muted2">
-                    <li>Share your data securely.</li>
-                    <li>Send personalised Emails and SMS.</li>
-                    <li>Start video conferences with team members.</li>
-                </ul>
-                <a href="/app" id="initialStart" class="page-scroll btn btn-primary btn-xl" style="margin-left:100px;margin-top:20px;font-size:18px;">START NOW</a>
-                <h3 style="margin-top:40px;"><img style="margin-left:-50px;margin-top:0px;height:650px" src="img/homepage_img2.jpg" border=0></h3>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-5 d-none d-sm-block">
+                    <img class="img-fluid" style="margin-top:0px;height:650px" src="img/homepage_img1.jpg">
+                </div>
+                <div class="col-sm-7">
+                    <h1 style="margin-top:180px;">Get things done with your data!</h1>
+                    <ul class="text-muted2">
+                        <li>Share your data securely.</li>
+                        <li>Send personalised Emails and SMS.</li>
+                        <li>Start video conferences with team members.</li>
+                    </ul>
+                    <a href="/app" id="initialStart" class="page-scroll btn btn-primary btn-xl" style="margin-top:20px;font-size:18px;">START NOW</a>
+                </div>
             </div>
-        </div>
-	</header>	   
+            <div class="row">
+                <div class="col-sm-5">
+                    <h2 style="margin-top:20px;margin-left:100px;color:gray">Why FrameLink?</h2>
+                    <ul class="text-muted2" style="margin-top:20px;margin-left:100px;margin-right:25px">
+                        <li>Add custom attributes as you go.</li>
+                        <li>Predefine different messages and send them in a personalised way.</li>
+                        <li>Manage your data and services from any device.</li>
+                    </ul>
+                </div>
+                <div class="col-sm-7">
+                    <h3 style="margin-top:40px;"><img style="margin-left:-50px;margin-top:-150px;height:650px" src="img/homepage_img2.jpg" border=0></h3>
+                </div>
+            </div>
+        </div>    
+    <!-- </div> -->
 	<section id="about" >
         <div class="container">
             <!-- <div class="row" style="margin-top:-70px;">
@@ -135,9 +127,9 @@
                 </div>
             </div>    
             <div class="row" style="margin-top:50px;">
-                <div class="col-lg-6 col-lg-offset-3 text-center">
+                <div class="col-lg-12 text-center">
                     <br>
-                    <a href="/app" id="initialStart" class="page-scroll btn btn-danger btn-xl" style="font-size:18px;">GET STARTED !</a>
+                    <a href="/app" id="initialStart" class="page-scroll btn btn-primary btn-xl" style="font-size:18px;">GET STARTED !</a>
                         <!-- <a href="/app" class="page-scroll btn btn-default btn-xl btn-danger">Get Started !</a> -->
                 </div>
             </div>
@@ -185,7 +177,7 @@
             <div class="text-center">
                 <div class="call-to-action">
                     <!-- <h2>Be creative about your business and try it now!</h2> -->
-                    <a href="/app" class="btn btn-default btn-xl sr-button btn-danger">Start me up!</a>
+                    <a href="/app" class="btn btn-default btn-xl sr-button btn-primary">Start me up!</a>
                 </div>
             </div>
         </aside>
@@ -209,7 +201,7 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-3 col-md-3 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-envelope-o text-primary sr-icons"></i>
                         <h3>Email</h3>
@@ -221,7 +213,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-3 col-md-3 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-phone-square text-primary sr-icons"></i>
                         <h3>SMS</h3>
@@ -233,7 +225,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-3 col-md-3 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-slack text-primary sr-icons"></i>
                         <h3>Chat/Video Channels</h3>
@@ -245,7 +237,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-3 col-md-3 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-credit-card text-primary sr-icons"></i>
                         <h3>Blockchain Services</h3>
@@ -256,11 +248,11 @@
         </div>
         <aside class="bg-dark">
             <div class="container text-center">
-                <div class="section-heading float-left">
+                <div class="section-heading">
                     <p>Share tasks with your team.</p>
                     <p>Define team member permissions.</p>
                     <br>
-                    <a href="/app" class="btn btn-default btn-xl sr-button btn-danger">Start me up!</a>
+                    <a href="/app" class="btn btn-default btn-xl sr-button btn-primary">Start me up!</a>
                 </div>
             </div>
         </aside>
@@ -301,9 +293,9 @@
     <section id="demoNow">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center" style="margin-top:-50px;">
+                <div class="col-lg-12 text-center" style="margin-top:-50px;">
                     <br>
-                    <h2 class="section-heading">Try Framelink, launching a conference call with our consultants.</h2>
+                    <h2 class="section-heading">Launch a conference call with our consultants.</h2>
                     <!-- <hr class="primary"> -->
                     <!-- <p class="text-muted">After login you will be in a FrameLink workspace you adjust to your needs. Select one consultant to guide you in a video conference call.</p>
                     <a class="btn btn-large btn-info" href="howto.html">See how to do it !</a> -->
@@ -311,13 +303,13 @@
             </div>
             <br>
         </div>
-        <aside class="bg-dark" style="margin-top:5px;">
+        <aside class="bg-light" style="margin-top:5px;">
             <div class="container text-center">
-                <div class="text-muted2 float-left">
-                    <p>1 - Click button below and enter with Login:"demo", Password:"demo".</p>
-                    <p>2 - Click <i class="fa fa-lg fa-phone text-primary sr-icons"></i>(upper right corner) and select one of our consultants !</p>
+                <div class="text-muted2">
+                    <p>1 - Click 'START' button and enter with Login:"demo", Password:"demo".</p>
+                    <p>2 - Click <i class="fa fa-lg fa-phone text-warning sr-icons"></i>(upper right corner) and select one of our consultants !</p>
                     <br>
-                    <a href="/app" class="btn btn-default btn-xl sr-button btn-danger">Try Framelink with online support!</a>
+                    <a href="/app" class="btn btn-default btn-xl sr-button btn-primary">START</a>
                 </div>
             </div>
         </aside>
@@ -328,7 +320,7 @@
 <footer class="bg-dark">
     <div class="container" style="margin-top:-75px;">
         <div class="row">
-            <div class="col-md-2 col-sm-2 col-xs-4">
+            <div class="col-md-2 col-sm-2 col-xs-4" style="margin-top:20px;">
                 <h3>Product</h3>
                 <ul>
                     <li class="bg-dark"><a style="color:white;" href="#about">What is it ?</a>
@@ -337,7 +329,7 @@
                     <li class="bg-dark"><a style="color:white;" href="pricing.html">Pricing</a>                        
                 </ul>
             </div>
-            <div class="col-md-3 col-sm-3 col-xs-6">
+            <div class="col-md-3 col-sm-3 col-xs-6" style="margin-top:20px;">
                 <h3>Company</h3>
                 <ul>
                     <li class="bg-dark"><a style="color:white;" href="aboutus.html">About Us</a>
@@ -346,7 +338,7 @@
                 </ul>
             </div>
             <div class="clearfix visible-xs-block margin_bottom_sm"></div>
-            <div class="col-md-2 col-sm-2 col-xs-off col-xs-4">
+            <div class="col-md-2 col-sm-2 col-xs-off col-xs-4" style="margin-top:20px;">
                 <h3>Help</h3>
                 <ul>
                     <li class="bg-dark"><a style="color:white;" href="howto.html">Getting Started</a>
@@ -355,7 +347,7 @@
                     <li class="bg-dark"><a style="color:white;" href="terms.html">Terms&Conditions</a>
                 </ul>
             </div>
-            <div class="col-md-2 col-sm-2 col-xs-off col-xs-4">
+            <div class="col-md-2 col-sm-2 col-xs-off col-xs-4" style="margin-top:20px;">
                 <h3 >Get in touch </h3>
                 <ul>
                     <li class="bg-dark"><a style="color:white;" href="contact.html">Contact Us</a>
@@ -388,8 +380,11 @@
 	    $(".navbar-collapse").collapse('hide');
 	});   
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> -->
     <!-- // <script src="js/creative.min.js"></script> -->
     <!-- // <script src="js/scrolling-nav.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    // <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    // <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 </body>
 </html> 
