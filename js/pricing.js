@@ -5,6 +5,7 @@
     document.showRegistrationModal = function () {
         var el = $('#framelink-registration-modal');
         if (typeof el.modal === 'function') {
+            $('input', el).val('');
             el.modal('show');
             setTimeout(function () {
                 $('input', el).focus();

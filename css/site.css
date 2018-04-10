@@ -553,6 +553,9 @@ button.action {
   -o-transition: background-color 300ms  cubic-bezier(0.55, 0, 0.1, 1) , box-shadow 300ms  cubic-bezier(0.55, 0, 0.1, 1);
   transition: background-color 300ms  cubic-bezier(0.55, 0, 0.1, 1) , box-shadow 300ms  cubic-bezier(0.55, 0, 0.1, 1);
 }
+button.action.marigold {
+    background-color: #ffc300;
+}
 button.action[disabled] {
   background-color: #CADCE0;
 }
@@ -562,6 +565,9 @@ button.action:not([disabled]) {
 button.action:not([disabled]):hover {
   background-color: #2f4ec1;
   box-shadow: 0 12px 12px 0 rgba(124, 145, 152, 0.24), 0 0 12px 0 rgba(160, 183, 190, 0.24);
+}
+button.action.marigold:not([disabled]):hover {
+  background-color: #f4ba00;
 }
 .input-material {
   border-bottom: 1px solid #BABABA;
@@ -589,4 +595,74 @@ button.action:not([disabled]):hover {
 .input-form {
     margin-top: 20px;
     width: 100%;
+}
+
+.pricing-container {
+    text-align: center;
+    padding: 0;
+    padding-top: 50px;
+}
+.pricing-container .action {
+    height: 35px;
+    width: 250px;
+}
+.pricing-card {
+    display: inline-block;
+    width: 500px;
+}
+.pricing-item {
+    min-height: 70px;
+}
+.pricing-item.small {
+    min-height: 50px;
+}
+.pricing-value {
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+.pricing-label {
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-size: 14px;
+    color: #95A8AE;
+}
+.icon-plan-standart {
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    height: 110px;
+    width: 500px;
+    background-image: url(../img/entity-icon-student.svg);
+}
+.icon-plan-pro {
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    height: 110px;
+    width: 500px;
+    background-image: url(../img/entity-icon-todo.svg);
+}
+.price {
+    display: inline-block;
+    margin-bottom: 30px;
+    width: 100px;
+}
+.price:not(:last-child) {
+    margin-right: 20px;
+}
+.price-period {
+    padding-left: 34px;
+    text-align: left;
+    font-size: 12px;
+    color: #95A8AE;
+}
+.price-name {
+    letter-spacing: 5px;
+    font-size: 16px;
+    color: #7c9198;
+    margin: 0;
+}
+.price-money {
+    text-align: left;
+    margin: 0;
 }
