@@ -19,7 +19,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="js/pricing.js"></script>
 
     <link rel="icon" href="img/framelink.ico" type="image/x-icon">
     <!-- // <script src="vendor/jquery/jquery.min.js"></script> -->
@@ -60,7 +61,7 @@
       </ul>
     </header>
     <main> -->
-    <nav class="navbar fixed-top navbar-expand-md navbar-toggleable-md navbar-light bg-light">    
+    <nav class="navbar fixed-top navbar-expand-md navbar-toggleable-md navbar-light bg-light">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -75,10 +76,10 @@
                     <li class="nav-item"><a class="nav-link" href="contact.html">&nbsp;Contact</a></li>
                 </ul>
             </div>
-    </nav>  
-      
+    </nav>
+
  <!--  <header>
-    
+
   </header> -->
       <section id="pricing2">
           <div class="container">
@@ -105,7 +106,7 @@
                                   <h2 class="price" style="margin-left:15px;">Standard</h2>
                                   <div class="row pricerow">
                                       <!-- <div class="price" style="margin-left:-40px;">xx</div> -->
-                                      
+
                                       <div class="curency" style="margin-left:-40px;">€</div>
                                       <div class="price" style="margin-left:-25px;">15</div>
                                       <!-- <div class="cents">.99</div> -->
@@ -124,7 +125,9 @@
                                   <div class="row feature yes"><b>100</b> SMS/month**</div>
                                   <!-- <div class="row feature no">Free beer for life</div> -->
                                   <!-- <div class="row feature no">Love, Money & Power</div> -->
-                                  <div class="row signup yellow2" style="margin-top:30px"><a href="/app/#!/login">Start free trial</a></div>
+                                  <div class="row signup yellow2" style="margin-top:30px" onclick="document.showRegistrationModal()">
+                                      Start free trial
+                                  </div>
                               </div>
                               <!-- <div class="cl"></div> -->
                           </div>
@@ -156,22 +159,48 @@
                                   <!-- <div class="row feature no"><b>No</b> domains</div> -->
                                   <!-- <div class="row feature no">Free beer for life</div> -->
                                   <!-- <div class="row feature no">Love, Money & Power</div> -->
-                                  <div class="row signup blue2" style="margin-top:20px"><a  href="/app/#!/login">Start free trial</a></div>
+                                  <div class="row signup blue2" style="margin-top:30px" onclick="document.showRegistrationModal()">
+                                      Start free trial
+                                  </div>
                               </div>
                               <!-- <div class="cl"></div> -->
                           </div>
                         </div>
                   </div>
-              </div>      
+              </div>
               <div class="row" >
                   <div class="col-lg-12 text-center" >
                       <br>
                       <p>*Extra Pack with +5000 Emails: €10  ---   **Extra Pack with +500 SMS: €10</p>
                   </div>
               </div>
-          </div>    
-      </section>      
+          </div>
+      </section>
     </main>
+    <div id="framelink-registration-modal" class="modal left fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Start Free Trial</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-inline">
+                        You can define your own date field format
+                    </div>
+                    <div id="date-field-format-picker"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="cancel" data-dismiss="modal">
+                        CANCEL
+                    </button>
+                    <button id="date-field-cfg-save" type="button" class="action">
+                        SAVE
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     // <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     // <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
