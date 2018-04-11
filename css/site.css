@@ -692,3 +692,33 @@ button.action.marigold:not([disabled]):hover {
     font-weight: 600;
     font-size: 36px;
 }
+.form-label {
+  letter-spacing: -0.1px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  text-align: left;
+  font-size: 14px;
+}
+.form-contact {
+    margin: 0 auto;
+    width: 500px;
+}
+.form-contact .action {
+    margin: 20px 0;
+    width: 200px;
+}
+.form-contact .form-label {
+    padding-top: 20px;
+}
+.form-contact .input-material {
+    padding: 3px 1px;
+    width: 100%;
+}
+.contact-description {
+    letter-spacing: 1px;
+    text-align: justify;
+    margin: 20px auto;
+    line-height: 1.9;
+    font-size: 14px;
+    width: 550px;
+}
