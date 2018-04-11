@@ -722,3 +722,18 @@ button.action.marigold:not([disabled]):hover {
     font-size: 14px;
     width: 550px;
 }
+.icon-facebook {
+    background-image: url(../img/icon-facebook.svg);
+}
+.icon-twitter {
+    background-image: url(../img/icon-twitter.svg);
+}
+.icon-contact {
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    background-size: cover;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+}
