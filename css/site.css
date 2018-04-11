@@ -614,19 +614,20 @@ button.action.marigold:not([disabled]):hover {
     width: 330px;
 }
 .pricing-item {
-    min-height: 70px;
+    min-height: 53px;
 }
 .pricing-item.small {
     min-height: 50px;
 }
 .pricing-value {
     letter-spacing: 2px;
-    font-size: 18px;
+    font-size: 16px;
 }
 .pricing-label {
     letter-spacing: 1px;
     font-weight: 100;
-    font-size: 14px;
+    margin-top: -6px;
+    font-size: 12px;
     color: #95A8AE;
 }
 .icon-plan {
@@ -655,8 +656,8 @@ button.action.marigold:not([disabled]):hover {
     display: inline-block;
 }
 .price-name {
-    letter-spacing: 5px;
-    font-size: 16px;
+    letter-spacing: 10px;
+    font-size: 12px;
     color: #7c9198;
     margin: 0;
 }
