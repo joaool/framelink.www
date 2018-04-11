@@ -738,15 +738,53 @@ button.action.marigold:not([disabled]):hover {
     width: 40px;
 }
 .contact-message-sent {
+    justify-content: center;
     font-family: 'Nunito';
+    align-items: center;
     text-align: center;
-    height: 200px;
     font-size: 24px;
+    height: 200px;
     display: none;
     width: 100%;
-    align-items: center;
-    justify-content: center;
 }
 .contact-container {
     padding: 100px 0 0 0;
+}
+.main-menu {
+    box-shadow: 0 1px 3px #EAF3F5, 0 1px 2px #EAF3F5;
+    background-color: #fff;
+    margin-bottom: 55px;
+    position: fixed;
+    height: 55px;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.main-menu-logo {
+    background-image: url(../img/logo.svg);
+    background-position-y: center;
+    background-position-x: left;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 8px;
+    height: 55px;
+    width: 160px;
+}
+.main-menu-links {
+    margin-right: 20px;
+    line-height: 55px;
+    float: right;
+}
+.main-menu-links a {
+    text-decoration: none;
+    display: inline-block;
+    color: #7c9198;
+}
+.main-menu-links a.active {
+    pointer-events: none;
+    cursor: default;
+    color: #415dd4;
+}
+.main-menu-links a:not(:first-child) {
+    margin-left: 20px;
 }
