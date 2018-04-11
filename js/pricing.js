@@ -1,10 +1,17 @@
 (function (document) {
 
+    var PlanName = [
+        'Standard',
+        'Pro',
+        'Pro++'
+    ];
+
     var EmailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-    document.showRegistrationModal = function () {
+    document.showRegistrationModal = function (planId) {
         var el = $('#framelink-registration-modal');
-        if (typeof el.modal === 'function') {
+        document.SelectedPlan = PlanName[planId - 1];
+        if (typeof el.modal === 'function' && document.SelectedPlan) {
             $('input', el).val('');
             el.modal('show');
             setTimeout(function () {
@@ -14,7 +21,7 @@
         }
     };
 
-    document.validateEmail = function () {
+    document.validateEmail = function (e) {
         var valid = EmailRegex.test($('#framelink-registration-email').val());
         $('#framelink-registration-email-send').prop('disabled', !valid);
     };
@@ -26,10 +33,12 @@
             valid = EmailRegex.test(toemail);
         if (valid && emailjs) {
             emailjs.send('default_service', 'fllogin', {
-                toemail: toemail
+                toemail: toemail,
+                plan: document.SelectedPlan
             });
             if (modalEl.modal) {
                 modalEl.modal('hide');
+                document.SelectedPlan = undefined;
             }
         }
     };

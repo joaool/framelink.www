@@ -602,9 +602,8 @@ button.action.marigold:not([disabled]):hover {
 }
 
 .pricing-container {
+    padding: 50px 0 20px 0;
     text-align: center;
-    padding: 0;
-    padding-top: 50px;
 }
 .pricing-container .action {
     height: 35px;
@@ -649,6 +648,7 @@ button.action.marigold:not([disabled]):hover {
 }
 .price-container {
     text-align: center;
+    margin-top: -20px;
     width: 100%;
 }
 .price-container div {
@@ -670,8 +670,7 @@ button.action.marigold:not([disabled]):hover {
     color: #7c9198;
 }
 .price-description {
-    margin-top: -10px;
-    padding-left: 0px;
+    margin: -5px 0 10px 0;
     text-align: center;
     font-size: 12px;
     color: #95A8AE;
