@@ -689,5 +689,6 @@ button.action.marigold:not([disabled]):hover {
 }
 .price-amount {
     letter-spacing: 2px;
+    font-weight: 600;
     font-size: 36px;
 }
