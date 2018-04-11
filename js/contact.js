@@ -17,7 +17,6 @@
             $('.contact-message-sent').css('display', 'flex');
             $('.contact-description').hide();
             $('.form-contact').hide();
-            return;
             emailjs.send('default_service', 'framelinkcontactreceiver', {
                 name: $('#form-contact-name').val(),
                 email: $('#form-contact-email').val(),
