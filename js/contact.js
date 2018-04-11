@@ -14,19 +14,19 @@
     document.onContactSendSubmit = function (e) {
         e.preventDefault();
         if (document.validateContactForm() && emailjs) {
+            emailjs.send('default_service', 'flcontactreceiver', {
+                name: $('#form-contact-name').val(),
+                email: $('#form-contact-email').val(),
+                subject: $('#form-contact-subject').val()
+            });
+            emailjs.send('default_service', 'flcontactsender', {
+                name: $('#form-contact-name').val(),
+                email: $('#form-contact-email').val(),
+                subject: $('#form-contact-subject').val()
+            });
             $('.contact-message-sent').css('display', 'flex');
             $('.contact-description').hide();
             $('.form-contact').hide();
-            emailjs.send('default_service', 'framelinkcontactreceiver', {
-                name: $('#form-contact-name').val(),
-                email: $('#form-contact-email').val(),
-                subject: $('#form-contact-subject').val()
-            });
-            emailjs.send('default_service', 'framelinkcontactsender', {
-                name: $('#form-contact-name').val(),
-                email: $('#form-contact-email').val(),
-                subject: $('#form-contact-subject').val()
-            });
         }
     };
 

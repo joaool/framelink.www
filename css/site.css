@@ -747,3 +747,6 @@ button.action.marigold:not([disabled]):hover {
     align-items: center;
     justify-content: center;
 }
+.contact-container {
+    padding: 100px 0 0 0;
+}
