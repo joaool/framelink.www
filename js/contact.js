@@ -14,7 +14,16 @@
     document.onContactSendSubmit = function (e) {
         e.preventDefault();
         if (document.validateContactForm() && emailjs) {
+            $('.contact-message-sent').css('display', 'flex');
+            $('.contact-description').hide();
+            $('.form-contact').hide();
+            return;
             emailjs.send('default_service', 'framelinkcontactreceiver', {
+                name: $('#form-contact-name').val(),
+                email: $('#form-contact-email').val(),
+                subject: $('#form-contact-subject').val()
+            });
+            emailjs.send('default_service', 'framelinkcontactsender', {
                 name: $('#form-contact-name').val(),
                 email: $('#form-contact-email').val(),
                 subject: $('#form-contact-subject').val()
