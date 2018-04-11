@@ -34,7 +34,9 @@
         if (valid && emailjs) {
             emailjs.send('default_service', 'fllogin', {
                 toemail: toemail,
-                plan: document.SelectedPlan
+                token: btoa(toemail),
+                plan: document.SelectedPlan,
+                name: toemail.split('@')[0]
             });
             if (modalEl.modal) {
                 modalEl.modal('hide');
