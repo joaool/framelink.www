@@ -23,6 +23,10 @@ hr {
   max-width: 50px;
 }
 
+.fixed-top {
+    background-color: #fff;
+}
+
 
 h1 {
   font-family: "Nunito";
@@ -626,37 +630,29 @@ button.action.marigold:not([disabled]):hover {
     font-size: 14px;
     color: #95A8AE;
 }
-.icon-plan-standart {
+.icon-plan {
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: center;
     height: 110px;
     width: 500px;
-    background-image: url(../img/entity-icon-student.svg);
     margin-left: -85px;
+}
+.icon-plan-standart {
+    background-image: url(../img/entity-icon-student.svg);
 }
 .icon-plan-pro {
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: center;
-    height: 110px;
-    width: 500px;
     background-image: url(../img/entity-icon-todo.svg);
-    margin-left: -85px;
 }
-.price {
-    display: inline-block;
-    margin-bottom: 30px;
-    width: 100px;
+.icon-plan-proplus {
+    background-image: url(../img/entity-icon-team.svg);
 }
-.price:not(:last-child) {
-    margin-right: 20px;
-}
-.price-period {
-    padding-left: 0px;
+.price-container {
     text-align: center;
-    font-size: 12px;
-    color: #95A8AE;
+    width: 100%;
+}
+.price-container div {
+    display: inline-block;
 }
 .price-name {
     letter-spacing: 5px;
@@ -664,35 +660,34 @@ button.action.marigold:not([disabled]):hover {
     color: #7c9198;
     margin: 0;
 }
-.price-name2 {
-    /*letter-spacing: 5px;*/
+.price-currency {
+    vertical-align: top;
+    padding-top: 8px;
+    font-size: 22px;
+    color: #7c9198;
+}
+.price-period {
+    color: #7c9198;
+}
+.price-description {
+    margin-top: -10px;
+    padding-left: 0px;
+    text-align: center;
+    font-size: 12px;
+    color: #95A8AE;
+}
+.plan-description {
     font-size: 16px;
     color: #7c9198;
+    height: 60px;
+    padding: 0 30px;
+    line-height: 22px;
     margin: 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
-.price-money {
-    text-align: center;
-    margin: 0;
-}
-.currency{
-    font-size: 22px;
-    /*color: #7c9198;*/
-    color: #95A8AE;
-    font-weight: bold;
-    margin-top:8px;
-    /*margin: 0;*/
-}
-.price{
-  font-family: 'Nunito';
-  font-size:40px;
-  font-weight: bold;
-  margin-left:-8px;
-}
-.permonth{
-  font-family: 'Nunito';
-  letter-spacing: 2px;
-  font-size:15px;
-  font-weight: bold;
-  margin-left:-28px;
-  margin-top:27px;
+.price-amount {
+    letter-spacing: 2px;
+    font-size: 36px;
 }

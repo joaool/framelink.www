@@ -66,98 +66,6 @@
                 </ul>
             </div>
     </nav>
-<!--      <section id="pricing2">
-          <div class="container">
-              <div class="row" >
-                    <div class="col-lg-12 text-center">
-                        <div class="col-lg-12 text-center">
-                          <h2 style="margin-top:10px;color:gray">Simple pricing</h2>
-                          <br>
-                          <h2 class="text-muted2">Every plan starts with a 14-day free trial. No credit card required.</h2>
-                          <hr class="primary">
-                        </div>
-                    </div>
-              </div>
-              <div class="row" style="margin-top:20px;">
-                  <div class="col-sm-6 offset-lg-2 col-lg-4 text-muted2">
-                        <div class="pricingtable" style="margin-left:0px;margin-top:10px;">
-                          <div class="column">
-                              <div class="body">
-                                  <h2 class="price" style="margin-left:45px;color:gray">Standard</h2>
-                                  <div class="row pricerow">
-                                      <div class="curency">€</div>
-                                      <div class="price">12</div><div class="cents">,5</div><div class="price">/mo</div>
-                                      <div class="priceby" style="margin-left:-30px;">Billed annually or €15 month-to-month.</div>
-                                  </div>
-                                  <div class="row signup yellow2" style="margin-top:30px" onclick="document.showRegistrationModal()">
-                                      Start free trial
-                                  </div>
-                              </div>
-                          </div>
-                        </div>
-                  </div>
-                  <div class="col-sm-6 col-lg-4 text-muted2">
-                        <div class="pricingtable" style="margin-left: 0px;margin-top:10px;">
-                          <div class="column">
-                              <div class="body">
-                                  <h2 class="price" style="margin-left:15px;color:gray">Pro</h2>
-                                  <div class="row pricerow">
-                                      <div class="curency" style="margin-left:-40px;">€</div>
-                                      <div class="price" style="margin-left:-25px;">100</div>
-                                      <div class="priceby">monthly</div>
-                                      <div class="curency">or   €</div>
-                                      <div class="price" style="margin-left:-10px;">1000</div>
-                                      <div class="priceby">yearly</div>
-                                  </div>
-                                  <div class="row signup blue2" style="margin-top:30px" onclick="document.showRegistrationModal()">
-                                      Start free trial
-                                  </div>
-                              </div>
-                          </div>
-                        </div>
-                  </div>
-              </div>
-              <br>
-              <br>
-              <div class="row">
-                  <div class="col-lg-12 text-center">
-                      <h2 style="color:gray">Feature comparison</h2><br>
-                  </div>
-              </div>
-              <div class="row" >
-                  <div class="col-lg-4" >
-                      <h3 class="price">&nbsp</h2>
-                        <div class="text-muted2" style="height:7vh;">Number of total rows(all tables)</div>
-                        <div class="text-muted2" style="height:7vh;">Number of users</div>
-                        <div class="text-muted2" style="height:7vh;">Time machine (can check any day in the past)</div>
-                        <div class="text-muted2" style="height:7vh;">Number of Emails</div>
-                        <div class="text-muted2" style="height:7vh;">Number of SMS</div>
-                  </div>
-                  <div class="col-lg-4">
-                      <h3 class="price" >Standard</h2>
-                      <div class="text-muted2"><img src="img/yes.png">5000</div>
-                      <div class="text-muted2"><img src="img/yes.png">5 (€5/mo per additional user)</div>
-                      <div class="text-muted2"><img src="img/yes.png">6 months</div>
-                      <div class="text-muted2"><img src="img/yes.png">1000/month *</div>
-                      <div class="text-muted2"><img src="img/yes.png">100/month **</div>
-                  </div>
-                  <div class="col-lg-4" >
-                      <h3 class="price">Pro</h2>
-                      <div class="text-muted2"><img src="img/yes.png">Unlimited</div>
-                      <div class="text-muted2"><img src="img/yes.png">Unlimited</div>
-                      <div class="text-muted2"><img src="img/yes.png">One year</div>
-                      <div class="text-muted2"><img src="img/yes.png">10000/month *</div>
-                      <div class="text-muted2"><img src="img/yes.png">500/month **</div>
-                  </div>
-              </div>
-              <div class="row" >
-                  <div class="col-lg-12 text-center" >
-                      <br>
-                      <p>*Extra Pack with +5000 Emails: €10  ---   **Extra Pack with +500 SMS: €10</p>
-                  </div>
-              </div>
-          </div>
-      </section> -->
     <div id="framelink-registration-modal" class="modal left fade">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -196,14 +104,20 @@
         <div class="pricing-card">
             <div class="pricing-item">
                 <h2 class="price-name">STANDARD</h2>
-                <div class="icon-plan-standart"></div>
-                <div class="row" style="justify-content:center;margin-top:-25px;">
-                    <div class="currency">€</div><div class="price">12,5</div><div class="permonth">/month</div>
-                </div>    
-                <div class="price-period" style="margin-top:-45px;">Billed annually or €15 month-to-month.</div>
-                <h2 class="price-name2" style="margin-top:10px;">For entrepreneurs and growing businesses</h2>
-                <div class="pricing-item small" style="margin-top:10px;">
-                  <button class="action" onclick="document.showRegistrationModal()">GET 14 DAYS FREE</button>
+                <div class="icon-plan icon-plan-standart"></div>
+                <div class="price-container">
+                    <div class="price-currency">€</div>
+                    <div class="price-amount">12,5</div>
+                    <div class="price-period">/ month</div>
+                </div>
+                <div class="price-description">
+                    Billed annually or €15 month-to-month
+                </div>
+                <h2 class="plan-description">
+                    For entrepreneurs and growing businesses
+                </h2>
+                <div class="pricing-item small">
+                    <button class="action" onclick="document.showRegistrationModal()">GET 14 DAYS FREE</button>
                 </div>
             </div>
             <div class="pricing-item">
@@ -227,25 +141,28 @@
                 <div class="pricing-label">Number of total rows</div>
             </div>
             <div class="pricing-item">
-                <div class="pricing-value">No</div>
+                <div class="pricing-value">NO</div>
                 <div class="pricing-label">Consultant support</div>
-            </div>
-            <div class="pricing-item small">
-                <button class="action" onclick="document.showRegistrationModal()">GET 14 DAYS FREE</button>
             </div>
             <div class="pricing-label">* Extra Pack with +5000 Emails: €10</div>
         </div>
         <div class="pricing-card">
             <div class="pricing-item">
                 <h2 class="price-name">PRO</h2>
-                <div class="icon-plan-pro"></div>
-                <div class="row" style="justify-content:center;margin-top:-25px;">
-                    <div class="currency">€</div><div class="price">20</div><div class="permonth">/month</div>
-                </div>    
-                <div class="price-period" style="margin-top:-45px;">Billed annually or €24 month-to-month.</div>
-                <h2 class="price-name2" style="margin-top:10px;">For established small businesses</h2>
-                <div class="pricing-item small" style="margin-top:10px;">
-                  <button class="action marigold" onclick="document.showRegistrationModal()">GET 14 DAYS FREE</button>
+                <div class="icon-plan icon-plan-pro"></div>
+                <div class="price-container">
+                    <div class="price-currency">€</div>
+                    <div class="price-amount">20</div>
+                    <div class="price-period">/ month</div>
+                </div>
+                <div class="price-description">
+                    Billed annually or €24 month-to-month
+                </div>
+                <h2 class="plan-description">
+                    For established small businesses
+                </h2>
+                <div class="pricing-item small">
+                    <button class="action marigold" onclick="document.showRegistrationModal()">GET 14 DAYS FREE</button>
                 </div>
             </div>
             <div class="pricing-item">
@@ -269,24 +186,27 @@
                 <div class="pricing-label">Number of total rows</div>
             </div>
             <div class="pricing-item">
-                <div class="pricing-value">No</div>
+                <div class="pricing-value">NO</div>
                 <div class="pricing-label">Consultant support</div>
-            </div>
-            <div class="pricing-item small">
-                <button class="action marigold" onclick="document.showRegistrationModal()">GET 14 DAYS FREE</button>
             </div>
             <div class="pricing-label">* Extra Pack with +5000 Emails: €10</div>
         </div>
         <div class="pricing-card">
             <div class="pricing-item">
-                <h2 class="price-name">PRO ++ </h2>
-                <div class="icon-plan-pro"></div>
-                <div class="row" style="justify-content:center;margin-top:-25px;">
-                    <div class="currency">€</div><div class="price">90</div><div class="permonth">/month</div>
-                </div>    
-                <div class="price-period" style="margin-top:-45px;">Billed annually or €108 month-to-month.</div>
-                <h2 class="price-name2" style="margin-top:10px;">Ready to use model or entreprise departments</h2>
-                <div class="pricing-item small" style="margin-top:10px;">
+                <h2 class="price-name">PRO++</h2>
+                <div class="icon-plan icon-plan-proplus"></div>
+                <div class="price-container">
+                    <div class="price-currency">€</div>
+                    <div class="price-amount">90</div>
+                    <div class="price-period">/ month</div>
+                </div>
+                <div class="price-description">
+                    Billed annually or €108 month-to-month
+                </div>
+                <h2 class="plan-description">
+                    Ready to use model or entreprise departments
+                </h2>
+                <div class="pricing-item small">
                   <button class="action marigold" onclick="document.showRegistrationModal()">GET 14 DAYS FREE</button>
                 </div>
             </div>
@@ -297,11 +217,11 @@
             <div class="pricing-item">
                 <div class="price">
                     <h2 class="price-money">€100</h2>
-                    <div class="price-period">per month</div>
+                    <div class="price-description">per month</div>
                 </div>
                 <div class="price">
                     <h2 class="price-money">€1000</h2>
-                    <div class="price-period">per year</div>
+                    <div class="price-description">per year</div>
                 </div>
             </div> -->
             <div class="pricing-item">
@@ -325,11 +245,8 @@
                 <div class="pricing-label">Number of total rows</div>
             </div>
             <div class="pricing-item">
-                <div class="pricing-value">We design your model</div>
+                <div class="pricing-value">WE DESIGN YOUR MODEL</div>
                 <div class="pricing-label">Consultant support</div>
-            </div>
-            <div class="pricing-item small">
-                <button class="action marigold" onclick="document.showRegistrationModal()">GET 14 DAYS FREE</button>
             </div>
             <div class="pricing-label">** Extra Pack with +500 SMS: €10</div>
         </div>
