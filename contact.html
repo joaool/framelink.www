@@ -73,26 +73,49 @@
                   Do you want to request a Demo or know more about the Framelink project?
                   That's great! Fill out the form below and we will get back to you as soon as possible!
               </div>
-              <form class="form-contact" method="post">
+              <form class="form-contact" method="post" onsubmit="document.onContactSendSubmit(event)">
                   <div class="form-label">Name:</div>
-                  <input type="text" class="input-material" />
+                  <input
+                    id="form-contact-name"
+                    type="text"
+                    class="input-material"
+                    onchange="document.validateContactForm()"
+                    onkeyup="document.validateContactForm()"
+                    oninput="document.validateContactForm()" />
                   <div class="form-label">Email:</div>
-                  <input type="text" class="input-material" />
+                  <input
+                    id="form-contact-email"
+                    type="text"
+                    class="input-material"
+                    onchange="document.validateContactForm()"
+                    onkeyup="document.validateContactForm()"
+                    oninput="document.validateContactForm()" />
                   <div class="form-label">Subject:</div>
-                  <input type="text" class="input-material" />
+                  <input
+                    id="form-contact-subject"
+                    type="text"
+                    class="input-material"
+                    onchange="document.validateContactForm()"
+                    onkeyup="document.validateContactForm()"
+                    oninput="document.validateContactForm()" />
                   <div class="text-center">
-                      <button class="action">SEND MESSAGE</button>
+                      <button id="form-contact-submit" class="action" disabled>SEND MESSAGE</button>
                   </dic>
               </form>
               <div class="col-lg-12 text-center">
                   <a target="_blank" title="find us on Facebook" href="http://www.facebook.com/framelink.co"><img alt="follow me on facebook" src="//login.create.net/images/icons/user/facebook_30x30.png" border=0></a>
                   <a target="_blank" title="follow us on twitter" href="https://twitter.com/FrameLink_co"><img alt="follow me on twitter" src="//login.create.net/images/icons/user/twitter-b_30x30.png" border=0></a>
-                  <!-- <a target="_blank" title="follow us on youtube" href="http://www.youtube.com/PLACEHOLDER"><img alt="follow me on youtube" src="https://c866088.ssl.cf3.rackcdn.com/assets/youtube30x30.png" border=0></a>
-                  <a target="_blank" title="follow us on instagram" href="http://www.instagram.com/PLACEHOLDER"><img alt="follow me on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram30x30.png" border=0></a> -->
               </div>
           </div>
       </section>
     </main>
+    <script src="js/contact.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_xvkggykECnktytkiSuUo6");
+       })();
+    </script>
   </body>
 </html>
 <!--End copying here
