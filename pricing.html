@@ -49,7 +49,11 @@
                         </div>
                         <div class="modal-body">
                             <div>
-                                Please, provide us your email and we will send you registration link
+                                <b>Before you can login...</b>
+                            </div>
+                            <br>
+                            <div>
+                              <p>Please activate your account. You will receive an activation link in your mailbox.</p>
                             </div>
                             <input
                                 id="framelink-registration-email"
@@ -61,6 +65,14 @@
                                 onkeyup="document.validateEmail()"
                                 oninput="document.validateEmail()"
                                 />
+                            <div>
+                                <br>
+                                <!-- <p style="font-size: 10px;">Note: This email will be <b>exclusively</b> used to send you the activation email or an access password in case you forget yours.</p> -->
+                                <br>
+                                <div align="left" style="font-size: 12px;">
+                                    <div class="d-inline" style="color:#a6a6a6">Note: </div><div class="d-inline" style="color:#bfbfbf;">No email after 1 minute? please check your <span style="color:#a6a6a6">Junk/Spam folder</span> for an email from Framelink - sometimes automated email messages are filtered to an unintended folder.</div>
+                                </div>  
+                            </div>    
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="cancel" data-dismiss="modal">
