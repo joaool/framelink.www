@@ -29,21 +29,22 @@ hr {
 
 
 h1 {
-  font-family: "Nunito";
-  font-weight: 700;
-  /*text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;*/
-  font-size: 60px;
+    font-family: 'Helvetica';
+    font-weight: bold;
+    font-size: 54px;
 }
+
 h2{
-  /*font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;*/
-  font-family: 'Trebuchet MS', sans-serif;
-  font-size:40px;
+  font-family: 'Helvetica';
   font-weight: bold;
+  font-size: 36px;
+  margin: 0;
 }
 h3{
   /*font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;*/
-  font-family: 'Nunito', sans-serif;
-  font-size:25px;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 16px;
 }
 h4{
   /*font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;*/
@@ -544,6 +545,11 @@ button.action {
     border: none;
     width: 140px;
 }
+button.action.action-big {
+    font-size: 13px;
+    height: 44px;
+    width: 250px;
+}
 button.cancel {
   background-color: transparent;
   color: #4361D1;
@@ -602,12 +608,10 @@ button.action.marigold:not([disabled]):hover {
 }
 
 .pricing-container {
+    font-family: Helvetica;
     padding: 50px 0 20px 0;
     text-align: center;
-}
-.pricing-container .action {
-    height: 35px;
-    width: 250px;
+    color: #4a4a4a;
 }
 .pricing-card {
     display: inline-block;
@@ -617,17 +621,17 @@ button.action.marigold:not([disabled]):hover {
     min-height: 53px;
 }
 .pricing-item.small {
-    min-height: 50px;
+    margin: 0 0 24px 0;
+    min-height: 35px;
 }
 .pricing-value {
-    letter-spacing: 2px;
+    font-weight: bold;
     font-size: 16px;
 }
 .pricing-label {
-    letter-spacing: 1px;
+    font-weight: bold;
     font-weight: 100;
-    margin-top: -6px;
-    font-size: 12px;
+    font-size: 13px;
     color: #95A8AE;
 }
 .icon-plan {
@@ -649,52 +653,45 @@ button.action.marigold:not([disabled]):hover {
 }
 .price-container {
     text-align: center;
-    margin-top: -20px;
+    margin-top: -10px;
     width: 100%;
 }
 .price-container div {
     display: inline-block;
 }
-.price-name {
-    letter-spacing: 10px;
-    font-size: 12px;
-    color: #7c9198;
-    margin: 0;
+.plan-name {
+    letter-spacing: 2px;
+    font-size: 13px;
 }
 .price-currency {
-    vertical-align: top;
-    padding-top: 8px;
-    font-size: 22px;
+    font-family: Times;
+    font-size: 20px;
     color: #7c9198;
 }
 .price-period {
+    font-size: 16px;
     color: #7c9198;
 }
 .price-description {
-    margin: -5px 0 10px 0;
+    margin: -5px 0 16px 0;
     text-align: center;
-    font-size: 12px;
+    font-size: 13px;
     color: #95A8AE;
 }
 .plan-description {
     font-size: 16px;
-    color: #7c9198;
+    color: inherit;
     height: 60px;
     padding: 0 30px;
     line-height: 22px;
     margin: 0;
-    display:flex;
-    align-items: center;
-    justify-content: center;
 }
 .price-amount {
-    letter-spacing: 2px;
     font-weight: 600;
     font-size: 36px;
 }
 .form-label {
   letter-spacing: -0.1px;
-  padding-bottom: 10px;
   font-weight: bold;
   text-align: left;
   font-size: 14px;
@@ -704,10 +701,10 @@ button.action.marigold:not([disabled]):hover {
     width: 500px;
 }
 .form-contact .action {
-    margin: 20px 0;
+    margin: 44px 0;
     width: 200px;
 }
-.form-contact .form-label {
+.form-contact .form-label:not(:first-child) {
     padding-top: 20px;
 }
 .form-contact .input-material {
@@ -715,12 +712,11 @@ button.action.marigold:not([disabled]):hover {
     width: 100%;
 }
 .contact-description {
-    letter-spacing: 1px;
-    text-align: justify;
     margin: 20px auto;
-    line-height: 1.9;
-    font-size: 14px;
-    width: 550px;
+    line-height: 1.5;
+    text-align: left;
+    font-size: 16px;
+    width: 320px;
 }
 .icon-facebook {
     background-image: url(../img/icon-facebook.svg);
@@ -778,8 +774,13 @@ button.action.marigold:not([disabled]):hover {
     float: right;
 }
 .main-menu-links a {
+    font-family: Helvetica;
     text-decoration: none;
     display: inline-block;
+    font-size: 13px;
+    color: #a0b7be;
+}
+.main-menu-links a:hover {
     color: #7c9198;
 }
 .main-menu-links a.active {
@@ -789,4 +790,83 @@ button.action.marigold:not([disabled]):hover {
 }
 .main-menu-links a:not(:first-child) {
     margin-left: 20px;
+}
+
+
+.feature-icon {
+    color: #4361D1;
+}
+.feature-title {
+    font-family: Helvetica;
+    margin: 16px 0 4px 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+.feature-description {
+    font-family: Helvetica;
+    font-weight: 400;
+    font-size: 16px;
+    color: #95A8AE;
+}
+
+.text-primary {
+    color: #4361D1;
+}
+
+footer {
+    font-family: 'Helvetica';
+    position: relative;
+    padding: 44px;
+}
+
+footer ul {
+    font-size: 16px;
+}
+
+footer li {
+    padding: 8px 0;
+}
+
+footer li:last-child {
+    padding-bottom: 0;
+}
+
+footer a {
+    text-decoration: none !important;
+    color: #4a4a4a !important;
+}
+
+footer a:hover {
+    text-decoration: underline !important;
+}
+
+.footer-block {
+    display: inline-block;
+}
+
+.footer-block:not(:first-child) {
+    margin-left: 44px;
+}
+
+.footer-block:last-child {
+    float: right;
+}
+
+.footer-title {
+    letter-spacing: 2px;
+    font-size: 13px;
+    color: #95A8AE;
+    padding: 0 0 8px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.framelink-copyright {
+    position: absolute;
+    bottom: 44px;
+    right: 44px;
 }
