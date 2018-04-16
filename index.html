@@ -48,7 +48,7 @@
                     <div style="margin: 30px 0;font-family: Helvetica;font-size:16px;">
                         Here we need some text for potential users, to explain what is this instrument about. Для кого и вообще зачем нужен. Bla bla bla lorem ipsum  bla bla lorem ipsum  bla bla lorem ipsum  bla bla lorem ipsum  bla bla lorem ipsum.
                     </div>
-                    <button class="action action-big">
+                    <button class="action action-big" onclick="document.showRegistrationModal(1)">
                         START NOW
                     </button>
                 </div>
@@ -367,7 +367,11 @@
                         </div>
                         <div class="modal-body">
                             <div>
-                                Please, provide us your email and we will send you registration link
+                                <b>Before you can login...</b>
+                            </div>
+                            <br>
+                            <div>
+                              <p>Please activate your account. You will receive an activation link in your mailbox.</p>
                             </div>
                             <input
                                 id="framelink-registration-email"
@@ -379,6 +383,13 @@
                                 onkeyup="document.validateEmail()"
                                 oninput="document.validateEmail()"
                                 />
+                            <div>
+                                <br>
+                                <br>
+                                <div align="left" style="font-size: 14px;">
+                                    <div class="d-inline" style="color:#999999">Note: </div><div class="d-inline" style="color:#b3b3b3;">No email after 1 minute? please check your <span style="color:#999999">Junk/Spam folder</span> for an email from Framelink - sometimes automated email messages are filtered to an unintended folder.</div>
+                                </div>
+                            </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="cancel" data-dismiss="modal">
@@ -401,6 +412,9 @@
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="https://cdn.emailjs.com/dist/email.min.js" type="text/javascript"></script>
+        <script src="js/contact.js"></script>
+        <script src="js/pricing.js"></script>
         <script>
             $('.navbar-collapse a').click(function(){
                 $(".navbar-collapse").collapse('hide');
