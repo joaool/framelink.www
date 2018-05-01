@@ -31,7 +31,7 @@ hr {
 h1 {
     font-family: 'Helvetica';
     font-weight: bold;
-    font-size: 54px;
+    font-size: 48px;
 }
 
 h2{
@@ -832,7 +832,8 @@ footer li:last-child {
 
 footer a {
     text-decoration: none !important;
-    color: #4a4a4a !important;
+    /*color: #4a4a4a !important;*/
+    color: #a6a6a6 !important;
 }
 
 footer a:hover {
@@ -840,6 +841,7 @@ footer a:hover {
 }
 
 .footer-block {
+    margin-top: -10px;
     display: inline-block;
 }
 
@@ -854,7 +856,8 @@ footer a:hover {
 .footer-title {
     letter-spacing: 2px;
     font-size: 13px;
-    color: #95A8AE;
+    /*color: #95A8AE;*/
+    color: white;
     padding: 0 0 8px 0;
 }
 
