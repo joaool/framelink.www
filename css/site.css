@@ -711,11 +711,11 @@ button.action.marigold:not([disabled]):hover {
     width: 100%;
 }
 .contact-description {
+    font-family: 'Helvetica';
     margin: 20px auto;
     line-height: 1.5;
-    text-align: left;
-    font-size: 16px;
-    width: 320px;
+    max-width: 620px;
+    font-size: 18px;
 }
 .icon-facebook {
     background-image: url(../img/icon-facebook.svg);
