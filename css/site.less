@@ -1,5 +1,9 @@
 // out: site1.css, sourcemap: false, compress: false
 
+@color-light-blue-grey-10: rgba(179, 216, 225, 0.1);
+
+@color-grey-whatisit: #95A8AE;
+
 @block-one-img-width: 590px;
 
 @block-one-text-width: 475px;
@@ -84,5 +88,36 @@
 
     div {
         margin-top: 30px;
+    }
+}
+
+.homepage-block-services {
+    background-color: @color-light-blue-grey-10;
+    text-align: center;
+    padding: 100px 0;
+    font-size: 16px;
+
+    h2 {
+        padding-bottom: 70px;
+    }
+}
+
+.homepage-feature-container {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.homepage-feature-block {
+    display: inline-block;
+    height: 220px;
+    width: 210px;
+
+    b {
+        margin: -10px 0 4px 0;
+        display: block;
+    }
+
+    div {
+        color: @color-grey-whatisit;
     }
 }
