@@ -797,7 +797,7 @@ button.action.marigold:not([disabled]):hover {
 }
 .feature-title {
     font-family: Helvetica;
-    margin: 16px 0 4px 0;
+    margin: -10px 0 4px 0;
     font-weight: bold;
     font-size: 16px;
 }
@@ -871,4 +871,43 @@ ul {
     position: absolute;
     bottom: 44px;
     right: 44px;
+}
+
+[class^='feature-icon-'], [class*=' feature-icon-'] {
+    background-size: cover;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+
+.feature-icon-blockchain {
+    background-image: url(../img/feature-icon-blockchain.svg);
+}
+
+.feature-icon-create {
+    background-image: url(../img/feature-icon-create.svg);
+}
+
+.feature-icon-devices {
+    background-image: url(../img/feature-icon-devices.svg);
+}
+
+.feature-icon-email {
+    background-image: url(../img/feature-icon-email.svg);
+}
+
+.feature-icon-relate {
+    background-image: url(../img/feature-icon-relate.svg);
+}
+
+.feature-icon-secure {
+    background-image: url(../img/feature-icon-secure.svg);
+}
+
+.feature-icon-sms {
+    background-image: url(../img/feature-icon-sms.svg);
+}
+
+.feature-icon-video-chat {
+    background-image: url(../img/feature-icon-video-chat.svg);
 }
