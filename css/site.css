@@ -729,8 +729,8 @@ button.action.marigold:not([disabled]):hover {
     background-position-x: center;
     background-size: cover;
     display: inline-block;
-    height: 40px;
-    width: 40px;
+    height: 36px;
+    width: 36px;
 }
 .contact-message-sent {
     justify-content: center;
@@ -869,6 +869,7 @@ ul {
 
 .framelink-copyright {
     position: absolute;
+    font-size: 13px;
     bottom: 44px;
     right: 44px;
 }
