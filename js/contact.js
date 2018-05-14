@@ -26,7 +26,7 @@
                 email: $('#form-contact-email').val(),
                 subject: $('#form-contact-subject').val()
             });
-            $('.contact-message-sent').css('display', 'flex');
+            $('.contact-message-sent').show();
             $('.contact-description').hide();
             $('.form-contact').hide();
         }

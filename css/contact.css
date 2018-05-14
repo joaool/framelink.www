@@ -1,17 +1,16 @@
 section {
-  padding: 70px 0 20px 0;
+  padding: 70px 0 0 0;
   text-align: center;
 }
 h1 {
-  margin-bottom: 10px;
-  margin: 0 44px;
+  margin: 0 44px 20px 44px;
 }
 .contact-description {
-  margin: 20px auto;
+  margin: 0 auto;
   max-width: 620px;
 }
 .form-contact {
-  margin: 0 auto;
+  margin: 40px auto;
   width: 500px;
 }
 .form-contact .action {
@@ -32,11 +31,14 @@ h1 {
   font-size: 14px;
 }
 .contact-message-sent {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 24px;
-  height: 200px;
   display: none;
-  width: 100%;
+}
+.aboutus-block-three-image {
+  background-image: url('../img/sendemails_min.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  margin: 0 auto;
+  height: 350px;
+  width: 400px;
 }
