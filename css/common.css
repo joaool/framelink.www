@@ -16,6 +16,9 @@ ul {
   padding: 0;
   margin: 0;
 }
+section {
+  margin-top: 55px;
+}
 /* Main Menu */
 .main-menu {
   background-color: #ffffff;
