@@ -164,10 +164,10 @@ footer {
     position: relative;
 
     h4 {
+        color: @color-grey-whatisit;
         text-transform: uppercase;
         letter-spacing: 2px;
         font-weight: normal;
-        color: @color-white;
         padding: 0 0 8px 0;
         font-size: 13px;
         margin: 0;
@@ -188,8 +188,7 @@ footer li:last-child {
 
 footer a {
     text-decoration: none !important;
-    /*color: #4a4a4a !important;*/
-    color: #a6a6a6 !important;
+    color: @color-white;
 }
 
 footer a:hover {
@@ -208,14 +207,53 @@ footer a:hover {
     }
 }
 
-
-
 .framelink-copyright {
+    color: @color-grey-whatisit;
     bottom: @footer-padding;
     right: @footer-padding;
     position: absolute;
     font-size: 13px;
 }
+
+@media screen and (max-width: 750px) {
+    footer {
+        padding: 50px 20px;
+    }
+
+    .footer-block {
+        display: block;
+
+        .icon-twitter {
+            margin-right: 10px;
+            float: right;
+        }
+
+        .icon-facebook {
+            float: right;
+        }
+    }
+
+    .footer-block-icons {
+        margin: 30px 0 20px 0;
+
+        .clearfix();
+    }
+
+    .footer-block:not(:first-child) {
+        margin: 20px 0 0 0;
+    }
+
+    .footer-block:last-child {
+        float: none;
+    }
+
+    .framelink-copyright {
+        position: relative;
+        bottom: auto;
+        right: auto;
+    }
+}
+
 .icon-startup-lisboa,
 .icon-facebook,
 .icon-twitter {
@@ -310,6 +348,16 @@ footer a:hover {
     }
 
     &.input-wide {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .main-menu-links {
+        display: none;
+    }
+
+    button, button.action.action-big {
         width: 100%;
     }
 }

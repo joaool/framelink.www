@@ -88,7 +88,6 @@
 /* Homepage Block Services */
 
 .homepage-block-services {
-    background-color: @color-light-blue-grey-10;
     text-align: center;
     padding: 100px 0;
     font-size: 16px;
@@ -115,6 +114,66 @@
 
     div {
         color: @color-grey-whatisit;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .homepage-block-one-wrap {
+        height: auto;
+    }
+
+    .homepage-block-one {
+        position: relative;
+        min-width: auto;
+
+        .homepage-block-one-text {
+            padding: 100px 20px 0 20px;
+            position: relative;
+            width: 100%;
+        }
+
+        .homepage-block-one-image {
+            background-position-x: -68px;
+            background-position-y: -25px;
+            height: 407px;
+            width: 549px;
+        }
+    }
+
+    .homepage-block-two {
+        min-width: auto;
+
+        .homepage-block-two-text {
+            padding: 50px 20px 0 20px;
+            width: 100%;
+        }
+
+        .homepage-block-two-image {
+            margin-top: 20px;
+            height: 400px;
+            width: 460px;
+        }
+    }
+
+    .homepage-block-services {
+        padding: 50px 0 50px 0;
+
+        h2 {
+            padding-bottom: 30px;
+        }
+
+        .homepage-feature-block {
+            height: auto;
+            width: 100%;
+
+            div {
+                padding: 0 20px;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
     }
 }
 
