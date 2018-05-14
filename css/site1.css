@@ -1,6 +1,14 @@
+body {
+  margin: 0;
+}
 .homepage {
+  color: #292b2c;
   font-family: Helvetica;
+  line-height: 1.5;
   font-size: 18px;
+}
+.homepage * {
+  box-sizing: border-box;
 }
 @media screen and (max-width: 1065px) {
   .homepage-block-one {

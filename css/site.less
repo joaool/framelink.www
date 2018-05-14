@@ -4,6 +4,8 @@
 
 @color-grey-whatisit: #95A8AE;
 
+@color-bootstrap-black: #292b2c;
+
 @block-one-img-width: 590px;
 
 @block-one-text-width: 475px;
@@ -12,9 +14,19 @@
 
 @block-one-width: (@block-one-img-width + @block-one-text-width);
 
+body {
+    margin: 0;
+}
+
 .homepage {
+    color: @color-bootstrap-black;
     font-family: Helvetica;
+    line-height: 1.5;
     font-size: 18px;
+
+    * {
+        box-sizing: border-box;
+    }
 }
 
 @media screen and (max-width: @block-one-width) {
