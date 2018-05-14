@@ -6,6 +6,7 @@ body {
     color: @color-bootstrap-black;
     font-family: Helvetica;
     overflow-x: hidden;
+    min-height: 100%;
     line-height: 1.5;
     font-size: 18px;
     margin: 0;
@@ -287,12 +288,13 @@ footer a:hover {
     border-left: none;
     border-top: none;
     border-radius: 0;
+    font-size: 16px;
     outline: none;
 
     .transition(border-color 300ms @swift-out);
 
     &:focus {
-        border-bottom: 1px solid @color-bluish-grey;
+        border-bottom: 1px solid @color-warm-blue;
     }
 
     &.invalid,

@@ -534,27 +534,12 @@ aside {
     color: #4a4a4a;
 }
 
-.form-label {
-  letter-spacing: -0.1px;
-  font-weight: bold;
-  text-align: left;
-  font-size: 14px;
-}
-.form-contact {
+
+.act {
     margin: 0 auto;
     width: 500px;
 }
-.form-contact .action {
-    margin: 44px 0;
-    width: 200px;
-}
-.form-contact .form-label:not(:first-child) {
-    padding-top: 20px;
-}
-.form-contact .input-material {
-    padding: 3px 1px;
-    width: 100%;
-}
+
 .contact-description {
     font-family: 'Helvetica';
     margin: 20px auto;

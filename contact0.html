@@ -33,47 +33,49 @@
             <a href="index.html" class="main-menu-logo"></a>
             <div class="main-menu-links">
                 <a href="./">WHAT IS IT?</a>
-                <a href="pricing.html">PRICING</a>
-                <a href="javascript:void(0);" disabled class="active">ABOUT US</a>
+                <a href="javascript:void(0);" disabled class="active">PRICING</a>
+                <a href="aboutus.html">ABOUT US</a>
                 <a href="contact.html">CONTACT</a>
             </div>
         </div>
-        <section>
-            <div class="aboutus-block-one">
-                <h2>
-                    Our passion:<br/>Enable you to create the workspace you need,<br>for your unique business
-                </h2>
-                <div>
-                    Launched in 2017, Framelink is a fast growing cloud plaftform used in many different business sectors to bring teams together.
-                    We built it to connect your team for<br/>sharing data, tasks and video-conferencing.
+        <section class="pricing-page">
+            <div>
+                <h1>Let's get in touch!</h1>
+                <div class="contact-description">
+                    Do you want to request a demo or know more about the Framelink project?
+                    That's great! Fill out the form below and we will get back to you<br/>as soon as possible!
                 </div>
-                <img src="img/why_framelink_min.png">
+                <form class="form-contact" style="margin-top: 40px;margin-bottom: 20px;" method="post" onsubmit="document.onContactSendSubmit(event)">
+                    <div class="form-label">Name:</div>
+                    <input
+                        id="form-contact-name"
+                        type="text"
+                        class="input-material"
+                        onchange="document.validateContactForm()"
+                        onkeyup="document.validateContactForm()"
+                        oninput="document.validateContactForm()" />
+                    <div class="form-label">Email:</div>
+                    <input
+                        id="form-contact-email"
+                        type="text"
+                        class="input-material"
+                        onchange="document.validateContactForm()"
+                        onkeyup="document.validateContactForm()"
+                        oninput="document.validateContactForm()" />
+                    <div class="form-label">Subject:</div>
+                    <input
+                        id="form-contact-subject"
+                        type="text"
+                        class="input-material"
+                        onchange="document.validateContactForm()"
+                        onkeyup="document.validateContactForm()"
+                        oninput="document.validateContactForm()" />
+                    <button id="form-contact-submit" class="action action-big" disabled>SEND MESSAGE</button>
+                </form>
             </div>
-            <div class="aboutus-block-two">
-                <div class="aboutus-block-two-col">
-                    <b>Business owners</b>
-                    We believe small business owners can create and maintain their own IT systems. They can define and use the exact data they need – no more no less. Using that data, team members can execute tasks like sending Emails or SMS, without any configuration – whenever it makes sense Framelink will show up a menu for that task execution.
-                </div>
-                <div class="aboutus-block-two-col">
-                    <b>Business Consultants</b>
-                    Non-technical Business Consultants are now able to deliverer a working system to their customers. Consultants can take advantage of FrameLink's flexibility to progressively adjust to their customer's needs.
-                </div>
-            </div>
-            <div class="aboutus-block-three">
-                <div class="aboutus-block-three-image"></div>
-                <div class="aboutus-block-three-text">
-                    <h2>Getting things done with business data</h2>
-                    <div>
-                        Sharing data securely with the team.<br>
-                        Sending personalised Emails and SMS.<br>
-                        Sending reports, documents and videos.<br>
-                    </div>
-                    <h2>Connect the people you need to get the job done</h2>
-                    <div>
-                        Defining access permissions to team members.<br>
-                        Starting video conferences with a single click.
-                    </div>
-                </div>
+            <div class="contact-message-sent">
+                Thanks for your message!<br/>
+                We will answer you as soon as it possible!
             </div>
         </section>
         <footer class="bg-dark">
@@ -105,6 +107,9 @@
             </div>
         </footer>
         <link href="css/common.css" rel="stylesheet" />
-        <link href="css/aboutus.css" rel="stylesheet" />
+        <link href="css/contact.css" rel="stylesheet" />
+        <script src="libs/js/jquery.min.js"></script>
+        <script src="libs/js/email.min.js"></script>
+        <script src="js/contact.js"></script>
     </body>
 </html>
