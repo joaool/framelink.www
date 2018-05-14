@@ -1,0 +1,61 @@
+// out: privacy.css, sourcemap: false, compress: false
+
+@import 'variables.less';
+
+body {
+    color: #777;
+    font-family: Helvetica;
+    overflow-x: hidden;
+    min-height: 100%;
+    line-height: 1.5;
+    font-size: 13px;
+    margin: 0;
+}
+
+section {
+    padding: 0 100px;
+}
+
+.main-menu-logo {
+    background-image: url(../img/logo.svg);
+    background-position-y: center;
+    background-position-x: left;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 55px;
+    width: 160px;
+}
+
+ul {
+    padding: 0;
+}
+
+ul > li {
+    list-style-type: none;
+
+    p {
+        font-weight: bold;
+        display: block;
+        margin: 2em 0;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 2em;
+    }
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+
+    span {
+        font-weight: normal;
+        font-size: 0.6em;
+    }
+}
+
+h4 {
+    font-weight: normal;
+    margin: 0 0 2em 0;
+    font-size: 1em;
+}
