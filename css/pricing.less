@@ -124,7 +124,12 @@
 
     .pricing-item:not(.pricing-main):not(.small) {
         display: inline-block;
+        min-height: 65px;
         width: 150px;
+    }
+
+    .pricing-item.small {
+        margin-bottom: 30px;
     }
 
     .icon-plan-standart, .icon-plan-proplus, .icon-plan-pro {
@@ -139,6 +144,11 @@
             padding: 0;
         }
     }
+
+    .plan-description {
+        margin-bottom: 20px;
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -148,5 +158,9 @@
 
     .pricing-card {
         max-width: 100%;
+    }
+
+    .pricing-item:not(.pricing-main):not(.small) {
+        width: 160px;
     }
 }

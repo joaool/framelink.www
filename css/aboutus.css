@@ -1,18 +1,25 @@
 section {
-  padding: 50px 0 20px 0;
+  padding: 50px 0 50px 0;
 }
 /* Block One */
 .aboutus-block-one {
   text-align: center;
 }
+.aboutus-block-one h1,
 .aboutus-block-one h2 {
-  font-size: 42px;
+  max-width: 750px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.aboutus-block-one h2 {
+  margin-top: 20px;
 }
 .aboutus-block-one div {
   margin: 30px auto 0 auto;
   margin-top: 30px;
   max-width: 750px;
   font-size: 18px;
+  padding: 0 20px;
 }
 .aboutus-block-one img {
   height: 650px;
@@ -93,5 +100,30 @@ section {
     padding: 0 50px;
     float: none;
     width: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .aboutus-block-one {
+    text-align: left;
+  }
+  .aboutus-block-one h1,
+  .aboutus-block-one h2 {
+    margin: 20px 0 0 0;
+  }
+  .aboutus-block-one img {
+    margin-left: -420px;
+    height: 500px;
+  }
+  .aboutus-block-two .aboutus-block-two-col {
+    padding: 0 20px;
+  }
+  .aboutus-block-three {
+    margin: 0;
+  }
+  .aboutus-block-three .aboutus-block-three-text {
+    padding: 0 20px;
+  }
+  .aboutus-block-three h2:first-child {
+    margin-top: 0;
   }
 }

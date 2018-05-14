@@ -65,12 +65,12 @@
 }
 /* Homepage Block Services */
 .homepage-block-services {
+  padding-bottom: 50px;
   text-align: center;
-  padding: 100px 0;
   font-size: 16px;
 }
 .homepage-block-services h2 {
-  padding-bottom: 70px;
+  padding-bottom: 50px;
 }
 .homepage-feature-container {
   max-width: 860px;
