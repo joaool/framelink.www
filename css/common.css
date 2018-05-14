@@ -1,9 +1,10 @@
 body {
-  margin: 0;
   color: #292b2c;
   font-family: Helvetica;
+  overflow-x: hidden;
   line-height: 1.5;
   font-size: 18px;
+  margin: 0;
 }
 body * {
   box-sizing: border-box;

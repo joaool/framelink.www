@@ -36,3 +36,11 @@
     transition: @argument;
     transition: @argument;
 }
+
+.clearfix() {
+    &:after {
+        display: block;
+        content: '';
+        clear: both;
+    }
+}

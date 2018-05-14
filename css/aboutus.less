@@ -1,0 +1,121 @@
+// out: aboutus.css, sourcemap: false, compress: false
+
+@import 'variables.less';
+
+@second-screen-width: 750px;
+
+.aboutus-page {
+    padding: 20px 0;
+}
+
+/* Block One */
+
+.aboutus-block-one {
+    text-align: center;
+    margin-top: 50px;
+
+    h2 {
+        font-size: 42px;
+    }
+
+    div {
+        margin: 30px auto 0 auto;
+        margin-top: 30px;
+        max-width: 750px;
+        font-size: 18px;
+    }
+
+    img {
+        height: 650px;
+    }
+}
+
+/* Block Two */
+
+.aboutus-block-two {
+    position: relative;
+
+    .clearfix();
+}
+
+.aboutus-block-two-col {
+    display: inline-block;
+    min-width: 350px;
+    float: left;
+    width: 46%;
+
+    &:first-child {
+        padding-left: 100px;
+    }
+
+    &:last-child {
+        padding-right: 100px;
+        float: right;
+    }
+
+    b {
+        display: block;
+    }
+}
+
+/* Block Three */
+
+.aboutus-block-three {
+    margin: 20px 0;
+    position: relative;
+
+    .clearfix();
+
+    h2 {
+        margin: 50px 0 30px 0;
+        font-size: 30px;
+    }
+
+    .aboutus-block-three-text {
+        padding-left: 100px;
+        min-width: 350px;
+        float: left;
+        width: 46%;
+    }
+
+    .aboutus-block-three-image {
+        background-image: url('../img/sendemails_min.jpg');
+        background-position-x: -75px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width: 350px;
+        height: 550px;
+        float: right;
+        width: 46%;
+    }
+}
+
+/* Second screen width styles */
+
+@media screen and (max-width: @second-screen-width) {
+    .aboutus-block-two .aboutus-block-two-col {
+        padding: 0 50px;
+        display: block;
+        float: none;
+        width: 100%;
+
+        &:last-child {
+            margin-top: 50px;
+        }
+    }
+
+    .aboutus-block-three {
+        .aboutus-block-three-image {
+            background-position-x: center;
+            display: block;
+            float: none;
+            width: 100%;
+        }
+
+        .aboutus-block-three-text {
+            padding: 0 50px;
+            float: none;
+            width: 100%;
+        }
+    }
+}

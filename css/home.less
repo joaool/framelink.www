@@ -20,11 +20,7 @@
 .homepage-block-one {
     min-width: @block-one-width;
 
-    &:after {
-        display: block;
-        content: '';
-        clear: both;
-    }
+    .clearfix();
 }
 
 @media screen and (max-width: @block-one-width) {
