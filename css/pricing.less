@@ -34,9 +34,9 @@
 .icon-plan-standart,
 .icon-plan-proplus,
 .icon-plan-pro {
-    background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: center;
+    background-repeat: no-repeat;
     margin-left: -85px;
     height: 110px;
     width: 500px;
@@ -58,38 +58,54 @@
     text-align: center;
     margin-top: -10px;
     width: 100%;
+
+    div {
+        display: inline-block;
+    }
 }
-.price-container div {
-    display: inline-block;
-}
+
 .plan-name {
     letter-spacing: 2px;
     font-size: 13px;
 }
+
 .price-currency {
+    color: @color-bluish-grey;
     font-family: Times;
     font-size: 20px;
-    color: #7c9198;
 }
+
 .price-period {
     font-size: 16px;
-    color: #7c9198;
+    color: @color-bluish-grey;
 }
+
 .price-description {
+    color: @color-grey-whatisit;
     margin: -5px 0 16px 0;
     text-align: center;
     font-size: 13px;
-    color: #95A8AE;
 }
+
 .plan-description {
+    line-height: 1.5;
+    padding: 0 30px;
     font-size: 16px;
     color: inherit;
     height: 60px;
-    padding: 0 30px;
-    line-height: 22px;
     margin: 0;
 }
+
 .price-amount {
-    font-weight: 600;
+    font-weight: bold;
     font-size: 36px;
+}
+
+.pricing-modal-description {
+    margin-top: 25px;
+    color: #b3b3b3;
+
+    span {
+        color: #999999;
+    }
 }

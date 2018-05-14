@@ -195,3 +195,62 @@ footer a:hover {
   width: 72px;
   float: left;
 }
+/* Bootstrap Modal Override */
+.modal-content {
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 0;
+  border: none;
+}
+.modal-content * {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+.modal-content .modal-header {
+  padding: 30px 40px 20px 40px;
+  border: none;
+}
+.modal-content .modal-footer {
+  padding: 20px 40px 40px 40px;
+  border: none;
+}
+.modal-content .modal-body {
+  font-size: 14px;
+  padding: 20px 40px;
+  border: none;
+}
+.modal-content .modal-title {
+  font-size: 26px;
+}
+/* Material Style Input */
+.input-material {
+  border-bottom: 1px solid #bababa;
+  -webkit-box-shadow: none;
+  background-color: transparent;
+  box-shadow: none;
+  -webkit-appearance: none;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-transition: border-color 300ms cubic-bezier(0.55, 0, 0.1, 1);
+  -moz-transition: border-color 300ms cubic-bezier(0.55, 0, 0.1, 1);
+  -o-transition: border-color 300ms cubic-bezier(0.55, 0, 0.1, 1);
+  transition: border-color 300ms cubic-bezier(0.55, 0, 0.1, 1);
+}
+.input-material:focus {
+  border-bottom: 1px solid #7c9198;
+}
+.input-material.invalid,
+.input-material.invalid:focus {
+  border-bottom: 1px solid #d15353;
+}
+.input-material:-webkit-autofill,
+.input-material:-webkit-autofill:hover,
+.input-material:-webkit-autofill:focus,
+.input-material:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #ffffff inset !important;
+}
+.input-material.input-wide {
+  width: 100%;
+}

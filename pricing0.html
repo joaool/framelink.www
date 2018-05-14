@@ -207,7 +207,53 @@
                 <div class="framelink-copyright">&copy; 2018 - FrameLink
             </div>
         </footer>
-        <link href="css/common.css" rel="stylesheet">
-        <link href="css/pricing.css" rel="stylesheet">
+        <div id="framelink-registration-modal" class="modal left fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form method="post" onsubmit="document.onEmailSendSubmit(event);">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Start Free Trial</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <b>Before you can login...</b>
+                            </div>
+                            <br>
+                            <div>
+                              <p>Please activate your account. You will receive an activation link in your mailbox.</p>
+                            </div>
+                            <input
+                                id="framelink-registration-email"
+                                class="input-material input-wide"
+                                type="text"
+                                placeholder="Email"
+                                name="toemail"
+                                onchange="document.validateEmail()"
+                                onkeyup="document.validateEmail()"
+                                oninput="document.validateEmail()"
+                                />
+                            <div class="pricing-modal-description">
+                                <span>Note:</span>
+                                No email after 1 minute? please check your
+                                <span>Junk/Spam folder</span>
+                                for an email from Framelink - sometimes automated email messages are filtered to an unintended folder.
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="cancel" data-dismiss="modal">CANCEL</button>
+                            <button id="framelink-registration-email-send" onclick="document.onEmailSendSubmit(event);" type="button" class="action">START</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <link href="libs/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/common.css" rel="stylesheet" />
+        <link href="css/pricing.css" rel="stylesheet" />
+        <script src="libs/js/jquery.min.js"></script>
+        <script src="libs/js/tether.min.js"></script>
+        <script src="libs/js/bootstrap.min.js"></script>
+        <script src="libs/js/email.min.js"></script>
+        <script src="js/pricing.js"></script>
     </body>
 </html>

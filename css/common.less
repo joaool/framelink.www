@@ -240,3 +240,73 @@ footer a:hover {
     width: 72px;
     float: left;
 }
+
+/* Bootstrap Modal Override */
+
+.modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    border-radius: 0;
+    border: none;
+
+    * {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    }
+
+    .modal-header {
+      padding: 30px 40px 20px 40px;
+      border: none;
+    }
+
+    .modal-footer {
+      padding: 20px 40px 40px 40px;
+      border: none;
+    }
+
+    .modal-body {
+        font-size: 14px;
+        padding: 20px 40px;
+        border: none;
+    }
+
+    .modal-title {
+      font-size: 26px;
+    }
+}
+
+/* Material Style Input */
+
+.input-material {
+    border-bottom: 1px solid @color-grey-darkest;
+    -webkit-box-shadow: none;
+    background-color: transparent;
+    box-shadow: none;
+    -webkit-appearance: none;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-radius: 0;
+    outline: none;
+
+    .transition(border-color 300ms @swift-out);
+
+    &:focus {
+        border-bottom: 1px solid @color-bluish-grey;
+    }
+
+    &.invalid,
+    &.invalid:focus {
+        border-bottom: 1px solid @color-red;
+    }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 30px @color-white inset !important;
+    }
+
+    &.input-wide {
+        width: 100%;
+    }
+}
