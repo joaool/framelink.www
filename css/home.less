@@ -1,10 +1,6 @@
-// out: site1.css, sourcemap: false, compress: false
+// out: home.css, sourcemap: false, compress: false
 
-@color-light-blue-grey-10: rgba(179, 216, 225, 0.1);
-
-@color-grey-whatisit: #95A8AE;
-
-@color-bootstrap-black: #292b2c;
+@import 'variables.less';
 
 @block-one-img-width: 590px;
 
@@ -14,27 +10,7 @@
 
 @block-one-width: (@block-one-img-width + @block-one-text-width);
 
-body {
-    margin: 0;
-}
-
-.homepage {
-    color: @color-bootstrap-black;
-    font-family: Helvetica;
-    line-height: 1.5;
-    font-size: 18px;
-
-    * {
-        box-sizing: border-box;
-    }
-}
-
-@media screen and (max-width: @block-one-width) {
-    .homepage-block-one {
-        position: absolute;
-        right: 0;
-    }
-}
+/* Homepage Block One */
 
 .homepage-block-one-wrap {
     height: @block-one-height;
@@ -47,6 +23,13 @@ body {
         display: block;
         content: '';
         clear: both;
+    }
+}
+
+@media screen and (max-width: @block-one-width) {
+    .homepage-block-one {
+        position: absolute;
+        right: 0;
     }
 }
 
@@ -69,6 +52,8 @@ body {
         margin: 30px 0;
     }
 }
+
+/* Homepage Block Two */
 
 .homepage-block-two {
     min-width: 1200px;
@@ -103,6 +88,8 @@ body {
     }
 }
 
+/* Homepage Block Services */
+
 .homepage-block-services {
     background-color: @color-light-blue-grey-10;
     text-align: center;
@@ -132,4 +119,43 @@ body {
     div {
         color: @color-grey-whatisit;
     }
+}
+
+[class^='feature-icon-'], [class*=' feature-icon-'] {
+    background-size: cover;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+
+.feature-icon-blockchain {
+    background-image: url(../img/feature-icon-blockchain.svg);
+}
+
+.feature-icon-create {
+    background-image: url(../img/feature-icon-create.svg);
+}
+
+.feature-icon-devices {
+    background-image: url(../img/feature-icon-devices.svg);
+}
+
+.feature-icon-email {
+    background-image: url(../img/feature-icon-email.svg);
+}
+
+.feature-icon-relate {
+    background-image: url(../img/feature-icon-relate.svg);
+}
+
+.feature-icon-secure {
+    background-image: url(../img/feature-icon-secure.svg);
+}
+
+.feature-icon-sms {
+    background-image: url(../img/feature-icon-sms.svg);
+}
+
+.feature-icon-video-chat {
+    background-image: url(../img/feature-icon-video-chat.svg);
 }

@@ -1,0 +1,121 @@
+/* Homepage Block One */
+.homepage-block-one-wrap {
+  height: 560px;
+}
+.homepage-block-one {
+  min-width: 1065px;
+}
+.homepage-block-one:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+@media screen and (max-width: 1065px) {
+  .homepage-block-one {
+    position: absolute;
+    right: 0;
+  }
+}
+.homepage-block-one-image {
+  background-image: url(../img/homepage_img1.jpg);
+  background-repeat: no-repeat;
+  width: 590px;
+  height: 560px;
+  background-size: cover;
+  display: inline-block;
+  float: left;
+}
+.homepage-block-one-text {
+  width: 475px;
+  padding: 150px 0 0 20px;
+  display: inline-block;
+}
+.homepage-block-one-text div {
+  margin: 30px 0;
+}
+/* Homepage Block Two */
+.homepage-block-two {
+  min-width: 1200px;
+  max-width: 1400px;
+}
+.homepage-block-two:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.homepage-block-two-image {
+  background-image: url(../img/homepage_img2.jpg);
+  background-position-x: -50px;
+  background-position-y: -20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  height: 550px;
+  width: 650px;
+  float: right;
+}
+.homepage-block-two-text {
+  display: inline-block;
+  padding: 90px 0 0 100px;
+  width: 500px;
+}
+.homepage-block-two-text div {
+  margin-top: 30px;
+}
+/* Homepage Block Services */
+.homepage-block-services {
+  background-color: rgba(179, 216, 225, 0.1);
+  text-align: center;
+  padding: 100px 0;
+  font-size: 16px;
+}
+.homepage-block-services h2 {
+  padding-bottom: 70px;
+}
+.homepage-feature-container {
+  max-width: 860px;
+  margin: 0 auto;
+}
+.homepage-feature-block {
+  display: inline-block;
+  height: 220px;
+  width: 210px;
+}
+.homepage-feature-block b {
+  margin: -10px 0 4px 0;
+  display: block;
+}
+.homepage-feature-block div {
+  color: #95a8ae;
+}
+[class^='feature-icon-'],
+[class*=' feature-icon-'] {
+  background-size: cover;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+}
+.feature-icon-blockchain {
+  background-image: url(../img/feature-icon-blockchain.svg);
+}
+.feature-icon-create {
+  background-image: url(../img/feature-icon-create.svg);
+}
+.feature-icon-devices {
+  background-image: url(../img/feature-icon-devices.svg);
+}
+.feature-icon-email {
+  background-image: url(../img/feature-icon-email.svg);
+}
+.feature-icon-relate {
+  background-image: url(../img/feature-icon-relate.svg);
+}
+.feature-icon-secure {
+  background-image: url(../img/feature-icon-secure.svg);
+}
+.feature-icon-sms {
+  background-image: url(../img/feature-icon-sms.svg);
+}
+.feature-icon-video-chat {
+  background-image: url(../img/feature-icon-video-chat.svg);
+}

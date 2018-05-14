@@ -1,0 +1,240 @@
+// out: common.css, sourcemap: false, compress: false
+
+@import 'variables.less';
+
+body {
+    margin: 0;
+    color: @color-bootstrap-black;
+    font-family: Helvetica;
+    line-height: 1.5;
+    font-size: 18px;
+
+    * {
+        box-sizing: border-box;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Main Menu */
+
+@menu-height: 55px;
+
+.main-menu {
+    background-color: @color-white;
+    margin-bottom: @menu-height;
+    height: @menu-height;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    left: 0;
+    top: 0;
+
+    .shadow3();
+}
+
+.main-menu-logo {
+    background-image: url(../img/logo.svg);
+    background-position-y: center;
+    background-position-x: left;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 8px;
+    cursor: pointer;
+    height: 55px;
+    width: 160px;
+}
+
+.main-menu-links {
+    margin-right: 20px;
+    line-height: 55px;
+    float: right;
+
+    a {
+        color: @color-grey-whatisit;
+        display: inline-block;
+        font-size: 13px;
+
+        &:hover {
+            color: @color-bluish-grey;
+        }
+
+        &.active {
+            color: @color-warm-blue;
+            pointer-events: none;
+            cursor: default;
+        }
+
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+    }
+}
+
+/* Action Buttons */
+
+button {
+    outline: none !important;
+    letter-spacing: 2px;
+    line-height: 14px;
+    padding: 7px 20px;
+    font-weight: 400;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    width: 140px;
+
+    &.cancel {
+        background-color: transparent;
+        color: @color-warm-blue;
+    }
+
+    &.action {
+        background-color: @color-warm-blue;
+        color: @color-white;
+        border-radius: 2px;
+
+        .transition(~'background-color 300ms ' @swift-out ~', box-shadow 300ms ' @swift-out);
+
+        &.marigold {
+            background-color: @color-marigold;
+
+            &:not([disabled]):hover {
+                background-color: #f4ba00;
+            }
+        }
+
+        &[disabled] {
+            background-color: @color-grey-light-blue;
+        }
+
+        &:not([disabled]) {
+            .shadow2();
+
+            &:hover {
+                background-color: darken(@color-warm-blue, 7%);
+                box-shadow: 0 12px 12px 0 rgba(124, 145, 152, 0.24), 0 0 12px 0 rgba(160, 183, 190, 0.24);
+            }
+        }
+
+        &.action-big {
+            font-size: 13px;
+            height: 44px;
+            width: 250px;
+        }
+    }
+}
+
+/* Headers */
+
+h1, h2 {
+    font-weight: bold;
+    line-height: 1.1;
+    margin: 0;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+/* Footer */
+
+@footer-padding: 44px;
+
+footer {
+    background-color: @color-footer;
+    padding: @footer-padding;
+    color: @color-white;
+    position: relative;
+
+    h4 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: normal;
+        color: @color-white;
+        padding: 0 0 8px 0;
+        font-size: 13px;
+        margin: 0;
+    }
+}
+
+footer ul {
+    font-size: 16px;
+}
+
+footer li {
+    padding: 8px 0;
+}
+
+footer li:last-child {
+    padding-bottom: 0;
+}
+
+footer a {
+    text-decoration: none !important;
+    /*color: #4a4a4a !important;*/
+    color: #a6a6a6 !important;
+}
+
+footer a:hover {
+    text-decoration: underline !important;
+}
+
+.footer-block {
+    display: inline-block;
+
+    &:not(:first-child) {
+        margin-left: @footer-padding;
+    }
+
+    &:last-child {
+        float: right;
+    }
+}
+
+
+
+.framelink-copyright {
+    bottom: @footer-padding;
+    right: @footer-padding;
+    position: absolute;
+    font-size: 13px;
+}
+.icon-startup-lisboa,
+.icon-facebook,
+.icon-twitter {
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    background-size: cover;
+    display: inline-block;
+    height: 36px;
+    width: 36px;
+}
+
+.icon-facebook {
+    background-image: url(../img/icon-facebook.svg);
+}
+.icon-twitter {
+    background-image: url(../img/icon-twitter.svg);
+}
+.icon-startup-lisboa {
+    background-image: url(../img/startuplisboa_logo2.png);
+    background-position-y: -8px;
+    margin-right: 10px;
+    height: 50px;
+    width: 72px;
+    float: left;
+}
