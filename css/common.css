@@ -322,6 +322,9 @@ footer ul {
   width: 100%;
 }
 @media screen and (max-width: 550px) {
+  .main-menu-logo {
+    margin-left: 20px;
+  }
   .main-menu-links {
     display: none;
   }
@@ -376,7 +379,8 @@ footer ul {
   }
   .main-menu-mobile .main-menu-mobile-top .main-menu-logo {
     background-image: url(../img/logo-mono.svg);
-    width: 36px;
+    width: 32px;
+    margin: 0;
   }
   .main-menu-mobile .main-menu-mobile-top .main-menu-mobile-close {
     background-image: url(../img/icon-close.svg);
