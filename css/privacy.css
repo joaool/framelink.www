@@ -1,14 +1,5 @@
-body {
-  color: #777;
-  font-family: Helvetica;
-  overflow-x: hidden;
-  min-height: 100%;
-  line-height: 1.5;
-  font-size: 13px;
-  margin: 0;
-}
 section {
-  padding: 0 100px;
+  padding: 50px 100px;
 }
 .main-menu-logo {
   background-image: url(../img/logo.svg);
@@ -19,18 +10,18 @@ section {
   height: 55px;
   width: 160px;
 }
-ul {
+section ul {
   padding: 0;
 }
-ul > li {
+section ul > li {
   list-style-type: none;
 }
-ul > li p {
+section ul > li p {
   font-weight: bold;
   display: block;
   margin: 2em 0;
 }
-ul > li:not(:last-child) {
+section ul > li:not(:last-child) {
   margin-bottom: 2em;
 }
 h1 {
