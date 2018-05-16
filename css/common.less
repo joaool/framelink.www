@@ -83,6 +83,14 @@ section {
     }
 }
 
+.main-menu-hamburger {
+    display: none;
+}
+
+.main-menu-mobile {
+    display: none;
+}
+
 /* Action Buttons */
 
 button {
@@ -372,8 +380,100 @@ footer a:hover {
         background-repeat: no-repeat;
         background-size: cover;
         margin: 13px 20px 0 0;
+        display: block;
         float: right;
         height: 30px;
         width: 30px;
+    }
+
+    .main-menu-mobile {
+        background-color: @menu-mobile-color;
+        position: fixed;
+        overflow: auto;
+        display: block;
+        z-index: 101;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 0;
+
+        .main-menu-mobile-top {
+            height: @menu-mobile-top-block-height;
+            background-color: @menu-mobile-color;
+            padding-top: 20px;
+            position: fixed;
+            z-index: 102;
+            right: 0;
+            left: 0;
+            top: 0;
+
+            .main-menu-logo {
+                margin-left: @menu-mobile-padding;
+                float: left;
+            }
+
+            .main-menu-mobile-close {
+                background-image: url(../img/icon-close.svg);
+                background-position-y: center;
+                background-position-x: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 13px 20px 0 0;
+                display: block;
+                float: right;
+                height: 30px;
+                width: 30px;
+            }
+        }
+
+        .main-menu-mobile-content {
+            padding: @menu-mobile-padding;
+            padding-bottom: @menu-mobile-padding + @menu-mobile-bottom-block-height;
+            padding-top: @menu-mobile-padding + @menu-mobile-top-block-height;
+            position: relative;
+            min-height: 100%;
+        }
+
+        a {
+            color: @color-grey-whatisit;
+            letter-spacing: 1px;
+            font-size: 18px;
+            display: block;
+
+            &.active {
+                color: @color-warm-blue;
+                pointer-events: none;
+                cursor: default;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+
+        .main-menu-mobile-bottom {
+            bottom: @menu-mobile-padding;
+            right: @menu-mobile-padding;
+            left: @menu-mobile-padding;
+            position: absolute;
+
+            .icon-facebook,
+            .icon-twitter {
+                float: right;
+            }
+
+            .icon-twitter {
+                margin-right: 10px;
+            }
+
+            .framelink-copyright {
+                position: absolute;
+                bottom: 0;
+            }
+        }
+    }
+
+    body {
+        // overflow: hidden;
     }
 }
