@@ -16,21 +16,28 @@ section {
     width: 160px;
 }
 
-section ul {
-    padding: 0;
+section {
+    ul {
+        padding: 0;
 
-    & > li {
-        list-style-type: none;
+        & > li {
+            list-style-type: none;
 
-        p {
-            font-weight: bold;
-            display: block;
-            margin: 2em 0;
+            &:not(:last-child) {
+                margin-bottom: 2em;
+            }
         }
+    }
 
-        &:not(:last-child) {
-            margin-bottom: 2em;
-        }
+    ol > li {
+        margin-bottom: 20px;
+    }
+
+    ul p,
+    ol p {
+        font-weight: bold;
+        display: block;
+        margin: 2em 0;
     }
 }
 
@@ -48,4 +55,19 @@ h4 {
     font-weight: normal;
     margin: 0 0 2em 0;
     font-size: 1em;
+}
+
+@media screen and (max-width: @screen-width-medium) {
+    section {
+        padding: 50px 20px;
+
+        ol {
+            margin-bottom: 10px;
+            padding-left: 20px;
+
+            ol {
+                padding-left: 10px;
+            }
+        }
+    }
 }

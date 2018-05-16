@@ -16,13 +16,17 @@ section ul {
 section ul > li {
   list-style-type: none;
 }
-section ul > li p {
+section ul > li:not(:last-child) {
+  margin-bottom: 2em;
+}
+section ol > li {
+  margin-bottom: 20px;
+}
+section ul p,
+section ol p {
   font-weight: bold;
   display: block;
   margin: 2em 0;
-}
-section ul > li:not(:last-child) {
-  margin-bottom: 2em;
 }
 h1 {
   margin: 0;
@@ -36,4 +40,16 @@ h4 {
   font-weight: normal;
   margin: 0 0 2em 0;
   font-size: 1em;
+}
+@media screen and (max-width: 750px) {
+  section {
+    padding: 50px 20px;
+  }
+  section ol {
+    margin-bottom: 10px;
+    padding-left: 20px;
+  }
+  section ol ol {
+    padding-left: 10px;
+  }
 }
