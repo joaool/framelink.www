@@ -49,7 +49,7 @@ h1 {
   height: 350px;
   width: 400px;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 750px) {
   .contact-description-1,
   .contact-description-2 {
     display: inline;
@@ -62,8 +62,7 @@ h1 {
   }
   .contact-description-1,
   .contact-description-2 {
-    display: inline;
-    width: 100%;
+    display: block;
   }
   .form-contact {
     padding: 0 20px;

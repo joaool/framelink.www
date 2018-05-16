@@ -2,10 +2,6 @@
 
 @import 'variables.less';
 
-@second-screen-width: 750px;
-
-@mobile-screen-width: 550px;
-
 section {
     padding: 50px 0 50px 0;
 }
@@ -100,7 +96,7 @@ section {
 
 /* Second screen width styles */
 
-@media screen and (max-width: @second-screen-width) {
+@media screen and (max-width: @screen-width-medium) {
     .aboutus-block-two .aboutus-block-two-col {
         padding: 0 50px;
         display: block;
@@ -128,7 +124,7 @@ section {
     }
 }
 
-@media screen and (max-width: @mobile-screen-width) {
+@media screen and (max-width: @screen-width-small) {
     .aboutus-block-one {
         text-align: left;
 
