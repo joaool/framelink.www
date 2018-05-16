@@ -10,6 +10,9 @@ body {
 body * {
   box-sizing: border-box;
 }
+body.no-scroll {
+  overflow: hidden;
+}
 a {
   text-decoration: none;
 }
@@ -322,27 +325,36 @@ footer a:hover {
   }
   .main-menu-mobile {
     background-color: #ffffff;
+    pointer-events: none;
     position: fixed;
     overflow: auto;
     display: block;
     z-index: 101;
+    width: 100vw;
+    left: 100vw;
     bottom: 0;
-    right: 0;
-    left: 0;
     top: 0;
+    -webkit-transition: left 500ms cubic-bezier(0.55, 0, 0.1, 1);
+    -moz-transition: left 500ms cubic-bezier(0.55, 0, 0.1, 1);
+    -o-transition: left 500ms cubic-bezier(0.55, 0, 0.1, 1);
+    transition: left 500ms cubic-bezier(0.55, 0, 0.1, 1);
+    box-shadow: 0 6px 6px 0 rgba(124, 145, 152, 0.24), 0 0 6px 0 rgba(160, 183, 190, 0.24);
+  }
+  .main-menu-mobile.main-menu-mobile-visible {
+    pointer-events: all;
+    left: 0;
   }
   .main-menu-mobile .main-menu-mobile-top {
-    height: 70px;
+    height: 55px;
     background-color: #ffffff;
-    padding-top: 20px;
-    position: fixed;
+    position: absolute;
     z-index: 102;
     right: 0;
     left: 0;
     top: 0;
   }
   .main-menu-mobile .main-menu-mobile-top .main-menu-logo {
-    margin-left: 40px;
+    width: 38px;
     float: left;
   }
   .main-menu-mobile .main-menu-mobile-top .main-menu-mobile-close {
@@ -358,30 +370,30 @@ footer a:hover {
     width: 30px;
   }
   .main-menu-mobile .main-menu-mobile-content {
-    padding: 40px;
-    padding-bottom: 140px;
-    padding-top: 110px;
+    padding: 20px;
+    padding-bottom: 120px;
+    padding-top: 100px;
     position: relative;
     min-height: 100%;
   }
-  .main-menu-mobile a {
+  .main-menu-mobile a.link {
     color: #95a8ae;
     letter-spacing: 1px;
     font-size: 18px;
     display: block;
   }
-  .main-menu-mobile a.active {
+  .main-menu-mobile a.link.active {
     color: #415dd4;
     pointer-events: none;
     cursor: default;
   }
-  .main-menu-mobile a:not(:last-child) {
+  .main-menu-mobile a.link:not(:last-child) {
     margin-bottom: 30px;
   }
   .main-menu-mobile .main-menu-mobile-bottom {
-    bottom: 40px;
-    right: 40px;
-    left: 40px;
+    bottom: 20px;
+    right: 20px;
+    left: 20px;
     position: absolute;
   }
   .main-menu-mobile .main-menu-mobile-bottom .icon-facebook,
@@ -394,5 +406,8 @@ footer a:hover {
   .main-menu-mobile .main-menu-mobile-bottom .framelink-copyright {
     position: absolute;
     bottom: 0;
+  }
+  .main-menu-mobile .action.action-big {
+    margin-bottom: 20px;
   }
 }

@@ -14,6 +14,10 @@ body {
     * {
         box-sizing: border-box;
     }
+
+    &.no-scroll {
+        overflow: hidden;
+    }
 }
 
 a {
@@ -388,27 +392,36 @@ footer a:hover {
 
     .main-menu-mobile {
         background-color: @menu-mobile-color;
+        pointer-events: none;
         position: fixed;
         overflow: auto;
         display: block;
         z-index: 101;
+        width: 100vw;
+        left: 100vw;
         bottom: 0;
-        right: 0;
-        left: 0;
         top: 0;
+
+        .transition(left 500ms @swift-out);
+
+        .shadow2();
+
+        &.main-menu-mobile-visible {
+            pointer-events: all;
+            left: 0;
+        }
 
         .main-menu-mobile-top {
             height: @menu-mobile-top-block-height;
             background-color: @menu-mobile-color;
-            padding-top: 20px;
-            position: fixed;
+            position: absolute;
             z-index: 102;
             right: 0;
             left: 0;
             top: 0;
 
             .main-menu-logo {
-                margin-left: @menu-mobile-padding;
+                width: 38px;
                 float: left;
             }
 
@@ -429,12 +442,12 @@ footer a:hover {
         .main-menu-mobile-content {
             padding: @menu-mobile-padding;
             padding-bottom: @menu-mobile-padding + @menu-mobile-bottom-block-height;
-            padding-top: @menu-mobile-padding + @menu-mobile-top-block-height;
+            padding-top: @menu-mobile-padding + @menu-mobile-top-block-height + 25px;
             position: relative;
             min-height: 100%;
         }
 
-        a {
+        a.link {
             color: @color-grey-whatisit;
             letter-spacing: 1px;
             font-size: 18px;
@@ -471,9 +484,9 @@ footer a:hover {
                 bottom: 0;
             }
         }
-    }
 
-    body {
-        // overflow: hidden;
+        .action.action-big {
+            margin-bottom: 20px;
+        }
     }
 }
