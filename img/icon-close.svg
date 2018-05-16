@@ -1,16 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-    <defs>
-        <filter id="a" width="103.2%" height="124%" x="-1.6%" filterUnits="objectBoundingBox">
-            <feMorphology in="SourceAlpha" operator="dilate" radius="1" result="shadowSpreadOuter1"/>
-            <feOffset dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
-            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
-            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
-            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0.701960784 0 0 0 0 0.847058824 0 0 0 0 0.882352941 0 0 0 0.5 0"/>
-            <feMerge>
-                <feMergeNode in="shadowMatrixOuter1"/>
-                <feMergeNode in="SourceGraphic"/>
-            </feMerge>
-        </filter>
-    </defs>
-    <path fill="#4A4A4A" fill-rule="evenodd" d="M27 23.656l5.38-5.38a.944.944 0 0 1 1.34.005.953.953 0 0 1 .005 1.338L28.344 25l5.38 5.38a.944.944 0 0 1-.005 1.34.953.953 0 0 1-1.338.005L27 26.344l-5.38 5.38a.944.944 0 0 1-1.34-.005.953.953 0 0 1-.005-1.338L25.656 25l-5.38-5.38a.944.944 0 0 1 .005-1.34.953.953 0 0 1 1.338-.005L27 23.656z" filter="url(#a)" transform="translate(-17 -16)"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Ic_close</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Current-Version" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M7.50340652,5.78749973 L12.8841932,0.40671309 C13.252237,0.0386692553 13.8488326,0.0385479386 14.2225054,0.412220661 C14.5935909,0.783306243 14.5884909,1.39005486 14.2280129,1.75053286 L8.84722629,7.1313195 L14.2280129,12.5121061 C14.5960568,12.88015 14.5961781,13.4767456 14.2225054,13.8504183 C13.8514198,14.2215039 13.2446712,14.2164039 12.8841932,13.8559259 L7.50340652,8.47513927 L2.12261988,13.8559259 C1.75457604,14.2239697 1.1579804,14.2240911 0.784307679,13.8504183 C0.413222097,13.4793328 0.418322112,12.8725841 0.778800108,12.5121061 L6.15958675,7.1313195 L0.778800108,1.75053286 C0.410756273,1.38248902 0.410634957,0.785893384 0.784307679,0.412220661 C1.15539326,0.0411350791 1.76214188,0.0462350942 2.12261988,0.40671309 L7.50340652,5.78749973 Z" id="Ic_close" fill="#FFFFFF"></path>
+    </g>
 </svg>

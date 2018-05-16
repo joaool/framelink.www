@@ -3,7 +3,9 @@
 @import 'variables.less';
 
 section {
-    padding: 50px 100px;
+    padding: 50px 150px;
+    margin: @menu-height auto 0 auto;
+    max-width: 1100px;
 }
 
 .main-menu-logo {
@@ -35,20 +37,27 @@ section {
 
     ul p,
     ol p {
+        margin: 2em 0 1.5em 0;
         font-weight: bold;
+        font-size: 1.5em;
         display: block;
-        margin: 2em 0;
     }
+}
+
+section a {
+    text-decoration: underline !important;
+    color: @color-warm-blue !important;
+}
+
+.last-updated {
+    color: @color-bluish-grey;
+    font-size: 13px;
 }
 
 h1 {
     margin: 0;
     font-size: 2.5em;
-
-    span {
-        font-weight: normal;
-        font-size: 0.6em;
-    }
+    margin-bottom: 40px;
 }
 
 h4 {
