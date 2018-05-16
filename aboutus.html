@@ -29,7 +29,33 @@
         </script>
     </head>
     <body>
-        <div class="main-menu">
+        <div class="main-menu-mobile">
+            <div class="main-menu-mobile-top">
+                <a href="index.html" class="main-menu-logo"></a>
+                <div class="main-menu-mobile-close"></div>
+            </div>
+            <div class="main-menu-mobile-content">
+                <a href="./" class="link">What is it?</a>
+                <a href="pricing.html" class="link">Pricing</a>
+                <a href="javascript:void(0);" disabled class="link active">About Us</a>
+                <a href="contact.html" class="link">Contact</a>
+                <div class="main-menu-mobile-bottom">
+                    <a target="_blank" href="http://framelink.co/app">
+                        <button class="action action-big">
+                            START NOW
+                        </button>
+                    </a>
+                    <a target="_blank" title="Find us on Facebook" href="http://www.facebook.com/framelink.co">
+                        <div class="icon-facebook"></div>
+                    </a>
+                    <a target="_blank" title="Follow us on twitter" href="https://twitter.com/FrameLink_co">
+                        <div class="icon-twitter"></div>
+                    </a>
+                    <div class="framelink-copyright">&copy; 2018 – FrameLink</div>
+                </div>
+            </div>
+        </div>
+        <header class="main-menu">
             <a href="index.html" class="main-menu-logo"></a>
             <div class="main-menu-links">
                 <a href="./">WHAT IS IT?</a>
@@ -37,7 +63,8 @@
                 <a href="javascript:void(0);" disabled class="active">ABOUT US</a>
                 <a href="contact.html">CONTACT</a>
             </div>
-        </div>
+            <div class="main-menu-hamburger"></div>
+        </header>
         <section>
             <div class="aboutus-block-one">
                 <h1>Our passion:</h1>
@@ -107,5 +134,7 @@
         </footer>
         <link href="css/common.css" rel="stylesheet" />
         <link href="css/aboutus.css" rel="stylesheet" />
+        <script src="libs/js/jquery.min.js"></script>
+        <script src="js/common.js"></script>
     </body>
 </html>
