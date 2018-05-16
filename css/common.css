@@ -160,10 +160,14 @@ footer li:last-child {
 }
 footer a {
   text-decoration: none !important;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 footer a:hover {
   text-decoration: underline !important;
+  color: #ffffff !important;
+}
+footer ul {
+  font-size: 16px;
 }
 .footer-block {
   display: inline-block;
