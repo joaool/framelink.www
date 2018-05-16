@@ -218,13 +218,13 @@ footer a:hover {
   width: 36px;
 }
 .icon-facebook {
-  background-image: url(../img/icon-facebook.svg);
+  background-image: url(../img/icon-contact-facebook.svg);
 }
 .icon-twitter {
-  background-image: url(../img/icon-twitter.svg);
+  background-image: url(../img/icon-contact-twitter.svg);
 }
 .icon-startup-lisboa {
-  background-image: url(../img/startuplisboa_logo2.png);
+  background-image: url(../img/icon-startuplisboa-logo.png);
   background-position-y: -8px;
   margin-right: 10px;
   height: 50px;
@@ -303,7 +303,7 @@ footer a:hover {
     width: 100%;
   }
   .main-menu-hamburger {
-    background-image: url(../img/hamburger.svg);
+    background-image: url(../img/icon-hamburger.svg);
     background-position-y: center;
     background-position-x: center;
     background-repeat: no-repeat;
