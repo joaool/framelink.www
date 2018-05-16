@@ -1,13 +1,20 @@
 section {
-  padding: 70px 0 0 0;
+  padding: 50px 0 0 0;
   text-align: center;
 }
 h1 {
   margin: 0 44px 20px 44px;
 }
 .contact-description {
+  padding: 0 20px;
+}
+.contact-description-1 {
+  max-width: 640px;
   margin: 0 auto;
-  max-width: 620px;
+}
+.contact-description-2 {
+  max-width: 520px;
+  margin: 0 auto;
 }
 .form-contact {
   margin: 40px auto;
@@ -41,4 +48,33 @@ h1 {
   margin: 0 auto;
   height: 350px;
   width: 400px;
+}
+@media screen and (max-width: 650px) {
+  .contact-description-1,
+  .contact-description-2 {
+    display: inline;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .contact-description {
+    text-align: left;
+  }
+  .contact-description-1,
+  .contact-description-2 {
+    display: inline;
+    width: 100%;
+  }
+  .form-contact {
+    padding: 0 20px;
+    width: 100%;
+  }
+  .contact-message-sent {
+    text-align: left;
+    padding: 20px;
+  }
+  h1 {
+    margin: 0 20px 20px 20px;
+    text-align: left;
+  }
 }
