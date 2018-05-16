@@ -353,11 +353,27 @@ footer a:hover {
 }
 
 @media screen and (max-width: @screen-width-small) {
+    .main-menu-logo {
+        margin-left: 20px;
+    }
+
     .main-menu-links {
         display: none;
     }
 
     button, button.action.action-big {
         width: 100%;
+    }
+
+    .main-menu-hamburger {
+        background-image: url(../img/hamburger.svg);
+        background-position-y: center;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 13px 20px 0 0;
+        float: right;
+        height: 30px;
+        width: 30px;
     }
 }
