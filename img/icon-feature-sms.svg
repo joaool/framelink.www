@@ -1,9 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
-    <g fill="none" fill-rule="nonzero" transform="translate(26.125 17)">
-        <path fill="#A0B7BE" d="M0 59.4V6.6C0 2.97 2.97 0 6.6 0H33c3.63 0 6.6 2.97 6.6 6.6v52.8c0 3.63-2.97 6.6-6.6 6.6H6.6C2.97 66 0 63.03 0 59.4z"/>
-        <path fill="#CADCE0" d="M33 4.95H6.6c-.99 0-1.65.66-1.65 1.65v47.85c0 .99.66 1.65 1.65 1.65H33c.99 0 1.65-.66 1.65-1.65V6.6c0-.99-.66-1.65-1.65-1.65z"/>
+    <defs>
+        <filter id="a" width="175.9%" height="166.7%" x="-37.9%" y="-16.7%" filterUnits="objectBoundingBox">
+            <feOffset dy="11" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5.5"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0.62745098 0 0 0 0 0.717647059 0 0 0 0 0.745098039 0 0 0 0.25 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <linearGradient id="b" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#CEDCE0"/>
+            <stop offset="100%" stop-color="#A0B7BE"/>
+        </linearGradient>
+        <linearGradient id="c" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#E7F0F2"/>
+            <stop offset="100%" stop-color="#CADCE0"/>
+        </linearGradient>
+        <linearGradient id="d" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#FFE300"/>
+            <stop offset="100%" stop-color="#FFC300"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="nonzero" filter="url(#a)" transform="translate(26.125 17)">
+        <path fill="url(#b)" d="M0 59.4V6.6C0 2.97 2.97 0 6.6 0H33c3.63 0 6.6 2.97 6.6 6.6v52.8c0 3.63-2.97 6.6-6.6 6.6H6.6C2.97 66 0 63.03 0 59.4z"/>
+        <path fill="url(#c)" d="M33 4.95H6.6c-.99 0-1.65.66-1.65 1.65v47.85c0 .99.66 1.65 1.65 1.65H33c.99 0 1.65-.66 1.65-1.65V6.6c0-.99-.66-1.65-1.65-1.65z"/>
         <path fill="#7C9198" d="M14.85 59.4h9.9v3.3h-9.9z"/>
-        <path fill="#FFC300" d="M54.45 11.55h-29.7a3.3 3.3 0 0 0-3.3 3.3v29.7l9.9-6.6h23.1a3.3 3.3 0 0 0 3.3-3.3v-19.8a3.3 3.3 0 0 0-3.3-3.3z"/>
+        <path fill="url(#d)" d="M54.45 11.55h-29.7a3.3 3.3 0 0 0-3.3 3.3v29.7l9.9-6.6h23.1a3.3 3.3 0 0 0 3.3-3.3v-19.8a3.3 3.3 0 0 0-3.3-3.3z"/>
         <circle cx="39.6" cy="18.15" r="1.65" fill="#FFF"/>
         <circle cx="39.6" cy="31.35" r="1.65" fill="#FFF"/>
         <path fill="#FFF" d="M44.55 28.05V23.1a4.95 4.95 0 1 0-9.9 0v4.95c0 .91-.74 1.65-1.65 1.65v1.65h13.2V29.7c-.91 0-1.65-.74-1.65-1.65z"/>

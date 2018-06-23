@@ -1,10 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+    <defs>
+        <path id="b" d="M9.052 12.992c-3.229 0-5.846 1.94-5.846 4.331v23.82c0 2.391 2.617 4.33 5.846 4.33h23.592c1.962 0 3.73 18 5.304 18h23.877c3.229 0 5.846-1.939 5.846-4.33v-41.82c0-2.392-12.617-4.33-15.846-4.33H9.052z"/>
+        <filter id="a" width="202.4%" height="230.7%" x="-51.2%" y="-43.6%" filterUnits="objectBoundingBox">
+            <feOffset dy="11" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5.5"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0.62745098 0 0 0 0 0.717647059 0 0 0 0 0.745098039 0 0 0 0.25 0"/>
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter2"/>
+            <feGaussianBlur in="shadowOffsetOuter2" result="shadowBlurOuter2" stdDeviation="5.5"/>
+            <feColorMatrix in="shadowBlurOuter2" result="shadowMatrixOuter2" values="0 0 0 0 0.62745098 0 0 0 0 0.717647059 0 0 0 0 0.745098039 0 0 0 0.2 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="shadowMatrixOuter2"/>
+            </feMerge>
+        </filter>
+        <linearGradient id="c" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#CEDCE0"/>
+            <stop offset="100%" stop-color="#A0B7BE"/>
+        </linearGradient>
+        <linearGradient id="d" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#E7F0F2"/>
+            <stop offset="100%" stop-color="#CADCE0"/>
+        </linearGradient>
+        <linearGradient id="e" x1="138.241%" x2="0%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#B3C4C9"/>
+            <stop offset="100%" stop-color="#7C9198"/>
+        </linearGradient>
+        <linearGradient id="f" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#FFE300"/>
+            <stop offset="100%" stop-color="#FFC300"/>
+        </linearGradient>
+        <linearGradient id="g" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#FFFAF2"/>
+            <stop offset="100%" stop-color="#FFF3E0"/>
+        </linearGradient>
+    </defs>
     <g fill="none" fill-rule="nonzero" transform="translate(15.895 18)">
-        <path fill="#A0B7BE" d="M3.248 38.977V6.497C3.248 2.922 6.171 0 9.744 0h45.474c3.573 0 6.496 2.923 6.496 6.496v32.481c0 3.573-2.923 6.496-6.496 6.496H9.744c-3.573 0-6.496-2.923-6.496-6.496z"/>
-        <path fill="#CADCE0" d="M55.218 4.872H9.744c-.974 0-1.624.65-1.624 1.624v32.481c0 .975.65 1.624 1.624 1.624h45.474c.974 0 1.624-.65 1.624-1.624V6.497c0-.975-.65-1.625-1.624-1.625z"/>
-        <path fill="#7C9198" d="M58.466 47.097H6.496C2.923 47.097 0 44.174 0 40.601h64.962c0 3.573-2.923 6.496-6.496 6.496z"/>
-        <path fill="#FFC300" d="M35.729 58.466V19.489c0-3.573 2.923-6.497 6.496-6.497h19.489c3.573 0 6.496 2.924 6.496 6.497v38.977c0 3.573-2.923 6.496-6.496 6.496H42.225c-3.573 0-6.496-2.923-6.496-6.496z"/>
-        <path fill="#FFF3E0" d="M61.714 17.865H42.225c-.974 0-1.624.65-1.624 1.624v35.729c0 .974.65 1.624 1.624 1.624h19.489c.974 0 1.624-.65 1.624-1.624v-35.73c0-.974-.65-1.623-1.624-1.623z"/>
+        <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+        <path fill="url(#c)" d="M3.248 38.977V6.497C3.248 2.922 6.171 0 9.744 0h45.474c3.573 0 6.496 2.923 6.496 6.496v32.481c0 3.573-2.923 6.496-6.496 6.496H9.744c-3.573 0-6.496-2.923-6.496-6.496z"/>
+        <path fill="url(#d)" d="M55.218 4.872H9.744c-.974 0-1.624.65-1.624 1.624v32.481c0 .975.65 1.624 1.624 1.624h45.474c.974 0 1.624-.65 1.624-1.624V6.497c0-.975-.65-1.625-1.624-1.625z"/>
+        <path fill="url(#e)" d="M58.466 47.097H6.496C2.923 47.097 0 44.174 0 40.601h64.962c0 3.573-2.923 6.496-6.496 6.496z"/>
+        <path fill="url(#f)" d="M35.729 58.466V19.489c0-3.573 2.923-6.497 6.496-6.497h19.489c3.573 0 6.496 2.924 6.496 6.497v38.977c0 3.573-2.923 6.496-6.496 6.496H42.225c-3.573 0-6.496-2.923-6.496-6.496z"/>
+        <path fill="url(#g)" d="M61.714 17.865H42.225c-.974 0-1.624.65-1.624 1.624v35.729c0 .974.65 1.624 1.624 1.624h19.489c.974 0 1.624-.65 1.624-1.624v-35.73c0-.974-.65-1.623-1.624-1.623z"/>
         <circle cx="51.97" cy="60.902" r="2.436" fill="#F09C00"/>
     </g>
 </svg>

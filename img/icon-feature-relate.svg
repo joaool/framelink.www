@@ -1,8 +1,37 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+    <defs>
+        <linearGradient id="a" x1="86.095%" x2="11.262%" y1="-7.673%" y2="91.331%">
+            <stop offset="0%" stop-color="#FFE300"/>
+            <stop offset="100%" stop-color="#FFC300"/>
+        </linearGradient>
+        <filter id="b" width="164.7%" height="173.3%" x="-32.4%" y="-18.3%" filterUnits="objectBoundingBox">
+            <feOffset dy="11" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5.5"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0.62745098 0 0 0 0 0.717647059 0 0 0 0 0.745098039 0 0 0 0.25 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <linearGradient id="c" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#CEDCE0"/>
+            <stop offset="100%" stop-color="#A0B7BE"/>
+        </linearGradient>
+        <linearGradient id="d" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#B3C4C9"/>
+            <stop offset="100%" stop-color="#7C9198"/>
+        </linearGradient>
+        <linearGradient id="e" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#E7F0F2"/>
+            <stop offset="100%" stop-color="#CADCE0"/>
+        </linearGradient>
+    </defs>
     <g fill="none" fill-rule="evenodd">
-        <path stroke="#FFC300" stroke-width="3" d="M23.158 58.025V43.943a6.482 6.482 0 0 1 3.334-5.665l12.771-7.095m37.58 26.842V43.943a6.482 6.482 0 0 0-3.335-5.665l-12.771-7.095M30.316 71.535l16.427 8.96a6.478 6.478 0 0 0 6.437-.132l14.715-8.828"/>
-        <path fill="#A0B7BE" fill-rule="nonzero" d="M37.474 25.814L50 18.656l12.526 7.158V40.13L50 47.288 37.474 40.13V25.814zm21.473 44.737l12.527 7.158L84 70.55V56.235l-12.526-7.158-12.527 7.158v14.316zm-42.947 0l12.526 7.158 12.527-7.158V56.235l-12.527-7.158L16 56.235v14.316z"/>
-        <path fill="#7C9198" fill-rule="nonzero" d="M37.474 25.814L50 32.972v14.316L37.474 40.13V25.814zM16 70.551l12.526 7.158V63.393L16 56.235v14.316zm42.947 0l12.527 7.158V63.393l-12.527-7.158v14.316z"/>
-        <path fill="#CADCE0" fill-rule="nonzero" d="M50 32.972l12.526-7.158V40.13L50 47.288V32.972zm21.474 44.737L84 70.55V56.235l-12.526 7.158V77.71zm-42.948 0l12.527-7.158V56.235l-12.527 7.158V77.71z"/>
+        <path stroke="url(#a)" stroke-width="3" d="M7.158 39.368v-14.08a6.482 6.482 0 0 1 3.334-5.666l12.771-7.096m37.58 26.842v-14.08a6.482 6.482 0 0 0-3.335-5.666l-12.771-7.096M14.316 52.88l16.427 8.96a6.478 6.478 0 0 0 6.437-.133l14.715-8.827" transform="translate(16 18.656)"/>
+        <g fill-rule="nonzero" filter="url(#b)" transform="translate(16 18.656)">
+            <path fill="url(#c)" d="M21.474 7.158L34 0l12.526 7.158v14.316L34 28.632l-12.526-7.158V7.158zm21.473 44.737l12.527 7.158L68 51.895V37.579L55.474 30.42 42.947 37.58v14.316zM0 51.895l12.526 7.158 12.527-7.158V37.579L12.526 30.42 0 37.58v14.316z"/>
+            <path fill="url(#d)" d="M21.474 7.158L34 14.316v14.316l-12.526-7.158V7.158zM0 51.895l12.526 7.158V44.737L0 37.579v14.316zm42.947 0l12.527 7.158V44.737l-12.527-7.158v14.316z"/>
+            <path fill="url(#e)" d="M34 14.316l12.526-7.158v14.316L34 28.632V14.316zm21.474 44.737L68 51.895V37.579l-12.526 7.158v14.316zm-42.948 0l12.527-7.158V37.579l-12.527 7.158v14.316z"/>
+        </g>
     </g>
 </svg>
