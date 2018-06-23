@@ -37,6 +37,9 @@ h1 {
   text-align: left;
   font-size: 14px;
 }
+.form-label.form-label-inline {
+  display: inline-block;
+}
 .contact-message-sent {
   display: none;
 }
