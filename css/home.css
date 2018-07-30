@@ -171,3 +171,7 @@ section {
 .icon-feature-video-chat {
   background-image: url(../img/icon-feature-video-chat.svg);
 }
+.icon-guides-overview1 {
+  background-image: url(../img/guide_overview1.png);
+  /*background-image: url(../img/icon-feature-video-chat.svg);*/
+}
