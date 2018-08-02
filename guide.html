@@ -9,6 +9,7 @@
         <meta name="p:domain_verify" content="5d037a9546cf4d54e971c807ebaae81a"/>
         <title>FrameLink Guides</title>
         <link rel="icon" href="img/framelink.ico" type="image/x-icon">
+
         <script>
             (function(h,o,t,j,a,r){
                 h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -64,7 +65,7 @@
             </div>
             <div class="main-menu-hamburger"></div>
         </header>
-        <section>
+        <section >
             <div class="homepage-block-services">
                 <h1>Guide to FrameLink</h1>
                 <div class="homepage-feature-container">
@@ -157,6 +158,9 @@
         </footer>
         <link href="css/common.css" rel="stylesheet" />
         <link href="css/guide.css" rel="stylesheet" />
+        <!-- <script src="libs/js/jquery.min.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="js/common.js"></script>
     </body>
     <div id="guides_content" style="visibility:hidden;">
         <!-- <div id="overview_item">
@@ -236,11 +240,11 @@
             <li><b>Framelink’s workspace</b> is based on the common needs of any company; data, action, and good communication between multiple team members and workspaces.</li>
             <br>
             <h3>FrameLink Philosophy</h3>
-            <li> Have you ever been stumped by a company because you required changes that there system wasn’t able to make? Framelink’s first principle is to always be <b>adaptable to change</b>. We assume that your information system may change at any time. Your team may change, the structure of your data may change, you communications to the outside world may change. When changes happen you want your information system to <b>easily</b> reflect those changes while keeping all of your information safe and ready to operate on any device.</li>
+            <li> Have you ever been stumped by a company because you required changes that their system wasn’t able to make? Framelink’s first principle is to always be <b>adaptable to change</b>. We assume that your information system may change at any time. Your team may change, the structure of your data may change, you communications to the outside world may change. When changes happen you want your information system to <b>easily</b> reflect those changes while keeping all of your information safe and ready to operate on any device.</li>
             <br><h3>Data Organization</h3><br>
             <li>FrameLink data is organized in <b>Tables</b>. Tables contain records that hold their information in <b>Fields</b>. When you first access a FrameLink table, you see a <b>List</b> with rows as records and columns as fields. In <b>List Mode</b> you can easily search any record and once you find it, zoom into a <b>Single Record Mode</b> where you only see that record and its relations with other FrameLink Tables.</li>
             <li>Inside a FrameLink application, you navigate from relation to relation without searching long lists to find the information you need. You may jump directly to the information you need because related information is always close by.</li>
-            <li>In most real case situations you will need to see data from several prespectives. With FrameLink you can define any number of predefined filters that present the information in the most convenientr way for the end user. A simple click allows the change from one filter to another, selected from a menu writen in the business language common to all end users.</li>
+            <li>In most real case situations you will need to see data from several perspectives. With FrameLink you can define any number of predefined filters that present the information in the most convenient way for the end user. A simple click allows the change from one filter to another, selected from a menu written in the business language of the organization, common to all end users.</li>
             <br><h3>Operations Principles</h3><br>
                 <li>if you have "DESIGNER" permissions, the <b>easily adaptable to change</b> principle will be applicable. In <b>List Mode</b> you will be able to completely transform the table, by adding or removing columns, by changing the order or size of any column or by changing its interface.<br>
                     At any time, FrameLink will show you the icons you need for the type of operation you want to do.</li>
@@ -251,16 +255,17 @@
                     <li style="margin-left:-2em;">BASIC DATA EDITION - add records/edit records</li>
                     <li>To add a new record in <b>List Mode</b>, click the edit <img style="height:2em;" src="./img/guide_overview3_1_1.png" >icon and a new blank row will appear.</li>
                     <li>To edit any existing data field, just click it and edit.</li><br>
-                    <li style="margin-left:-2em;">BASIC TRANSFORMATIONS - change Table & Field Names.</li><br>
-                    <li>If you have "DESIGNER" permissions you can also edit the <b>Table name</b> and any <b>Field Header</b>.</li>
-                    <li>If you have "DESIGNER" permissions you can change the field interface of any field by clicking it and selecting any of the available interfaces in the horizontal list of icons that will appear below the table name.(not visible in the figure at left)</li>
+                    <li style="margin-left:-2em;">BASIC TRANSFORMATIONS - change Table & Field Names (only for DESIGNERS).</li><br>
+                    <li>Edit the <b>Table name</b> by clicking it and change it in place. </li>
+                    <li>Edit any <b>Field name</b> (column headers) simply by clicking it and change it in place. </li>
+                    <li>Notice that when you click any column header the icons above the line of headers change. The left most icon corresponds to the currently selected field interface and you may change it to any of the available interfaces in the horizontal menu.(not visible in the figure at left)</li>
                 </ul><br><br>
                     These transformations can be done in <b>Field Mode</b> - when we do someting specific to a  column such as changing its interface or removing the column - or <b>Outside Field Mode</b> when we want to add a new column to the table.<br>
                     Users with "DESIGNER" permissions will be able to enter <b>Field Mode</b> simply by clicking the header of the column they want to change. They can exit Field Mode by clicking anywhere outside any column header.<br>
-                    Notice that the default operation mode is <b>Outside Field Mode</b>.<b>Field Mode</b> is only accessible to users with "DESIGNER" permissions.</li><br><br><br>
+                    Notice that the default operation mode is <b>Outside Field Mode</b> - <b>Field Mode</b> is only accessible to users with "DESIGNER" permissions.</li><br><br><br><br><br>
                 <li><img style="height:20em;" src="./img/guide_overview3_2.png" align="left" alt="FrameLink blank screen">
                     <ul class="b" style="margin-left:40em;">
-                        <li>The first elementary operation you will want to do is to <b>add a new column</b> to the table. To execute it, click outside any column header and notice the upper right area icons:</li>
+                        <li>The first elementary operation a DESIGNER will want to do, is to <b>add a new column</b> to the table. To execute it, click outside any column header and notice the upper right area icons:</li>
                         <ul class="a" style="margin-left:2em;">
                             <li>Click the <b>Add Field</b> icon. A new column with header "New Field" will appear at the right side of the last existing column.
                             <li>You can drag the column to whatever position you prefer simply by hovering the header and dragging the cross icon that will appear.</li>
@@ -297,9 +302,12 @@
                 <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</li>
                 <br><h3>Navigation in FrameLink</h3><br>
                 <li>In FrameLink you use the List Mode to enter any item of the data mesh. As soon as you are in you can navigate directly from records to records folowing the path of your data.</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</li>
+                <li>In both <b>List Mode</b> or <b>Single Record Mode</b> you will find fields that have a Zoom Lens<img style="height:2em;" src="./img/guide_overview4_2.png" > at the right side of the field content. These are "linkedFields" and you can click the Lens to jump directly to that record in <b>Single Record Mode</b>. All records in Single Record Mode have a set of tabs (below the last field) that show you all connections from the current record to other Framelink Records.</li>
+                <li>You may open the tab of the relation you want to follow and repeat the process clicking again the Zoom Lens to jump to any other related records.</li>
+                <li>This navigation process is available all over the application and it only depends on the nature of your data and relations.</li>
                 <br><h3>FrameLink Services</h3><br>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</li>
+                <li>FrameLink services are automatically available or unavailable depending on the type of data that you have directly or undirectly available in <b>List Mode</b>.</li>
+                <li>If an Email interface exist in the current table or any table directly related to the current one, an Email service will be automatically available. If an Phone interface exist in the current table or any table directly related to the current one, an SMS service will be automatically available. If the current table as a master/detail relation to any other table a report service will be available.</li>
             </li><br>
         </ul>
     </script>
@@ -310,19 +318,23 @@
             <br>
             <h3>Creating a new table</h3>
             <br>
-            <li>Create a new table from scratch:</li>
-            <li>Create a new table from an existing spreadsheet:</li>
+            <li>To begin creating a new system you typically have 2 approaches:</li>
+            <ul class="b" style="margin-left:5em;"><br>
+                    <li><b>Import a new table from an existing spreadsheet</b>. From the Dashboard, click the Settings Cog and select "Import Spreadsheet". You can import any number of tables with fear that any clash may happen. Framelink malkes sure that the imported table will have a name different from the already existing names.</li>
+                    <li><b>Build a new table from scratch</b>. From the Dashboard, click the blue plus sign at right and select "Create new table"</li>
+            </ul>
         </ul>
     </script>
     <script id="c_linking_tables_item" type="text/template" >
         <ul style="margin-left: 5em;margin-right: 5em;margin-top:-0em;" align="left">
             <li>With FrameLink, you can create relationships between individual records. The interesting thing is that you can create those relationships while you are introducing your data - without leaving the current screen.</li>
-            <li>After we’ve created an association between tables, we can use that to pull information, count records, or calculate values from the other table.  For instance, on a vendors table, we could show the products that each produces and the amount owed to each vendor.</li>
+            <li>The field interface corresponding to a <b>"linked Field"</b> is pulldown menu where you can find any record and select it or introduce a new record in a table other than the current table.</li>
+            <li>If you need to define a new field in that other table, you simply follow the link by pressing the Zoom Lens<img style="height:2em;" src="./img/guide_overview4_2.png" > at the right side of the field content, and then select the "Add Field" icon to define the new field and fill in the new content. No previous preparation is needed to perform these operations.</li>
             <br>
             <h3>Linked records in action</h3>
             <br>
-            <li>First, we’ll show you what linked records look like and then show you how to create them!</li>
-            <li>Below, you can see a screenshot of NASA’s Vendors table with a linked field that connects to the supplies table.</li>
+            <li>First, we’ll show you what linked records look like and then show you how to create them.</li>
+            <li>To define a structure to accept linked records, all you have to do is to define a Field Interface of type <b>Linked Field</b>. This is an field interface such Text or Numeric or any other. The properties of this particular interface are the table name to link (if any) and the content that you want to be displayed in the pulldown.</li>
         </ul>
     </script>
     <script id="c_field_interfaces_item" type="text/template" >
@@ -421,6 +433,14 @@
                 <p>The Administrator can define permissions for each user on how to manage the database content and which tables and records are accessible.</p>
                 <center><img src="./img/guide_permissions3.png" alt="permissions per user"></center>
             </li>
+        </ul>
+    </script>
+    <script id="c_chat_video_item" type="text/template" >
+        <ul style="margin-left: 5em;margin-right: 5em;margin-top:-0em;" align="left">
+            <li>Easy communications between team members are a critical feature of any workplace. With FrameLink video conferencing with any member of your tem is one click away.</li>
+            <center><img style="height:10em;" src="./img/guide_chat_video1.png" class="center" alt="FrameLink video"></center>
+            <li>After clicking the yellow phone icon you will see a list of all available team members. In a recently created account you will see FrameLink support. If you click it you will have the support of any FrameLink consultant that is available.</li>
+            <center><img style="height:10em;" src="./img/guide_chat_video2.png"  alt="FrameLink video2"></center>
         </ul>
     </script>
 </html>
