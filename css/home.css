@@ -175,3 +175,6 @@ section {
   background-image: url(../img/guide_overview1.png);
   /*background-image: url(../img/icon-feature-video-chat.svg);*/
 }
+.icon-finger-point-right{
+  background-image: url(../img/icon-finger-point-right.svg);
+}
