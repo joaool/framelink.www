@@ -27,6 +27,35 @@
             ga('create', 'UA-47881952-1', 'auto');
             ga('send', 'pageview');
         </script>
+        <style type="text/css">
+            .responsive{
+              width:100%;
+              height:0;
+              padding-bottom:56.25%;
+              position:relative;
+              /*display: block;*/
+              /*margin-left: auto;*/
+              /*margin-right: auto;*/
+            }
+            .responsive iframe{
+              position:absolute;
+              width:100%;
+              height:100%;
+              max-width:630px;
+              max-height:354px;
+            }
+            .responsiveImg{
+              width:90%;
+              max-width:400px;
+            }
+            @media screen and (min-width: 550px) {
+                .responsive{
+                  width:50%;
+                  margin-left: auto;
+                  margin-right: auto;
+                }
+            }    
+        </style>
     </head>
     <body>
         <div class="main-menu-mobile">
@@ -35,11 +64,12 @@
                 <div class="main-menu-mobile-close"></div>
             </div>
             <div class="main-menu-mobile-content">
-                <a href="./" class="link">What is it?</a>
-                <a href="javascript:void(0);" disabled class="link active">Guide</a>
-                <a href="pricing.html" class="link">Pricing</a>
-                <a href="aboutus.html" class="link">About Us</a>
-                <a href="contact.html" class="link">Contact</a>
+                <a href="../index.html" class="link">What is it?</a>
+                <!-- <a href="javascript:void(0);" disabled class="link active">Guide</a> -->
+                <a href="../guide.html" class="link">Guide</a>
+                <a href="../pricing.html" class="link">Pricing</a>
+                <a href="../aboutus.html" class="link">About Us</a>
+                <a href="../contact.html" class="link">Contact</a>
                 <div class="main-menu-mobile-bottom">
                     <a target="_blank" href="http://framelink.co/app">
                         <button class="action action-big marigold">
@@ -50,29 +80,29 @@
             </div>
         </div>
         <header class="main-menu">
-            <a href="index.html" class="main-menu-logo"></a>
+            <a href="../index.html" class="main-menu-logo"></a>
             <div class="main-menu-links">
-                <a href="index.html">WHAT IS IT?</a>
-                <a href="javascript:void(0);" disabled class="active">GUIDE</a>
-                <a href="pricing.html">PRICING</a>
-                <a href="aboutus.html">ABOUT US</a>
-                <a href="contact.html">CONTACT</a>
+                <a href="../index.html">WHAT IS IT?</a>
+                <!-- <a href="javascript:void(0);" disabled class="active">GUIDE</a> -->
+                <a href="../guide.html" >GUIDE</a>
+                <a href="../pricing.html">PRICING</a>
+                <a href="../aboutus.html">ABOUT US</a>
+                <a href="../contact.html">CONTACT</a>
             </div>
             <div class="main-menu-hamburger"></div>
         </header>
         <section>
             <div class="guide-header">
-                <a href="guide.html"><h2>Guide to FrameLink</h2></a>
+                <a href="../guide.html"><h2>Guide to FrameLink</h2></a>
                 <div class="arrow-right"></div>
                 <h1>Overview</h1>
             </div>
             <div class="guide-text-block">
-                With the ever-increasing digitalization of the world’s economy, a radical transformation is taking place in the global workforce. New jobs are appearing requiring businesses to collaborate with creative talent from different places inside the same company or across companies around the world. They can network and work together on <b>unique projects</b> from any location by sharing the same <b>workspace application</b>, like FrameLink
+                With the ever-increasing digitalization of the world’s economy, a radical transformation is taking place in the global workforce. New jobs are appearing requiring businesses to collaborate with creative talent from different places inside the same company or across companies around the world. They can network and work together on <b>unique projects</b> from any location by sharing the same <b>workspace application</b>, like FrameLink.
             </div>
             <div class="guide-text-block">
-                <img style="margin: 0 31px 20px -9px;float: left;" src="../img/guide_overview2.png" />
+                    <img class="responsiveImg" style="margin: 0 31px 20px -9px;float: left;" src="../img/guide_overview2.png" />
                 <ul class="guide-list">
-                    <br><br>
                     <li>
                         Framelink allows businesses to build and maintain <b>a system that’s unique</b>
                         for them that’s always ready to adapt to changes.
@@ -94,11 +124,12 @@
                 <div>
                     Check a <b>video example</b> of an organization using FrameLink:<i>notice that this is a <b>100% customizable</b> application easily adjustable to your organization without hired help.</i>
                 </div>
-                <div>    
-                    <img src="../img/guide_overview3_1.png" />
-                </div>    
             </div>
-
+            <!-- <div align="center"> -->
+            <div class="responsive">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lBoKQkUhBVE?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+                <!-- <iframe width="840" height="472" src="https://www.youtube.com/embed/lBoKQkUhBVE?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+            </div>
             <h3>FrameLink Philosophy</h3>
 
             <div class="guide-text-block">
@@ -313,103 +344,9 @@
             $("#showRoom").append(html_str+button+template);
         }
     </script>
-    <script id="c_overview_item" type="text/template" >
-
-    </script>
-    <script id="c_adding_tables_item" type="text/template" >
-        <ul style="margin-left: 5em;margin-right: 5em;margin-top:-0em;" align="left">
-            <li>With FrameLink you can deal with your data with a minimum preparation. You do not need to define upfront a set of tables each one with a set of fields before introducing data into FrameLink. Only one rule applies: your data should be created within a table. Create a table from scratch clicking the big blue plus icon in the dashboard or import existing data from a spreadsheet by clicking the cog icon and selecting <b>Import Spreadsheet</b>.</li>
-            <li>Once you’ve created your table, it’s time to add all the information you want to organize as records. While you are adding information you can add fields if the information does not fit in existing ones, and adjust field headers to make your information clearer.</li>
-            <br>
-            <h3>Creating a new table</h3>
-            <br>
-            <li>To begin creating a new system you typically have 2 approaches:</li>
-            <ul class="b" style="margin-left:5em;"><br>
-                    <li><b>Import a new table from an existing spreadsheet</b>. From the Dashboard, click the Settings Cog and select "Import Spreadsheet". You can import any number of tables with fear that any clash may happen. Framelink malkes sure that the imported table will have a name different from the already existing names.</li>
-                    <li><b>Build a new table from scratch</b>. From the Dashboard, click the blue plus sign at right and select "Create new table"</li>
-            </ul>
-        </ul>
-    </script>
-    <script id="c_linking_tables_item" type="text/template" >
-        <ul style="margin-left: 5em;margin-right: 5em;margin-top:-0em;" align="left">
-            <li>With FrameLink, you can create relationships between individual records. The interesting thing is that you can create those relationships while you are introducing your data - without leaving the current screen.</li>
-            <li>The field interface corresponding to a <b>"linked Field"</b> is pulldown menu where you can find any record and select it or introduce a new record in a table other than the current table.</li>
-            <li>If you need to define a new field in that other table, you simply follow the link by pressing the Zoom Lens<img style="height:2em;" src="./img/guide_overview4_2.png" > at the right side of the field content, and then select the "Add Field" icon to define the new field and fill in the new content. No previous preparation is needed to perform these operations.</li>
-            <br>
-            <h3>Linked records in action</h3>
-            <br>
-            <li>First, we’ll show you what linked records look like and then show you how to create them.</li>
-            <li>To define a structure to accept linked records, all you have to do is to define a Field Interface of type <b>Linked Field</b>. This is an field interface such Text or Numeric or any other. The properties of this particular interface are the table name to link (if any) and the content that you want to be displayed in the pulldown.</li>
-        </ul>
-    </script>
-    <script id="c_field_interfaces_item" type="text/template" >
-        <ul style="margin-left: 5em;margin-right: 5em;margin-top:-0em;" align="left">
-            <li>Each field of any table must have an interface suitable to its use. FrameLink supports in-place editing, meaning that to edit any field name you (the designer), simply click in the heading of that field.</li>
-            <li>After clicking the field name, you can select the most convenient interface to that field. The selected interface will appear in the left most position above the header line.</li>
-            <center><img src="./img/guide_interfaces1_1.png" alt="FrameLink user types">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="./img/guide_interfaces1_2.png" alt="FrameLink user types"></center><br>
-            <li>Notice the following interfaces:</li>
-            <ul class="b" style="margin-left:2em;">
-                <li><b>Text</b> - To be used when simple text is needed. (The default interface).</li>
-                <li><b>LongText</b> - To be used when multiple text lines are needed. This interface shows the whole field content when the user hovers it.</li>
-                <li><b>Number</b> - To be used when only numbers should be allowed. The designer can define the decimal part of the number (eventualy none) and the units (any currency or text).</li>
-                <li><b>Email</b> - To be used to register email adresses. This interface will trigger Email services availability.</li>
-                <li><b>Phone</b> - To be used to register phone numbers. The designer can define the default prefix and country format. This service will trigger SMS services availability</li>
-                <li><b>Date & Time</b> - To be for dates (only dates or date & time). The designer can choose the date format. This interface allows date definitions either by text or using a calendar.</li>
-                <li><b>Image</b> - To be used to collect an image.</li>
-                <li><b>Logical</b> - To be used in yes/no situations. This interface will show a checkbox initialy with an undefined value (a dash) that the user can enable (a tick will appear) or disable (the checkbox will become empty). Notice that checkboxes have 3 possible states: Undetermined, Checked or Unchecked.</li>
-                <li><b>URL</b> - To be used to refer to any accessible URL. The designer may use this interface to access a web site, a document, a folder of documents, etc.</li>
-                <li><b>Linked Field</b> - This interface builds a bridge between the current field and one or more fields of another table. The designer uses it to define a pulldown, with content from another table. The user may select any record or create content in the table referred by this interface.</li>
-                <li><b>Formula</b> - To be used to show the result of a numeric operation with fields from the current table or one or several tables referred by linked Fields. Besides considering numbers, these operations may consider dates and date periods.</li>
-                <li><b>Lookup</b> - This interface shows the content of any field of any of the tables referred by a linked field.</li>
-            </ul>
-        </ul>
-    </script>
-    <script id="c_adding_records_item" type="text/template" >
-        <ul style="margin-left: 5em;margin-right: 5em;margin-top:-0em;" align="left">
-            <li>Once you’ve created a table (a container of fields), you can add records.</li>
-            <br>
-                <h3>Creating and updating records</h3>
-            <br>
-            <li>There are two ways to add new records to your Table:</li>
-            <ul class="b" style="margin-left:2em;">
-                <li> - Scroll to the bottom of a table and click the last row</li>
-                <li> - Import records from another table (merge rows)</li>
-            </ul>
-            <li>In a new record, the behavior of each field you are filling in, depends on the field interface. You can have fields automaticaly filled in according with default rules you defined in Field Interfaces.
-            </li>
-            <br>
-                <h3>Deleting records</h3>
-            <br>
-            <li>If by some reason, you want to delete records from the FrameLink database, you have two ways to do it:</li><br>
-            <ul class="b" style="margin-left:2em;">
-                <li><b>One by one</b></li><img style="margin-left:5em;" src="./img/guide_add_records_delete1.png" alt="Delete one by one"> <br>
-                <li><b>A set of records</b> - Select the records you want to delete and open a menu with the 'Remove Selected Records' option (right mouse click on Windows or 'Ctrl' click on Mac). To select a range of records, you select the first row and while holding the 'shift' key, select the last row in the range.</li><img style="margin-left:5em;" src="./img/guide_add_records_delete2.png" alt="Delete selected"><br>
-            </ul>
-            <br>
-                <h3>Filtering records</h3>
-            <br>
-            <li>With FrameLink, you can store a lot of data and filter it to only see the records that interest you. For example, if you are tracking tasks for a project, you may want to retain information on all the tasks but only look at the ones that are incomplete.  The ability to filter records removes the need to regularly delete data from your Base.</li>
-            <br>
-                <h3>Exporting records</h3>
-            <br>
-            <li>It’s your data, so it’s important that you can do what you want with it. FrameLink lets you export your data to Excel&reg; save as an archive or to use with other applications.</li>
-        </ul>
-    </script>
-    <script id="c_sending_emails_item" type="text/template" >
-        <ul style="margin-left: 5em;margin-right: 5em;margin-top:-0em;" align="left">
-            <li>Depending on the user interface you have in the current table or other related tables, some services will automaticaly be available. That is the case of Email Services, whenever FrameLink detects a possible Email channel or SMS services whenever FrameLink detects a possible SMS channel.</li>
-            <br>
-            <h3>Creating Email templates</h3>
-            <br>
-            <li>Whenever a possible Email channel is availble, Framelink will show the Email Services icon below the table name.</li>
-            <ul class="b" style="margin-left:2em;">
-                <li> - Scroll to the bottom of a table and click the last row</li>
-                <li> - Import records from another table (merge rows)</li>
-            </ul>
-            <li>In a new record, the behavior of each field you are filling in, depends on the field interface. You can have fields atomaticaly filled in according with default rules you defined in Field Interfaces.
-            </li>
-        </ul>
-    </script>
+    
+    
+    
     <script id="c_defining_permissions_item" type="text/template" >
         <ul style="margin-left: 5em;margin-right: 5em;margin-top:-0em;" align="left">
             <li>

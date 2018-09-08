@@ -27,6 +27,35 @@
             ga('create', 'UA-47881952-1', 'auto');
             ga('send', 'pageview');
         </script>
+        <style type="text/css">
+            .responsive{
+              width:100%;
+              height:0;
+              padding-bottom:56.25%;
+              position:relative;
+              /*display: block;*/
+              /*margin-left: auto;*/
+              /*margin-right: auto;*/
+            }
+            .responsive iframe{
+              position:absolute;
+              width:100%;
+              height:100%;
+              max-width:630px;
+              max-height:354px;
+            }
+            .responsiveImg{
+              width:90%;
+              max-width:400px;
+            }
+            @media screen and (min-width: 550px) {
+                .responsive{
+                  width:50%;
+                  margin-left: auto;
+                  margin-right: auto;
+                }
+            }    
+        </style>
     </head>
     <body>
         <div class="main-menu-mobile">
@@ -77,13 +106,18 @@
             </div>
             <div class="homepage-block-two">
                 <div class="homepage-block-two-text">
-                    <h2>Why FrameLink?</h2>
-                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/dpjTcLLDxLM?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
-                    <div style="font-size:1em">We created a cloud platform to connect people, data and services. It vastly simplifies managing your company, from anywhere and on any device.</div> 
+                    <h2>Watch a Quick Video Example...</h2>
+                    <div class="responsive">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/3jQowgOq0eo?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div style="font-size:0.9em">
+                        Build and maintain a system that's <b>unique</b> for your business! Check out our <a href="guide.html" class="link"><u>Guides</u></a> to know more.
+                    </div> 
                 </div>
                 <div class="homepage-block-two-image"></div>
             </div>
             <div class="homepage-block-services">
+                <br>
                 <h2>Smart-Tables for your Business</h2>
                 <div class="homepage-feature-container">
                     <div class="homepage-feature-block">
