@@ -96,8 +96,10 @@
                 <h1>Field Interfaces</h1>
             </div>
             <div class="guide-text-block">
-                Each field of any table must have an interface suitable for its use. FrameLink supports in-place editing, meaning that to edit any field name you (the designer), simply click in the heading of that field.
-                After clicking the field name, you can select the most convenient interface for that field. The selected interface will appear in the left most position above the header line.
+                Each field of any table can have an interface convenient for its function. Fields can only have one type of interface at a time.
+            </div>
+            <div class="guide-text-block">
+                By clicking the field name, you can select the most convenient interface for that field. The type of interface selected will appear in the left most position of the row of interface icons above the header line.
                 <br>
                 <br>
                 <center>
@@ -107,20 +109,23 @@
                 </center><br>
             </div>
             <div class="guide-text-block">
-                Notice the following interfaces:
+                <b>Field Name:</b> FrameLink supports in-place editing which means that you can edit any field name simply by clicking in the heading of that field. (If you have Designer Permission)
+            </div>
+            <div class="guide-text-block">
+                <b>Interface Options:</b><br><br>
                 <ul class="guide-list" style="margin-left:2em;">
                     <li><b>Text</b> - To be used when simple text is needed. (The default interface).</li>
-                    <li><b>LongText</b> - To be used when multiple text lines are needed. This interface shows the whole field content when the user hovers it.</li>
+                    <li><b>LongText</b> - To be used when multiple text lines are needed. This interface shows the field’s collapsed content when the user hovers over it.</li>
                     <li><b>Number</b> - To be used when only numbers should be allowed. The designer can define the decimal part of the number (eventualy none) and the units (any currency or text).</li>
-                    <li><b>Email</b> - To be used to register email adresses. This interface will trigger Email services availability.</li>
-                    <li><b>Phone</b> - To be used to register phone numbers. The designer can define the default prefix and country format. This service will trigger SMS services availability</li>
-                    <li><b>Date & Time</b> - To be for dates (only dates or date & time). The designer can choose the date format. This interface allows date definitions either by text or using a calendar.</li>
+                    <li><b>Email</b> - To be used to register email adresses. This interface will make Email services available.</li>
+                    <li><b>Phone</b> - To be used to register phone numbers. The designer can define the default prefix and country format. This service will make SMS services available.</li>
+                    <li><b>Date & Time</b> - To be used for dates (only dates or date & time). The designer can choose the date format. This interface allows you to define a date by using a calendar oe editing text.</li>
                     <li><b>Image</b> - To be used to collect an image.</li>
-                    <li><b>Logical</b> - To be used in yes/no situations. This interface will show a checkbox initialy with an undefined value (a dash) that the user can enable (a tick will appear) or disable (the checkbox will become empty). Notice that checkboxes have 3 possible states: Undetermined, Checked or Unchecked.</li>
+                    <li><b>Logical</b> - To be used in yes/no situations. This interface will initially show a checkbox with an undefined value (a dash) that the user can enable (a tick will appear) or disable (the checkbox will become empty). <b>Note</b> that checkboxes have 3 possible states: Undetermined, Checked or Unchecked.</li>
                     <li><b>URL</b> - To be used to refer to any accessible URL. The designer may use this interface to access a web site, a document, a folder of documents, etc.</li>
                     <li><b>Linked Field</b> - This interface builds a bridge between the current field and one or more fields of another table. The designer uses it to define a pulldown, with content from another table. The user may select any record or create content in the table referred by this interface.</li>
-                    <li><b>Formula</b> - To be used to show the result of a numeric operation with fields from the current table or one or several tables referred by linked Fields. Besides considering numbers, these operations may consider dates and date periods.</li>
-                    <li><b>Lookup</b> - This interface shows the content of any field of any of the tables referred by a linked field.</li>
+                    <li><b>Formula</b> - To be used to show the result of a numeric operation with fields from the current table or one or several tables referred by linked Fields. In addition to comprehending numbers, these operations can also consider dates and date periods.</li>
+                    <li><b>Lookup</b> - This interface shows the content of any field of any of the tables referred by a linked field. Lookup fields are for visual reference only and can only be edited from their source table.</li>
                 </ul>
             </div>
         </section>
