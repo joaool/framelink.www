@@ -1,0 +1,78 @@
+// out: guide-page.css, sourcemap: false, compress: false
+
+@import 'variables.less';
+
+section {
+    padding: 50px 100px;
+}
+
+.guide-header {
+    margin-bottom: 40px;
+
+    * {
+        display: inline-block;
+    }
+
+    a {
+        color: #000 !important;
+
+        .transition(color 250ms @swift-out);
+
+        &:hover {
+            color: @color-warm-blue !important;
+        }
+    }
+}
+
+.arrow-right {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin: 0 10px 4px 10px;
+}
+
+.guide-text-block {
+    font-family: Helvetica;
+    line-height: 1.5;
+    font-size: 18px;
+    clear: both;
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+.guide-text-block-small {
+    margin-bottom: 15px;
+
+.guide-list {
+    list-style-type: square;
+    padding-left: 20px;
+
+    li {
+        margin-bottom: 20px;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.col-container {
+    display: flex;
+
+    .column {
+        overflow: hidden;
+    }
+
+    &.two-col .column {
+        width: 48%;
+
+        &:last-child {
+            margin-left: auto;
+        }
+    }
+}

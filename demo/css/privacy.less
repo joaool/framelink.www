@@ -1,0 +1,70 @@
+// out: privacy.css, sourcemap: false, compress: false
+
+@import 'variables.less';
+
+section {
+    padding: 50px 150px;
+    margin: @menu-height auto 0 auto;
+    max-width: 1100px;
+
+    ul {
+        padding: 0;
+
+        & > li {
+            list-style-type: none;
+
+            &:not(:last-child) {
+                margin-bottom: 2em;
+            }
+        }
+    }
+
+    ol > li {
+        margin-bottom: 20px;
+    }
+
+    ul p,
+    ol p {
+        margin: 2em 0 1.5em 0;
+        font-weight: bold;
+        font-size: 1.5em;
+        display: block;
+    }
+}
+
+section a {
+    text-decoration: underline !important;
+    color: @color-warm-blue !important;
+}
+
+.last-updated {
+    color: @color-bluish-grey;
+    font-size: 13px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+h4 {
+    font-weight: normal;
+    margin: 0 0 2em 0;
+    font-size: 1em;
+}
+
+@media screen and (max-width: @screen-width-medium) {
+    section {
+        padding: 50px 20px;
+
+        ol {
+            margin-bottom: 10px;
+            padding-left: 20px;
+
+            ol {
+                padding-left: 10px;
+            }
+        }
+    }
+}

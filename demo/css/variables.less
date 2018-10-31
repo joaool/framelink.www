@@ -1,0 +1,51 @@
+@color-light-blue-grey-50: rgba(179, 216, 225, 0.5);
+@color-bootstrap-black: #292b2c;
+@color-grey-light-blue: #cadce0;
+@color-grey-whatisit: #95a8ae;
+@color-grey-darkest: #bababa;
+@color-bluish-grey: #7c9198;
+@color-warm-blue: #415dd4;
+@color-marigold: #ffc300;
+@color-white: #ffffff;
+@color-footer: #222222;
+@color-red: #d15353;
+
+@swift-out: cubic-bezier(.55,0,.1,1);
+@menu-height: 55px;
+
+@screen-width-medium-pricing: 1010px;
+@screen-width-medium: 750px;
+@screen-width-small: 550px;
+
+@menu-mobile-bottom-block-height: 44px;
+@menu-mobile-top-block-height: 55px;
+@menu-mobile-color: @color-warm-blue;
+@menu-mobile-padding: 20px;
+
+.shadow2() {
+    box-shadow: 0 6px 6px 0 rgba(124, 145, 152, 0.24), 0 0 6px 0 rgba(160, 183, 190, 0.24);
+}
+
+.shadow2hover() {
+    box-shadow: 0 12px 12px 0 rgba(124, 145, 152, 0.24), 0 0 12px 0 rgba(160, 183, 190, 0.24);
+}
+
+.shadow3() {
+    box-shadow: 0 1px 3px 0 @color-light-blue-grey-50;
+}
+
+.transition(@argument) {
+    -webkit-transition: @argument;
+    -moz-transition: @argument;
+    -o-transition: @argument;
+    transition: @argument;
+    transition: @argument;
+}
+
+.clearfix() {
+    &:after {
+        display: block;
+        content: '';
+        clear: both;
+    }
+}

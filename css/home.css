@@ -67,6 +67,15 @@ section {
 .homepage-block-two-text div {
   margin-top: 30px;
 }
+.homepage-block-center-text {
+  text-align: center;
+  display: inline-block;
+  /*padding: 90px 0 0 100px;*/
+  width: 900px;
+}
+.homepage-block-center-text div {
+  margin-top: -20px;
+}
 /* Homepage Block Services */
 .homepage-block-services {
   padding-bottom: 50px;
@@ -125,10 +134,16 @@ section {
   .homepage-block-two {
     min-width: auto;
   }
+  .homepage-block-center-text {
+  }  
   .homepage-block-two .homepage-block-two-text {
     padding: 50px 20px 0 20px;
     width: 100%;
   }
+  .homepage-block-center-text {
+    padding: 50px 20px 0 20px;
+    width: 100%;
+  } 
   .homepage-block-two .homepage-block-two-image {
     margin-top: 20px;
     height: 400px;
