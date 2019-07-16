@@ -12,12 +12,13 @@
         // });
         // $("#sticker").sticky({topSpacing:0});
         // document.getElementById("focus").focus();
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        // document.body.scrollTop = 0; // For Safari
+        // document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        // console.log("1");
         // alert("zzzzzzzzzzzzz");
     });
 
-    $("#sticker").sticky({topSpacing:0});
+    // $("#sticker").sticky({topSpacing:0});
 
   //   $('.popup-youtube').magnificPopup({
 		// disableOn: 700,
@@ -37,26 +38,35 @@
     });
 
     // js validation
-    $("#success").hide();
-    $('.submit').click(function(){
+    //    $("#success").hide();
+    //    $('.submit').click(function(){
 
-		$.post("send.php", $("#myform").serialize(),  function(response) {   
-		 $('#success').html(response);
-		 $('#success').show('slow');
-		});
-		return false;
+	// 	$.post("send.php", $("#myform").serialize(),  function(response) {   
+	// 	 $('#success').html(response);
+	// 	 $('#success').show('slow');
+	// 	});
+	// 	return false;
 		
-	});
+	// });
 
 
     jQuery(window).on("load",function(){
         $('#preloader-wrapper').delay(1000).fadeOut('slow');
-
-        setTimeout(function() {
+        // console.log("2");
+        // setTimeout(function() {
             $('.site').addClass('loaded');
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        }, 500);
+            // document.body.scrollTop = 0; // For Safari
+            // document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            // window.scrollTo(0, 0);
+            document.body.scrollTop = document.documentElement.scrollTop = 0;
+            console.log("---->"+($(document).height() - $(window).innerHeight()));
+            // $('html,body').scrollTop(0);
+            console.log("4");
+            // alert("xxx");
+        // }, 1);
+        // document.body.scrollTop = 0; // For Safari
+        // document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        // console.log("3");
     });
     // $('#sticker').on('sticky-start', function() { 
     //     console.log("stick force Started");
