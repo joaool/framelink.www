@@ -14,10 +14,10 @@
         // document.getElementById("focus").focus();
         // document.body.scrollTop = 0; // For Safari
         // document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        // console.log("1");
+        console.log("1");
         // alert("zzzzzzzzzzzzz");
     });
-
+    console.log("A");
     // $("#sticker").sticky({topSpacing:0});
 
   //   $('.popup-youtube').magnificPopup({
@@ -61,13 +61,14 @@
             document.body.scrollTop = document.documentElement.scrollTop = 0;
             console.log("---->"+($(document).height() - $(window).innerHeight()));
             // $('html,body').scrollTop(0);
-            console.log("4");
+            console.log("2");
             // alert("xxx");
         // }, 1);
         // document.body.scrollTop = 0; // For Safari
         // document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         // console.log("3");
     });
+    console.log("B");
     // $('#sticker').on('sticky-start', function() { 
     //     console.log("stick force Started");
     //     // alert("xxx"); 
