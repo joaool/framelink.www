@@ -1,6 +1,5 @@
 (function ($) {
     "use strict";
-
     $(document).ready(function($){
         
         // $(".testimonial-slides").owlCarousel({
@@ -18,7 +17,7 @@
         // alert("zzzzzzzzzzzzz");
     });
     console.log("A");
-    // $("#sticker").sticky({topSpacing:0});
+    $("#sticker").sticky({topSpacing:0});
 
   //   $('.popup-youtube').magnificPopup({
 		// disableOn: 700,
