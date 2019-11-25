@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
         <meta name="description" content="Create a unique professional App to manage your business. Send personalized Emails and SMS using your existing data. Define once and use in any device">
-        <meta name="keywords" content="personalized Emails, personalized SMS, app builder, freedom to change, excel template, online database, relational database, zero code, VLOOKUP, HLOOKUP">
+        <meta name="keywords" content="personalized Emails, personalized SMS, app builder, freedom to change, excel template, online database, relational database, zero code, VLOOKUP, HLOOKUP, customizable app, small business management">
         <meta name="author" content="FrameLink">
         <meta name="p:domain_verify" content="5d037a9546cf4d54e971c807ebaae81a"/>
         <title>We get people working together</title>
@@ -53,8 +53,51 @@
                   width:50%;
                   margin-left: auto;
                   margin-right: auto;
+                  float: left;
                 }
-            }    
+                /*body{
+                  background-color: green;
+                }*/
+            }
+            @media screen and (min-width: 550px) {
+                .youtube_icon{
+                  position:relative; 
+                  left:270px; 
+                  top:260px;"
+                }
+            }
+            @media screen and (max-width: 550px) {
+                .youtube_icon{
+                  position:relative; 
+                  left:175px; 
+                  top:215px;"
+                }
+            }
+            @media screen and (max-width: 550px) {
+                .xyoutube_icon{
+                  visibility: hidden;
+                  clear: both;
+                  width:50%;
+                  float:left;
+                  margin-left: auto;
+                  margin-right: auto;
+                  display: none;
+                }
+                /*body{
+                  background-color: red;
+                }*/
+            }
+            /*@media screen and (max-width: 550px) {
+                .no_video{
+                  visibility: hidden;
+                  clear: both;
+                  width:50%;
+                  float:left;
+                  margin-left: auto;
+                  margin-right: auto;
+                  display: none;
+                }
+            }  */     
         </style>
     </head>
     <!--Start of snatchbot.me Script-->
@@ -92,10 +135,13 @@
                 <!-- <a href="contact.html">CONTACT</a> -->
             </div>
             <div class="main-menu-hamburger"></div>
+            <script src="//cdn.jsdelivr.net/npm/afterglowplayer@1.x"></script>
         </header>
         <section>
             <div class="homepage-block-one-wrap">
                 <div class="homepage-block-one">
+                    <!-- <source src="https://www.youtube.com/watch?v=9JXPK9EkApE" > -->
+                    
                     <div class="homepage-block-one-text">
                         <!-- <h1>Create your own Business App</h1> -->
                         <h1>Simplifying your business</h1>
@@ -114,7 +160,16 @@
                             </button>
                         </a>
                     </div>
-                    <div class="homepage-block-one-image"></div>
+                    <div class="homepage-block-one-image">
+                            <!-- <a class="afterglow" href="#myvideo"><img border="0" alt="Video" src="./img/ytube.jpg" width="50" style="position:relative; left:270px; top:260px;"></a> -->
+                            <a class="afterglow" href="#myvideo"><img class="youtube_icon" border="0" alt="Video" src="./img/ytube.jpg" width="50"></a>
+                            <video  id="myvideo" width="640" height="360" data-overscale="false" data-autoclose="true">
+                                <source type="video/mp4" src="./video/myvideo.mp4" />
+                            </video>
+
+                            <!-- <video  id="myvideo" width="640" height="360" data-overscale="false" loop="loop" preload="auto" poster="/img/homepage_img1.jpg" data-autoclose="true" data-youtube-id="uZZdNt9zZeg"></video> -->
+                    </div>
+                   
                 </div>
             </div>
             <!-- <div class="homepage-block-two">
