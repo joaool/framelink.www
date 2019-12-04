@@ -206,6 +206,7 @@ footer ul {
   right: 44px;
   position: absolute;
   font-size: 13px;
+  margin-bottom: -10px;
 }
 @media screen and (max-width: 750px) {
   footer {
