@@ -202,8 +202,9 @@ section {
 
 .custom-btn {
   padding: 10px 25px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Helvetica", sans-serif;*/
   font-weight: 500;
+  color:red;
   background: transparent;
   outline: none !important;
   cursor: pointer;
@@ -215,6 +216,8 @@ section {
   border: none;
   border-bottom: 2px solid #000;
   border-left: 2px solid #000;
+  color:blue;
+  font-family: "Helvetica";
 }
 .btn-2:before,
 .btn-2:after {
