@@ -48,12 +48,12 @@ section {
   font-size:3.6vw;
 }
 .homepage-block-one-text {
-  max-width:495px;
+  max-width:520px;
   /*padding: 20px 0 0 20px;*/
   display: inline-block;
   float:left;
   margin-top:5%;
-  /*margin-left:20px;*/
+  margin-left:30px;
 }
 .homepage-block-one-text h1{
   font-size:2.6vw;
@@ -200,46 +200,30 @@ section {
   color: #565c5e;
 }
 
-.custom-btn {
-  padding: 10px 25px;
-  font-family: "Helvetica", sans-serif;*/
-  font-weight: 500;
-  color:red;
-  background: transparent;
-  outline: none !important;
-  cursor: pointer;
-  transition: all 0.3s ease;
+.underline {
+  display: inline;
   position: relative;
-  display: inline-block;
+  overflow: hidden;
+  color: #1264A3;
 }
-.btn-2 {
-  border: none;
-  border-bottom: 2px solid #000;
-  border-left: 2px solid #000;
-  color:blue;
-  font-family: "Helvetica";
-}
-.btn-2:before,
-.btn-2:after {
-  position: absolute;
+.underline:after {
   content: "";
+  position: absolute;
+  z-index: -1;
   right: 0;
-  top: 0;
-  background: #000;
-  transition: all 0.3s ease;
-}
-.btn-2:before {
-  height: 0%;
-  width: 2px;
-}
-.btn-2:after {
-  width: 0%;
+  width: 0;
+  bottom: -5px;
+  background: #1264A3;
   height: 2px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
 }
-.btn-2:hover:before {
-  height: 100%;
-}
-.btn-2:hover:after {
+.underline:hover:after,
+.underline:focus:after,
+.underline:active:after {
+  left: 0;
+  right: auto;
   width: 100%;
 }
 
