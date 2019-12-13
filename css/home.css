@@ -313,6 +313,12 @@ section {
   .homepage-block-services .homepage-feature-block:not(:last-child) {
     margin-bottom: 20px;
   }
+  .carousel-container {
+    visibility:hidden;
+    /*width: 100%;  full width */
+    /*height: 160px;  height of carousel */
+    /*margin-right: 10px;*/
+}
 }
 @media (max-width:1400px) and (min-width:1024px) {
   .homepage-block-one-text h1{
