@@ -48,7 +48,7 @@ section {
   font-size:3.6vw;
 }
 .homepage-block-one-text {
-  max-width:560px;
+  max-width:500px;
   /*padding: 20px 0 0 20px;*/
   display: inline-block;
   float:left;
@@ -120,7 +120,7 @@ section {
 .homepage-freedom-image {
   background-image: url(../img/sendemails_min.jpg);
   background-repeat: no-repeat;
-  width: 30vw;
+  width: 28vw;
   height: 28vw;
   background-size: cover;
   margin-top:5px;
