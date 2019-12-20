@@ -3,13 +3,36 @@ section {
   max-width: 100vw;
   overflow: hidden;
 }
+.homepage-main {
+  width:100%;
+  /*padding: 70px 0 0 0px;*/
+  /*display: inline-block;*/
+  float:left;
+  margin-top:5%;
+  margin-left:15%;
+}
+.homepage-main h1{
+  font-size:3.6vw;
+}
 .homepage-block-one-wrap {
   margin-top: 5px;
   /*margin-left:120px;*/
   height: 360px;
+  text-align: center;
+  width:70%;
 }
 .homepage-block-one {
   min-width: 1065px;
+  /*text-align: center;*/
+  /*width: 70%;*/
+  /*display: inline-block;*/
+  /*margin:0 auto;*/
+  /*text-align:center;*/
+  /*margin: 0 auto;*/
+  /*margin-left: 10vw;*/
+  /*margin-right: 5vw;*/
+  /*padding: 1vw 1vw 1vw 8vw;*/
+  margin: auto;
 }
 .homepage-block-one:after {
   display: block;
@@ -23,34 +46,12 @@ section {
   }
 }
 
-.homepage-block-one {
-  /*text-align: center;*/
-  width: 70%;
-  /*display: inline-block;*/
-  /*margin:0 auto;*/
-  /*text-align:center;*/
-  /*margin: 0 auto;*/
-  /*margin-left: 10vw;*/
-  /*margin-right: 5vw;*/
-  /*padding: 1vw 1vw 1vw 8vw;*/
-  margin: auto;
-}
 
-.homepage-main {
-  max-width:100%;
-  /*padding: 70px 0 0 0px;*/
-  display: inline-block;
-  float:left;
-  margin-top:5%;
-  margin-left:15%;
-}
-.homepage-main h1{
-  font-size:3.6vw;
-}
 .homepage-block-one-text {
   max-width:500px;
   /*padding: 20px 0 0 20px;*/
   display: inline-block;
+  text-align: left;
   float:left;
   margin-top:5%;
   margin-left:30px;
@@ -164,8 +165,8 @@ section {
 }
 .homepage-block-center-text {
   text-align: center;
-  display: inline-block;
-  width: 900px;
+  /*display: inline-block;*/
+  width: 70%;
 }
 .homepage-block-center-text div {
   font-size:1.2vw;
@@ -182,8 +183,11 @@ section {
   margin-top:2.5vw;
 }
 .homepage-feature-container {
-  max-width: 860px;
-  margin: 0 auto;
+  /*max-width: 860px;*/
+  width: 70%;
+  /*margin: 0 auto;*/
+  /*float:left;*/
+  text-align: center;
 }
 .homepage-feature-block {
   display: inline-block;
@@ -239,21 +243,22 @@ section {
   height:100%;
 }
 @media screen and (max-width: 770px) {
+  .homepage-main {
+    margin-left:auto;
+  }
   .homepage-main h1{
     font-size:5.6vw;
+    text-align: center;
   }
   .homepage-block-one-wrap {
     height: auto;
+    width:100%;
   }
   .homepage-block-one {
     /*margin-top:10px;*/
     position: relative;
     min-width: auto;
-    margin-left:4px;
-  }
-  .homepage-block-one .homepage-block-one-text {
-    padding: 10px 1px 0 1px;
-    position: relative;
+    /*margin-left:4px;*/
     width: 100%;
   }
   .homepage-block-one-text h1{
@@ -262,6 +267,12 @@ section {
   .homepage-block-one-text div {
       font-size:4.0vw;
       padding: 0 5px 20px 5px;
+      /*text-align: center;*/
+  }
+  .homepage-block-one-text button.action.action-big{
+      /*text-align:center;*/
+      margin-left: 20%;
+      width:50%;
   }
   .homepage-block-one .homepage-block-one-image {
     /*background-position-x: -68px;*/
@@ -274,8 +285,8 @@ section {
     /*margin-left: 1px;*/
     /*margin-right: 5px;*/
     margin: auto;
-    width: 365px;
-    height: 394px;
+    /*width: 365px;*/
+    /*height: 394px;*/
   }
   .homepage-block-two {
     min-width: auto;
@@ -307,6 +318,14 @@ section {
     height: auto;
     width: 100%;
   }
+  .homepage-feature-container {
+    width: 100%;
+  }
+  .homepage-feature-block {
+    height: auto;
+    display:inline-block;
+    width: 70%;
+  }
   .homepage-block-services .homepage-feature-block div {
     padding: 0 20px;
   }
@@ -314,13 +333,13 @@ section {
     margin-bottom: 20px;
   }
   .carousel-container {
-    visibility:hidden;
+    /*visibility:hidden;*/
     /*width: 100%;  full width */
     /*height: 160px;  height of carousel */
     /*margin-right: 10px;*/
 }
 }
-@media (max-width:1400px) and (min-width:1024px) {
+/*@media (max-width:1400px) and (min-width:1024px) {
   .homepage-block-one-text h1{
     margin-left: 10px;
     font-size:3.6vw;
@@ -328,10 +347,6 @@ section {
   .homepage-block-one-text div {
     margin-left: 10px;
     font-size:2vw;
-  }
-  .homepage-block-one-text .lismall{
-    margin-left: 10px;
-    font-size: 1vw;
   }
   .homepage-block-one-text .action {
     margin-left: 10px;
@@ -341,8 +356,8 @@ section {
   }
   .homepage-block-center-text div {
     font-size:2vw;
-}
-}
+  }
+}*/
 [class^='icon-feature-'],
 [class*=' icon-feature-'] {
   background-size: cover;
