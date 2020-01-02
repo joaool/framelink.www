@@ -8,8 +8,8 @@ section {
   /*padding: 70px 0 0 0px;*/
   /*display: inline-block;*/
   float:left;
-  margin-top:5%;
-  margin-left:15%;
+  margin-top:2%;
+  margin-left:10%;
 }
 .homepage-main h1{
   font-size:3.6vw;
@@ -53,7 +53,7 @@ section {
   display: inline-block;
   text-align: left;
   float:left;
-  margin-top:5%;
+  margin-top:2%;
   margin-left:30px;
 }
 .homepage-block-one-text h1{
@@ -115,7 +115,20 @@ section {
   background-size: cover;
   margin-top:5px;
   display: inline-block;
-  margin-left:60p;
+  margin-left:20px;
+  float:left;
+}
+.homepage-email-gif {
+  background-image: url(../img/fl_2email_fast_min.gif);
+  background-repeat: no-repeat;
+  /*width: 400px;
+  height: 324px;*/
+  width: 39vw;
+  height: 24vw;
+  background-size: contain;
+  margin-top:5px;
+  display: inline-block;
+  margin-left:-10px;
   float:left;
 }
 .homepage-freedom-image {
@@ -173,7 +186,7 @@ section {
 }
 /* Homepage Block Services */
 .homepage-block-services {
-  padding-bottom: 50px;
+  padding-bottom: 10px;
   text-align: center;
   font-size: 16px;
 }
@@ -337,8 +350,57 @@ section {
     /*width: 100%;  full width */
     /*height: 160px;  height of carousel */
     /*margin-right: 10px;*/
+  }
 }
-}
+@media screen and (max-width: 670px) {
+  .homepage-email-gif {
+    margin-left:1px;
+    background-size: 100%;
+    width:80%;
+    max-width:800px;
+    height: 280px;
+  }
+}  
+@media (max-width: 810px) and (min-width:660px) {
+  .homepage-email-gif {
+    margin-left:1px;
+    background-size: 100%;
+    width:70%;
+    max-width:1000px;
+    height: 300px;
+  }
+} 
+@media (max-width: 1024px) and (min-width:810px) {
+  .homepage-email-gif {
+    margin-left:1px;
+    background-size: 100%;
+    width:40%;
+    max-width:500px;
+    height: 200px;
+    display: none;
+  }
+  .homepage-block-one-text {
+    max-width:300px;
+    /*padding: 20px 0 0 20px;*/
+    display: none;
+    text-align: left;
+    float:right;
+    margin-top:2%;
+    margin-left:30px;
+  }
+  .homepage-email-gif {
+    display: none;
+  }
+  .homepage-freedom-image {
+    display: none;
+  }
+  .homepage-security-image {
+    display: none;
+  }
+  .homepage-cross-image {
+    display: none;
+  }
+}  
 /*@media (max-width:1400px) and (min-width:1024px) {
   .homepage-block-one-text h1{
     margin-left: 10px;
