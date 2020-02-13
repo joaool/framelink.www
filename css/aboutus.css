@@ -73,13 +73,15 @@ section {
 }
 .aboutus-block-three .aboutus-block-three-image {
   background-image: url('../img/sendemails_min.jpg');
-  background-position-x: -75px;
+  /*background-position-x: -75px;*/
   background-repeat: no-repeat;
   background-size: cover;
-  min-width: 350px;
-  height: 550px;
+  /*min-width: 25vw;*/
+  height: 30vw;
+  max-width: 30vw;
+  width: 50%;
   float: right;
-  width: 46%;
+  margin-right: 12vw;
 }
 /* Second screen width styles */
 @media screen and (max-width: 750px) {
