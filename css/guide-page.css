@@ -60,3 +60,12 @@ section {
 .col-container.two-col .column:last-child {
   margin-left: auto;
 }
+@media screen and (max-width: 770px) {
+  .guide-text-block{
+    margin-left: 0.2vw !important;
+    color: #FF0000;
+    width:100%;
+    font-size:5.6vw;
+    text-align: left;
+  }
+}
