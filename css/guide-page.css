@@ -1,5 +1,8 @@
 section {
-  padding: 50px 100px;
+  /*padding: 50px 100px;*/
+  max-width: 100vw;
+  overflow: hidden;
+}
 }
 .guide-header {
   margin-bottom: 40px;
@@ -60,12 +63,43 @@ section {
 .col-container.two-col .column:last-child {
   margin-left: auto;
 }
-@media screen and (max-width: 770px) {
+.gif-format {
+  /*background-image: url("../img/fl_2email_fast_min.gif");*/
+  float:right;
+  margin-right:-15vw;
+  width:70vw;
+  vertical-align: top;
+  /*border:1px solid blue;*/
+}
+.guide-block div{
+    margin-left: 65px;
+    /*padding: 10px 10px;*/
+    /*border:1px solid green;*/
+    /*float:left;*/
+    width:80vw;
+    font-size:1.3vw;
+}
+.responsive {
+  width:100%;
+  height:0;
+  padding-bottom:20% !important;
+  position:relative;
+}
+@media screen and (max-width: 715px) {
   .guide-text-block{
     margin-left: 0.2vw !important;
-    color: #FF0000;
+    /*color: #FF0000;*/
     width:100%;
     font-size:5.6vw;
     text-align: left;
+    /*border:1px solid green;*/
   }
+  .gif-format {
+    display:none;
+  }
+  .guide-block div{
+    margin-left: 15px;
+    float:left;
+    width:80vw;
+  } 
 }
