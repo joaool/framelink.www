@@ -71,9 +71,9 @@ section {
   float: left;
 }
 .main-menu-links a {
-  color: #95a8ae;
+  color: #817F7F;
   display: inline-block;
-  font-size: 20px;
+  font-size: 22px;
 }
 .main-menu-links a:hover {
   color: #7c9198;
