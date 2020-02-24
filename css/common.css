@@ -59,7 +59,7 @@ section {
   background-position-x: left;
   background-repeat: no-repeat;
   display: inline-block;
-  margin-left: 8px;
+  margin-left: 185px;
   cursor: pointer;
   height: 55px;
   width: 160px;
@@ -73,7 +73,7 @@ section {
 .main-menu-links a {
   color: #95a8ae;
   display: inline-block;
-  font-size: 13px;
+  font-size: 20px;
 }
 .main-menu-links a:hover {
   color: #7c9198;
