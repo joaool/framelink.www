@@ -72,12 +72,12 @@ section {
   /*border:1px solid blue;*/
 }
 .guide-block div{
-    margin-left: 65px;
+    margin-left: 1vw;
     /*padding: 10px 10px;*/
     /*border:1px solid green;*/
     /*float:left;*/
-    width:80vw;
-    font-size:1.3vw;
+    /*width:100vw;*/
+    font-size:1.2vw;
 }
 .responsive {
   width:100%;
