@@ -41,6 +41,10 @@ ul {
 section {
   margin-top: 55px;
 }
+.section-div {
+  margin-left: 10vw;
+  margin-right:5vw;
+}
 /* Main Menu */
 .main-menu {
   background-color: #ffffff;
