@@ -139,7 +139,7 @@ button.action:not([disabled]):hover {
   box-shadow: 0 12px 12px 0 rgba(124, 145, 152, 0.24), 0 0 12px 0 rgba(160, 183, 190, 0.24);
 }
 button.action.action-big {
-  font-size: 13px;
+  font-size: 18px;
   height: 44px;
   width: 250px;
 }
