@@ -295,6 +295,7 @@ section {
   }
   .homepage-block-one-text {
       max-width:12vw;
+      margin-left: -10vw;
   }
   .homepage-block-one-text h1{
       font-size:6vw;
@@ -303,7 +304,10 @@ section {
   .homepage-block-one-text div {
       font-size:4.0vw;
       width:80vw;
-      margin-left: 7vw;
+      margin-left: 25vw;
+  }
+   .homepage-block-one-text a {
+      margin-left: 9vw;
   }
   .homepage-block-feature-text {
       max-width:90vw;
@@ -345,6 +349,7 @@ section {
     height:120vw;
     overflow:hidden;
     margin-left:0vw;
+    margin-right:1vw;
   }
   .homepage-video iframe,
   .homepage-video object,
@@ -353,8 +358,8 @@ section {
     top:50vw;
     /*float: left;*/
     left:0vw;
-    width:90%;
-    height:50%;
+    width:100%;
+    height:51%;
   }
   .homepage-block-two {
     min-width: auto;
@@ -466,6 +471,24 @@ section {
   }
   .homepage-cross-image {
     display: none;
+  }
+  .homepage-video {
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:5px;
+    /*height:100vw;*/
+    overflow:hidden;
+    margin-left:10vw;
+    margin-right:1vw;
+  }
+  .homepage-video iframe,
+  .homepage-video object,
+  .homepage-video embed{
+    position:absolute;
+    top:2vw;
+    left:40vw;
+    width:50%;
+    height:51%;
   }
 }  
 /*@media (max-width:1400px) and (min-width:1024px) {
