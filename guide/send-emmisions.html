@@ -104,125 +104,118 @@
                     <h1>Send Emails &amp; SMS</h1>
                 </div>
             </div>
-            <div class="guide-block">
-                <div class="gif-format">
-                    <!-- <img class="xgif-format" style="display:inline;" src="../img/fl_2email_fast_min.gif"> -->
-                    <img style="display:inline;" src="../img/fl_2email_fast_min.gif">
-                </div>
-                <!-- <div style="width:80vw;border:1px solid red;vertical-align:top;"> -->
-                <div>
+            <div>
+                <div class="homepage-block-feature-text" style="margin-top:2vw;">
                     <p><b>Transform your old spreadsheet into a live database ready to send Emails and SMS.</b></p>
                     <p><b>1) Import your spreadsheet.</b></p>You can easily create extra fields, change names and more, according to your needs.
-                    <p><b>2) Setup your templates</b>.</p>Take your existing Emails and SMS and create templates by replacing specific parts like contact names, company names, product etc. with merge tags.
+                    <p><b>2) Select recipients and Setup your template</b>.</p>Select recipients and create a template based on an existing Email/SMS. Replace name or any elements you need to personalize by merge-tags and a template is ready to be used next time with any set of recipients.
+                    <p><b>RESULT recipients will see in their inbox:</b></p>A personalized email written just for them.
+                    
+                    <!-- <p><b>2) Setup your templates</b>.</p>Take your existing Emails and SMS and create templates by replacing specific parts like contact names, company names, product etc. with merge tags.
                     <p><b>3) Select and Send.</b></p>
-                    <p>Easily filter your recipients. Create saved list of common used recipients and send hundreds of personalized Emails or SMSs with one click.</p>
+                    <p>Easily filter your recipients. Create saved list of common used recipients and send hundreds of personalized Emails or SMSs with one click.</p> -->
                 </div>
+                <div>
+                    <img class="gif-format" src="../img/fl_2email_fast_min.gif">
+                    <!-- <img style="display:inline;" src="../img/fl_2email_fast_min.gif"> -->
+                </div>
+                <!-- <div style="width:80vw;border:1px solid red;vertical-align:top;"> -->
             </div>    
-            <!-- <div class="guide-text-block"> -->
-                
-            <!-- </div> -->
-            <div>
-                <!-- <div class="homepage-email-gif2"></div> -->
-                <!-- <div class="guide-text-block">
-                    Email and SMS services will be automatically available whenever one or more columns of the type <b>Email or Phone</b> are available in current or any related tables. 
-                    Most frequently your system will have several possible paths (or channels) to send Email and SMS depending on the relations FrameLink detects at any moment. 
-                </div>  -->
-            </div>
-            <!-- <div class="guide-text-block">
-                Whenever FrameLink detects a possible path to an Email, it will present the icon<img style="height:1.5em;" src="../img/icon_email_service.png" alt="email"> below the application name (upper left below FrameLink Icon) enabling you to send personalized Emails. The same applies  to Phones with the icon <img style="height:1.5em;" src="../img/icon_sms_service.png" alt="sms">, enabling you to send personalized SMS.
-            </div> -->
-            </br>
-            </br>
-            </br>
-            </br>
             <div class="guide-block">
-                <div class="responsive" style="text-align:center;">
-                    <iframe width="420" height="232" align="right" src="https://www.youtube.com/embed/J1t88fnZJx0?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <!-- <div class="responsive" style="text-align:center;"> -->
+                    <iframe src="https://www.youtube.com/embed/J1t88fnZJx0?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <!-- </div> -->
+            </div>
+                
+           
+            </br>
+            <div class="homepage-block-feature-text">
+                <h2>Creating and using Email Templates</h2>
+                <div>
+                    Whenever an Email collection is available, Framelink will show the Email Services icon <img style="height:1.5em;" src="../img/icon_email_service.png" alt="email"> in the left vertical blackbar. Before sending the personalized emails, you must create a template - a generic text content with smart-tags or fields to be replaced by Framelink values - for each collection of Email messages. Follow these steps:
+                    <ul class="guide-list" style="margin-left:2em;">
+                        <li> 
+                            - Select the collection you want to use to send your Emails by clicking <img style="height:1.5em;" src="../img/icon_email_service.png" alt="email"> and selecting the collection (one of the items that have a Star) you want to use.
+                        </li>
+                        <li> 
+                            - Create a new template for that collection or edit an existing template. You can create any number of templates for each Email collection. Give a good name to your template. Later on this will be the name to select to resend Emails of that type.
+                        </li>
+                        <li> 
+                            - While creating or editing your Email template notice that:
+                        </li>
+                            <ul class="guide-list" style="margin-left:2em;">
+                                <li>
+                                    You can personalize the <b>Subject</b> line, using "@" to include any of the FrameLink available fields for that template. 
+                                </li>
+                                <li>
+                                    <b>From Email</b> must always have an existing email. If the email in <b>From Email</b> is the same as any of the recipient Emails, FrameLink will assume it as an error (you dont want to send an Email to yourself. If you want to do a test use the test button).
+                                </li>
+                                <li>
+                                    To use <b>Email signatures</b> you must define them upfront in "Settings-> Edit Email Settings". If at least one signature is defined, a pulldown will appear in the Template screen. By clicking the Signature pulldown (in blue bar above the Email body text) you will have access to all defined signatures.
+                                </li>
+                        </li>            
+                    </ul>
+                    Once you have one or several templates ready, you can send your personalized Emails. Follow these steps:
+                    <ul class="guide-list" style="margin-left:2em;">
+                        <li> 
+                            - Use Search or FrameLink Filters to select the set of recipients that you want to send your emails to. You can fine tunning the selection by enabling or disabling individual records (use the check box at the leftmost row side).
+                        </li>
+                        <li> 
+                            - Select the Email collection you want to use to send your Emails by clicking <img style="height:1.5em;" src="../img/icon_email_service.png" alt="email"> and select the template name you want to use (one of the items without "star" that are below the chosen collection).
+                        </li>
+                        <li> 
+                            - Do any last minute change you may need in your template, then click the blue "Save and Send" button.
+                        </li>
+                    </ul>
                 </div>
             </div>
-
-            <h2>Creating an using Email Templates</h2>
-            <div class="guide-text-block">
-                Whenever an Email collection is available, Framelink will show the Email Services icon <img style="height:1.5em;" src="../img/icon_email_service.png" alt="email"> in the left vertical blackbar. Before sending the personalized emails, you must create a template - a generic text content with smart-tags or fields to be replaced by Framelink values - for each collection of Email messages. Follow these steps:
-                <ul class="guide-list" style="margin-left:2em;">
-                    <li> 
-                        - Select the collection you want to use to send your Emails by clicking <img style="height:1.5em;" src="../img/icon_email_service.png" alt="email"> and selecting the collection (one of the items that have a Star) you want to use.
-                    </li>
-                    <li> 
-                        - Create a new template for that collection or edit an existing template. You can create any number of templates for each Email collection. Give a good name to your template. Later on this will be the name to select to resend Emails of that type.
-                    </li>
-                    <li> 
-                        - While creating or editing your Email template notice that:
-                    </li>
-                        <ul class="guide-list" style="margin-left:2em;">
-                            <li>
-                                You can personalize the <b>Subject</b> line, using "@" to include any of the FrameLink available fields for that template. 
-                            </li>
-                            <li>
-                                <b>From Email</b> must always have an existing email. If the email in <b>From Email</b> is the same as any of the recipient Emails, FrameLink will assume it as an error (you dont want to send an Email to yourself. If you want to do a test use the test button).
-                            </li>
-                            <li>
-                                To use <b>Email signatures</b> you must define them upfront in "Settings-> Edit Email Settings". If at least one signature is defined, a pulldown will appear in the Template screen. By clicking the Signature pulldown (in blue bar above the Email body text) you will have access to all defined signatures.
-                            </li>
-                    </li>            
-                </ul>
-                Once you have one or several templates ready, you can send your personalized Emails. Follow these steps:
-                <ul class="guide-list" style="margin-left:2em;">
-                    <li> 
-                        - Use Search or FrameLink Filters to select the set of recipients that you want to send your emails to. You can fine tunning the selection by enabling or disabling individual records (use the check box at the leftmost row side).
-                    </li>
-                    <li> 
-                        - Select the Email collection you want to use to send your Emails by clicking <img style="height:1.5em;" src="../img/icon_email_service.png" alt="email"> and select the template name you want to use (one of the items without "star" that are below the chosen collection).
-                    </li>
-                    <li> 
-                        - Do any last minute change you may need in your template, then click the blue "Save and Send" button.
-                    </li>
-                </ul>
+            <div class="homepage-block-feature-text" style="margin-left:5vw;">
+                <h2>Creating and Using SMS Templates</h2>
+                <div>
+                    Whenever a possible Phone collection is availble, Framelink will show the SMS Services icon <img style="height:1.5em;" src="../img/icon_sms_service.png" alt="sms"> below the table name. Before sending the personalized SMS, you must create a template for each family of SMS messages. Follow these steps:
+                    <ul class="guide-list" style="margin-left:2em;">
+                        <li> 
+                            - Select the message you want to use to send your SMS by clicking <img style="height:1.5em;" src="../img/icon_sms_service.png" alt="sms"> and choosing the phone collection (one of the items that have a Star) you want to use.
+                        </li>
+                        <li> 
+                            - Create a new template for that channel or edit an existing template. (You can create any number of templates for each SMS collection). Give a good name to your template. Later you will use that template name to resend SMS messages of that type.
+                        </li>
+                    </ul>
+                    <ul class="guide-list" style="margin-left:2em;">
+                        <li>
+                            - Notice the <b>Sender Field</b>: This content will may appear in the recipient Phone in diferent formats:
+                            <ul class="guide-list" style="margin-left:2em;">
+                                <li>
+                                    - If it is a phone number: if the phone name exists in the recipient contact list, the recipient phone will replace the number by the contact name related to that number in the contact list. If the number is not in the contact list, the phone number will appear exactly as it is in the Sender Field.
+                                </li>
+                                <li>
+                                    - If it is an alphanumeric: the text may appear exactly as it is in the Sender Field or a standard text may appear instead. This depends on the communications network of the recipient phone.
+                                </li>
+                                <li>
+                                    - Remember that the recipient phone may check any number sequence with the recipient phone contact list. If a match is found the number will be replaced by the contact phone existing in the contact list.
+                                </li>
+                                <li>
+                                    - Depending on the recipient device, URLs that may exist in the SMS body will be converted to a clickable icon in the recipient device or presented as an URL.
+                                </li>
+                            </ul>    
+                        </li>
+                    </ul>
+                    Once you have one or several templates, you can send your personalized SMS. Follow these steps:
+                    <ul class="guide-list" style="margin-left:2em;">
+                        <li> 
+                            - Use FrameLink Filters to select the set of records that you want to use for your SMS emission. You can fine tunning the selection by enabling or disabling individual records (use the check box at the leftmost row side).
+                        </li>
+                        <li> 
+                            - Select the Phone collection you want to use to send you SMS by clicking <img style="height:1.5em;" src="../img/icon_sms_service.png" alt="sms"> and select the template name you want to use (one of the items without "star" that are below the chosen channel).
+                        </li>
+                        <li> 
+                            - Do any last minute change you may need in your template, then click the blue "Save and Send" button.
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <h2>Creating and Using SMS Templates</h2>
-            <div class="guide-text-block">
-                Whenever a possible Phone collection is availble, Framelink will show the SMS Services icon <img style="height:1.5em;" src="../img/icon_sms_service.png" alt="sms"> below the table name. Before sending the personalized SMS, you must create a template for each family of SMS messages. Follow these steps:
-                <ul class="guide-list" style="margin-left:2em;">
-                    <li> 
-                        - Select the message you want to use to send your SMS by clicking <img style="height:1.5em;" src="../img/icon_sms_service.png" alt="sms"> and choosing the phone collection (one of the items that have a Star) you want to use.
-                    </li>
-                    <li> 
-                        - Create a new template for that channel or edit an existing template. (You can create any number of templates for each SMS collection). Give a good name to your template. Later you will use that template name to resend SMS messages of that type.
-                    </li>
-                </ul>
-                <ul class="guide-list" style="margin-left:2em;">
-                    <li>
-                        - Notice the <b>Sender Field</b>: This content will may appear in the recipient Phone in diferent formats:
-                        <ul class="guide-list" style="margin-left:2em;">
-                            <li>
-                                - If it is a phone number: if the phone name exists in the recipient contact list, the recipient phone will replace the number by the contact name related to that number in the contact list. If the number is not in the contact list, the phone number will appear exactly as it is in the Sender Field.
-                            </li>
-                            <li>
-                                - If it is an alphanumeric: the text may appear exactly as it is in the Sender Field or a standard text may appear instead. This depends on the communications network of the recipient phone.
-                            </li>
-                            <li>
-                                - Remember that the recipient phone may check any number sequence with the recipient phone contact list. If a match is found the number will be replaced by the contact phone existing in the contact list.
-                            </li>
-                            <li>
-                                - Depending on the recipient device, URLs that may exist in the SMS body will be converted to a clickable icon in the recipient device or presented as an URL.
-                            </li>
-                        </ul>    
-                    </li>
-                </ul>
-                Once you have one or several templates, you can send your personalized SMS. Follow these steps:
-                <ul class="guide-list" style="margin-left:2em;">
-                    <li> 
-                        - Use FrameLink Filters to select the set of records that you want to use for your SMS emission. You can fine tunning the selection by enabling or disabling individual records (use the check box at the leftmost row side).
-                    </li>
-                    <li> 
-                        - Select the Phone collection you want to use to send you SMS by clicking <img style="height:1.5em;" src="../img/icon_sms_service.png" alt="sms"> and select the template name you want to use (one of the items without "star" that are below the chosen channel).
-                    </li>
-                    <li> 
-                        - Do any last minute change you may need in your template, then click the blue "Save and Send" button.
-                    </li>
-                </ul>
-            </div>
-        </div></section>
+        </div>
+        </section>
         <footer class="bg-dark">
             <div class="footer-block">
                 <h4>COMPANY</h4>

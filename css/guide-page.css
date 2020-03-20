@@ -3,7 +3,6 @@ section {
   max-width: 100vw;
   overflow: hidden;
 }
-}
 .guide-header {
   margin-bottom: 40px;
 }
@@ -66,24 +65,18 @@ section {
 .gif-format {
   /*background-image: url("../img/fl_2email_fast_min.gif");*/
   float:right;
-  margin-right:-15vw;
-  width:70vw;
+  margin-right:-8vw;
+  width:62vw;
   vertical-align: top;
+  margin-top: 3vw;
   /*border:1px solid blue;*/
 }
-.guide-block div{
+.guide-block iframe{
     margin-left: 1vw;
-    /*padding: 10px 10px;*/
-    /*border:1px solid green;*/
-    /*float:left;*/
-    /*width:100vw;*/
-    font-size:1.2vw;
-}
-.responsive {
-  width:100%;
-  height:0;
-  padding-bottom:20% !important;
-  position:relative;
+    margin-top: 3vw;
+    text-align: center;
+    width: 50vw;
+    height: 28vw;
 }
 @media screen and (max-width: 715px) {
   .guide-text-block{
@@ -95,11 +88,35 @@ section {
     /*border:1px solid green;*/
   }
   .gif-format {
-    display:none;
+    /*display:none;*/
+    margin-right:-8vw;
+    width:110vw;
+    /*vertical-align: top;*/
+    margin-top: 3vw;
   }
-  .guide-block div{
-    margin-left: 15px;
-    float:left;
-    width:80vw;
+  .guide-block iframe{
+    display:none;
+    /*margin-left: 1vw;
+    margin-top: 3vw;
+    text-align: center;
+    width: 80vw;
+    height: 45vw;*/
+  }
+}
+@media (max-width: 1024px) and (min-width:760px) {
+  .gif-format {
+    /*display:none;*/
+    margin-right:-8vw;
+    width:100vw;
+    /*vertical-align: top;*/
+    margin-top: 3vw;
+  }
+  .guide-block iframe{
+    /*display:none;*/
+    margin-left: 1vw;
+    margin-top: 3vw;
+    text-align: center;
+    width: 80vw;
+    height: 45vw;
   } 
 }
