@@ -71,13 +71,13 @@ section {
 }
 .main-menu-links {
   margin-left: 3.6%;
-  line-height: 55px;
+  line-height: 63px;
   float: left;
 }
 .main-menu-links a {
   color: #817F7F;
   display: inline-block;
-  font-size: 22px;
+  font-size: 18px;
 }
 .main-menu-links a:hover {
   color: #7c9198;
