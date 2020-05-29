@@ -57,6 +57,47 @@ button.webinar-action {
   height: 44px;
   width: 250px;
 }
+.t1{
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+}
+.img-rui {
+  background-image: url('../img/t_ruia.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  margin: 0 auto;
+  height: 85px;
+  width: 70px;
+}
+.img-sarah {
+  background-image: url('../img/t_saraha.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  margin: 0 auto;
+  height: 85px;
+  width: 70px;
+}
+.img-joaool{
+  background-image: url('../img/t_joaool20.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  margin: 0 auto;
+  height: 85px;
+  width: 70px;
+}
+.img-miguelr {
+  background-image: url('../img/t_miguelr.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  margin: 0 auto;
+  height: 85px;
+  width: 70px;
+}
 @media screen and (max-width: 750px) {
   .contact-description-1,
   .contact-description-2 {

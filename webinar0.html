@@ -16,6 +16,43 @@
                 margin-left: 10px;
                 list-style-type: circle;
              }
+             .col1 {
+               display:inline-block;
+               vertical-align: top;
+               text-align: left;
+               /*border: 5px outset red;*/
+               width:26vw;
+               height:12vw;
+               /*background:powderblue;*/
+            }
+            .col2 {
+               display:inline-block;
+               /*border: 5px outset blue;*/
+               width:60%;
+               height:20vw;
+               /*background:lightgray;*/
+            }
+             .subcol {
+               display:inline-block;
+               /*border: 5px outset blue;*/
+               margin-left:1.35vw;
+               width:20%;
+               height:5vw;
+               /*background:blue;*/
+            }
+
+            .col2:last-child {
+               margin-left:41px;
+            }
+
+            .col2 .title {
+               float:left;
+               margin-left:21px;
+               font-size:15px;
+            }
+            .bottom {
+               background-color: #F9A5A1;
+            }
         </style>
         <script>
             !function(f,b,e,v,n,t,s)
@@ -92,40 +129,123 @@
         </header>
         <section class="pricing-page">
             <div>
-                <!-- <h1>Webinars Framelink</h1> -->
-                <div style="margin-left:10vw;margin-right:5vw;">
-                    <!-- <div class="contact-description-1">
-                        Como a tecnologia abre caminho para sobreviver ao novo normal
-                    </div> -->
-                    <!-- <div style="margin-left:0vw; display: inline-block;"> -->
-                    <div style="margin-left:-7.5vw;display: inline-block;" class="webinar-image"></div>
-                    <div style="margin-left:3vw;display: inline-block; vertical-align:top; margin-top:1vw;">
-                        <div style="text-align: left;" class="contact-description-2">
-                            <h2>O novo futuro pos-covid19</h2>
-                            <p>Neste Webinar tentámos contribuir para uma melhor reposta dos pequenos negócios perante este desafio. Foi feita uma breve análise do inquérito da McKinsey para Portugal e uma revisão das tecnologias que nos podem apoiar.<p>
-                            <p>Pontos cobertos na sessão:<p>
-                            <ul style="margin-left:4em;">
-                                <li>Percepção em Portugal do futuro "normal".</li>
-                                <li>Soluções creativas já implementadas para responder à pandemia.</li>
-                                <li>Exemplos de ferramentas para responder a desafios actuais e futuros.</li>
-                            </ul>
-                            <p>Pode registar-se para rever o webinar. Opcionalmente (botão verde por baixo do video) oferecemos uma sessão de 30 minutos onde tentaremos definir uma estratégia para o futuro pós-COVID19 do seu negócio.</p>
-                            <!-- </p>Data:21 de Maio às 18:00 h.</p> -->
-                        </div>    
-                        <a target="_blank" href="https://www.crowdcast.io/e/o-novo-futuro-ps-covid">
-                            <button style="margin-top:0.5vw; vertical-align:top;" class="action webinar-action">
-                                Webinar: Registe-se aqui
-                            </button>
-                        </a> 
+                <div class="container">
+                    <div  class="row d-sm-block">
+                        <div  class="col-sm-4 float-left">
+                            <div style="margin-left:-0vw;" class="webinar-image"></div>
+                        </div>
+                        <div  class="col-sm-8 float-right">
+                            <div style="text-align:left;padding: 2vw 3vw;" class="contact-description-2">
+                                <h2>O novo futuro pos-covid19</h2>
+                                <p>Neste Webinar tentámos contribuir para uma melhor reposta dos pequenos negócios perante este desafio. Foi feita uma breve análise do inquérito da McKinsey para Portugal e uma revisão das tecnologias que nos podem apoiar.<p>
+                                <p>Pontos cobertos na sessão:<p>
+                                <ul style="margin-left:4em;">
+                                    <li>Percepção em Portugal do futuro "normal".</li>
+                                    <li>Soluções creativas já implementadas para responder à pandemia.</li>
+                                    <li>Exemplos de ferramentas para responder a desafios actuais e futuros.</li>
+                                </ul>
+                                <p>Pode registar-se para rever o webinar. Opcionalmente (botão verde por baixo do video) oferecemos uma sessão de 30 minutos onde tentaremos definir uma estratégia para o futuro pós-COVID19 do seu negócio.</p>
+                            </div>
+                            <a target="_blank" href="https://www.crowdcast.io/e/o-novo-futuro-ps-covid">
+                                <button style="margin-top:0.5vw; vertical-align:top;" class="action webinar-action">
+                                    Webinar: Registe-se aqui
+                                </button>
+                            </a>
+                            <br>
+                            <br>
+                        </div>
                     </div>
-                    <hr style="margin-top:-3px;border: 1px solid lightgray;" />
-                    <div style="text-align:left;">
+                </div>
+                &nbsp;
+                <hr style="margin-top:-3px;margin-left:10vw;margin-right:10vw;border: 1px solid lightgray;" />
+                </br>
+                <div class="container">
+                    <div class="row d-sm-block">
+                      <div  class="col-sm-4 float-left text-primary">
+                        <div style="padding: 0vw 3vw;color:black;" class="t1">
+                            Explore as vantagens que a tecnologia pode trazer ao seu negócio, com o apoio de uma equipa profissional.
+                        </div>
+                      </div>
+                      <div  class="col-sm-8 float-right">
+                        <!-- <div>A Equipa:</div> -->
+                      </div>
+                      <div  class="col-sm-8 float-right">
+                           <div class="col-11 no-gutters">
+                                <div class="row">
+                                    <div class="col-3 col-md-3 col-sm-3 col-lg-3">
+                                        <div class="img-joaool"></div>
+                                        <h6><small class="text-muted">Coordenação:</small></h6>
+                                        <a href="https://www.linkedin.com/in/joao-oliveira-2ab79bb/"><h6>João Oliveira</h6></a>
+                                        <h6><small class="text-muted"><a href="https://framelink.co"><b>FrameLink</b></a></small></h6>
+                                    </div>
+                                    <div class="col-3 col-md-3 col-sm-3 col-lg-3">
+                                        <div class="img-rui"></div>
+                                        <h6><small class="text-muted">Estratégia:</small></h6>
+                                        <a href="https://www.clsbe.lisboa.ucp.pt/pt-pt/pessoa/rui-antunes"><h6>Rui Antunes</h6></a>
+                                        <a href="http://www.mbr.pt/"><b>MBR</b></a>
+                                    </div>
+                                    <div class="col-3 col-md-3 col-sm-3 col-lg-3">
+                                        <div class="img-sarah"></div>
+                                        <h6><small class="text-muted">Digital Marketing:</small></h6>
+                                        <a href="https://www.linkedin.com/in/sarah-andersen-63b59046/?locale=de_DE"><h6>Sarah Andersen</h6></a>
+                                        <h6><small class="text-muted"><a href="https://framelink.co"><b>Sarah A. Business Optimization</b></a></small></h6>
+                                    </div>
+                                    <div class="col-3 col-md-3 col-sm-3 col-lg-3">
+                                        <div class="img-miguelr"></div>
+                                        <h6><small class="text-muted">Marketing e Vendas:</small></h6>
+                                        <a href="https://www.linkedin.com/in/miguel-relego-24842b22/?originalSubdomain=pt"><h6>Miguel Relego</h6></a>
+                                        <a href="https://framelink.co"><b>FrameLink</b></a>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+                    </div>
+                </div>
+                </br>
+                </br>
+                <!-- <div style="margin-left:10vw;margin-right:5vw;text-align:left;" class="secondGroup"> 
+                   <div class="col1"> 
+                        <div style="padding: 2vw 3vw;" class="t1">
+                            Explore as vantagens que a tecnologia pode trazer ao seu negócio, com o apoio de uma equipa profissional.
+                        </div>
+                   </div> 
+                   <div class="col2"> 
+                        </br> 
+                        <div class="subcol"> 
+                            <div class="img-joaool"></div>
+                            <p>João Oliveira</p> 
+                        </div> 
+                        <div class="subcol"> 
+                            <div class="img-rui"></div>
+                            <p>Rui Antunes</p> 
+                        </div>
+                        <div class="subcol"> 
+                            <div class="img-sarah"></div>
+                            <p>Sarah Andersen</p> 
+                        </div> 
+                        <div class="subcol"> 
+                            <div class="img-miguelr"></div>
+                            <p>Miguel Relego</p> 
+                        </div>
+                   </div> 
+                </div>  -->
+                    <!-- <div style="margin-left:0;border: 5px outset green;width:25.7vw;">
+                        <p>abcs</p>
+                        <p>abcs</p>
+                        <p>abcs</p>
+                    </div>
+                    <div style="margin-left:3vw;width:20vw;display:inline-block;vertical-align:top;border: 5px outset blue;margin-top:1vw;background-color:red;">
+                        <p>abcs</p>
+                        <p>abcs</p>
+                        <p>abcs</p>
+                    </div> -->
+                    <!-- <div style="text-align:left;">
                         <div style="text-align:left;">
                             <ul>
                                 <li style="font-size: 20px;">Coordenação: <a href="https://www.linkedin.com/in/joao-oliveira-2ab79bb/"><b>João Oliveira – FrameLink</b></a></li>
                                 <li style="font-size: 20px;">Estratégia: <a href="https://www.clsbe.lisboa.ucp.pt/pt-pt/pessoa/rui-antunes"><b>Rui Antunes – MBR</b></a></li>
                                 <ul style="margin-left:2em">
-                                    <li style="margin-left:2em">Consultor de Gestão (Balanced Scorecard), performance estratégica,  reengenharia de processos, sistemas de informação e controlo de gestão.</li>
+                                   <li style="margin-left:2em">Consultor de Gestão (Balanced Scorecard), performance estratégica,  reengenharia de processos, sistemas de informação e controlo de gestão.</li>
                                 </ul>
                                 <li style="font-size: 20px;">Digital Marketing/Comunicação:<a href="https://www.linkedin.com/in/sarah-andersen-63b59046/?locale=de_DE"><b>Sarah Andersen – Sarah Andersen Business Optimization</b></a></li>
                                 <ul style="margin-left:2em">
@@ -134,7 +254,7 @@
                                 <li style="font-size: 20px;">Marketing e Vendas: <a href="https://www.linkedin.com/in/miguel-relego-24842b22/?originalSubdomain=pt"><b>Miguel Relego – FrameLink</b></a></li>
                             </ul>
                         </div>    
-                    </div>    
+                    </div> -->    
                 </div>
                     <!-- </div> -->
             </div>
@@ -177,6 +297,7 @@
         </footer>
         <link href="css/common.css" rel="stylesheet" />
         <link href="css/webinar.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
         <script src="libs/js/jquery.min.js"></script>
         <script src="libs/js/email.min.js"></script>
         <script src="js/common.js"></script>
