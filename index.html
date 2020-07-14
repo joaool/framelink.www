@@ -9,11 +9,11 @@
         <meta name="p:domain_verify" content="5d037a9546cf4d54e971c807ebaae81a"/>
         <title>Simplify Your Business - all you need in one place</title>
         <link rel="icon" href="img/framelink.ico" type="image/x-icon">
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-        <!-- Facebook Pixel Code -->
-        <script>
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/css/bootstrap.css" > -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+        <link rel="stylesheet" href="libs/css/owl.carousel.min.css"> 
+        <link rel="stylesheet" href="libs/css/owl.theme.default.min.css"> 
+       <script>
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
             n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -88,99 +88,105 @@
                   background-color: green;
                 }*/
             }
-            @media screen and (min-width: 770px) {
-                .minigif{
-                  position:relative; 
-                  left:55px; 
-                  top:177px;
-                  width:135px;
-                }
-                .smoke{
-                  position:relative; 
-                  left:-32px; 
-                  top:28px;
-                  width:80px;
+            .carousel-wrap{
+                width:1000px;
+                margin-left: 100px;
+                position:relative;
+            }
+            .owl-carousel .owl-nav{
+                overflow:hidden;
+                height:0px;
+            }
+            .owl-dots {
+                bottom: -40px;
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                width: 100%;
+            }
+            .owl-dot {
+                background-color: $_color-viking;
+                border-radius: 50%;
+                height: 1rem;
+                margin: 0 5px;
+                opacity: .5;
+                transition: opacity .3s;
+                width: 1rem;
+
+                &:hover,
+                &.active {
+                    opacity: 1;
                 }
             }
-            @media screen and (max-width: 770px) {
-                .minigif{
-                  position:relative; 
-                  left:15px; 
-                  top:178px;
-                  width:130px;
-                }
-                .smoke{
-                  visibility: hidden;  
-                  /*position:relative; 
-                  left:125px; 
-                  top:64px;
-                  width:29px;*/
-                }
-            }
-            /*@media screen and (max-width: 550px) {
-                .no_video{
-                  visibility: hidden;
-                  clear: both;
-                  width:50%;
-                  float:left;
-                  margin-left: auto;
-                  margin-right: auto;
-                  display: none;
-                }
-            }  */     
         </style>
         <script src="//cdn.jsdelivr.net/npm/afterglowplayer@1.x"></script>
     </head>
     <!--Start of snatchbot.me Script-->
     <!--End of snatchbot.me Script-->
     <body>
-        <div class="main-menu-mobile">
-            <div class="main-menu-mobile-top">
-                <div class="main-menu-logo"></div>
-                <div class="main-menu-mobile-close"></div>
-            </div>
-            <div class="main-menu-mobile-content">
-                <a href="javascript:void(0);" disabled class="link active">What is it?</a>
-                <a href="guide.html" class="link">Guide</a>
-                <a href="cust_reviews.html" class="link">Customer Reviews</a>
-                <a href="pricing.html" class="link">Pricing</a>
-                <a href="aboutus.html" class="link">About Us</a>
-                <!-- <a href="faq.html" class="link">FAQ</a> -->
-                <a href="contact.html" class="link">Contact</a>
-                <a href="webinar0.html" class="link">Webinars</a>
-                <div class="main-menu-mobile-bottom">
-                    <a target="_blank" href="app">
-                        <button class="action action-big marigold">
-                            START NOW
-                        </button>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            
+            <a class="navbar-brand" href="index.html"><div class="main-menu-logo"></div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="guide.html">Guide<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown" >
+                    <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        What's it for?
                     </a>
-                </div>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="emails.html">Send Emails/SMSs</a>
+                        <a class="dropdown-item" href="collecting.html">Share and Collect Data</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="crm.html">Build your own CRM</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown" >
+                    <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Who it's for?
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="smallbiz.html">Small Businesses</a>
+                        <a class="dropdown-item" href="startups.html">StartUps</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="cust_reviews.html">Customer Reviews</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pricing.html">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="aboutus.html">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+                <a href="app" >
+                    <button class="btn btn-outline-primary my-2 my-sm-0" >Sign in</button>
+                </a>
+              </form>
             </div>
-        </div>
-        <header class="main-menu">
-            <a href="index.html" class="main-menu-logo"></a>
-            <div class="main-menu-links">
-                <a href="javascript:void(0);" disabled class="active">What is it?</a>
-                <a href="guide.html" class="link">Guide</a>
-                <a href="cust_reviews.html" class="link">Customer Reviews</a>
-                <a href="pricing.html">Pricing</a>
-                <!-- <a href="faq.html">FAQ</a> -->
-                <a href="aboutus.html">About us</a>
-                <a href="contact.html">Contact</a>
-                <a style="color:gray;" href="webinar0.html" class="link"><b>Webinar initiatives</b></a>
-            </div>
-            <a href="app" class="link action marigold"><button style="float:right;width: 150px;height: 40px;margin-top:10px;margin-right:10px;font-size:18px;" class="action marigold">Sign in</button></a>
-            <div class="main-menu-hamburger"></div>
-        </header>
+        </nav>
         <section>
-            <div class="homepage-main">
+            <div class="homepage-main" >
                 <h1>Simplifying Your Business</h1>
                 <div class="homepage-block-one-wrap">
                     <div class="homepage-block-one">
                         <div class="homepage-block-one-text" style="margin-top:5vw;">
-                            <!-- <h1>Simplifying Your Business</h1> -->
-                            <!-- <div>Take your company's scattered data from Excel, your CRM, and your website, and unify it in a single place.</div> -->
-                            <div>A platform that manages, displays and connects your business data in any way you need.</div></br>
+                            <!-- <div>A platform that manages, displays and connects your business data in any way you need.</div></br> -->
+                            <div>A simple, dynamic, and intuitive way to connect people with the data, information, and processes they need to accomplish their specific work goals.</div></br>
                             <div>Have automatic updates, create personalized email or connect your schedules – all from a single dashboard.</div>
                             <a target="_blank" href="contact.html">
                                 <button style="margin-top:25px;" class="action action-big">
@@ -190,49 +196,44 @@
                             </br></br>
                         </div>
                         <div class="homepage-video">
-                            <!-- <div class="responsive" style="text-align:center;"> -->
                                 <iframe class="html5-video-player" width="585" height="418" src="https://www.youtube.com/embed/VRbF7oChIjU?wmode=transparent" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                <!-- <iframe width="585" height="418" src="https://www.youtube. com/embed/VRbF7oChIjU?rel=0&amp;showinfo=0;" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
-                            <!-- </div> -->
                         </div>
                         </br>
-                        <!-- <div class="homepage-block-one-image">
-                                <a class="afterglow" href="#myvideo"><img class="minigif" border="0" alt="Video" src="./img/homepage.gif"></a>
-                                <video  id="myvideo" width="640" height="360" data-overscale="false" data-autoclose="true">
-                                    <source type="video/mp4" src="./img/flink.mp4" />
-                                </video>
-                                <img class="smoke" border="0" alt="smoke" src="./img/smoke2.gif">
-                        </div> -->
                     </div>
                 </div>
                 <div class="homepage-block-services" >
+                    
                     <div class="homepage-block-center-text" >
                         <h2>Happy FrameLink Users</h2>
                         <div>These are some businesses that made FrameLink their work management solution.</div>
-                        <br>
-                        <div class="carousel-container" >         
-                        <div class="main-carousel" data-flickity='{"groupCells": true,"cellAlign": "left", "contain": true, "autoPlay":2500 }'>    
-                            <div class="homepage-feature-block"><img width="130px" alt="Logo Carla Rocha" src="img/logo_carlarocha.png"></div>
-                            <div class="homepage-feature-block"><img width="100px" alt="Logo 2goOut" src="img/logo_2goout.png"></div>
-                            <div class="homepage-feature-block"><img width="120px" alt="Logo Conjugamapas" src="img/logo_conjugamapas.png"></div>
-                            <div class="homepage-feature-block"><img width="80px" alt="Logo Santa Casa" src="img/logo_santacasa.png"></div>
-                            <div class="homepage-feature-block"><img width="100px" alt="Logo Freshfaced" src="img/logo_freshfaced.jpg"></div>
-                            <div class="homepage-feature-block"><img width="150px" alt="Logo Grass4you" src="img/logo_grass4you.png"></div>
-                            <div class="homepage-feature-block"><img width="120px" alt="Logo Renergie" src="img/logo_renergie.png"></div>
-                            <div class="homepage-feature-block"><img width="190px" alt="Logo Sacramento Campos" src="img/logo_sacramento.png"></div>
-                            <div class="homepage-feature-block"><img width="80px" alt="Logo ShareValue" src="img/logo_sharevalue.png"></div>
-                            <div class="homepage-feature-block"><img width="80px" alt="Logo Startup Lisboa" src="img/logo_startuplisboa.png"></div>
-                            <div class="homepage-feature-block"><img width="130px" alt="Logo Apea" src="img/logo_apea.png"></div>
-                            <div class="homepage-feature-block"><img width="130px" alt="Logo FPKMT" src="img/logo_fpkmt.png"></div>
-                            <div class="homepage-feature-block"><img width="110px" alt="Logo WeAdvice" src="img/logo_weadvice.jpg"></div>
+                        </br>
+                    </div>    
+                    <div class="carousel-wrap">    
+                        <div class="owl-carousel owl-theme">    
+                        <!-- <div class="main-carousel" data-flickity='{"groupCells": true,"cellAlign": "left", "contain": true, "autoPlay":2500 }'>     -->
+                            <div><img alt="Logo Carla Rocha" src="img/logo_carlarocha.png"></div>
+                            <div><img alt="Logo 2goOut" src="img/logo_2goout.png"></div>
+                            <div><img  alt="Logo Conjugamapas" src="img/logo_conjugamapas.png"></div>
+                            <div><img alt="Logo Santa Casa" src="img/logo_santacasa.png"></div>
+                            <div><img  alt="Logo Freshfaced" src="img/logo_freshfaced.jpg"></div>
+                            <div><img  alt="Logo Grass4you" src="img/logo_grass4you.png"></div>
+                            <div><img  alt="Logo Renergie" src="img/logo_renergie.png"></div>
+                            <div><img  alt="Logo Sacramento Campos" src="img/logo_sacramento.png"></div>
+                            <div><img alt="Logo ShareValue" src="img/logo_sharevalue.png"></div>
+                            <div><img alt="Logo Startup Lisboa" src="img/logo_startuplisboa.png"></div>
+                            <div><img  alt="Logo Apea" src="img/logo_apea.png"></div>
+                            <div><img  alt="Logo FPKMT" src="img/logo_fpkmt.png"></div>
+                            <div><img  alt="Logo WeAdvice" src="img/logo_weadvice.jpg"></div>
                         </div>
-                        </div>
-                        <br>
-                        <br>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="homepage-block-center-text" >
                         <div style="margin-bottom:20px;" >       
                             <a style="align:middle;" target="_blank" class="underline" href="cust_reviews.html">More customer testimonials &rarr;</a>
                         </div>    
-                    </div>    
+                    </div>  
                 </div>
                 <div class="homepage-block-services">
                     <div class="homepage-features-title">
@@ -243,23 +244,6 @@
                                 <!-- <a href="cust_reviews.html" class="link"><b>our clients</b></a> -->
                         </div>
                     </div>
-                    <!-- <div class="homepage-feature-container">
-                        <div class="homepage-feature-block">
-                            <i class="icon-feature-email"></i>
-                            <b>Emails &amp; SMS</b>
-                            <div>Easily send personalized emails &amp; SMS to your customers and partners.</div>
-                        </div>
-                        <div class="homepage-feature-block">
-                            <i class="icon-feature-devices"></i>
-                            <b>Build your own CRM</b>
-                            <div>Exactly what you need - 100% customized to your business.</div>
-                        </div>
-                        <div class="homepage-feature-block">
-                            <i class="icon-feature-secure"></i>
-                            <b>Share Your Data</b>
-                            <div>Share your data securely. Control permissions of your team members.</div>
-                        </div>
-                    </div> -->
                     <div class="homepage-main" style="margin-left: 4%">
                 
             </div>
@@ -430,14 +414,47 @@
                 </div>
                 <div class="framelink-copyright">&copy; 2019 – FrameLink            </div>
         </footer>
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/js/bootstrap.js" ></script> -->
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
         <script src="libs/js/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".owl-carousel").owlCarousel({
+                    loop:true,
+                    autoplay:true,
+                    smartspeed:500,
+                    center:true,
+                    margin:30,
+                    nav:true,
+                    dots:true,
+                    // dotsData:true,
+                    responsive:{
+                        0:{
+                            dotsEach:5,
+                            items:1
+                        },
+                        600:{
+                            dotsEach:5,
+                            items:3
+                        },
+                        1000:{
+                            dotsEach:5,
+                            items:5,
+                        }
+                    }
+                    // onInitialized:setDots,
+                    // onChanged:setDots
+                });
+            }); 
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="libs/js/owl.carousel.min.js"></script>
         <link href="css/common.css" rel="stylesheet" />
         <link href="css/home.css" rel="stylesheet" />
         <script src="js/common.js"></script>
-
-        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-        
-        <!--<link href="https://snatchbot.me/sdk/webchat.css" rel="stylesheet" type="text/css"><script src="https://snatchbot.me/sdk/webchat.min.js"></script><script> Init('?botID=60143&appID=webchat', 380, 550, 'https://dvgpba5hywmpo.cloudfront.net/media/image/HamFyHzI5S4MTe6yEcixZyycw', 'bubble', '#00AFF0', 90, 87, 60.9, '', '1', '##ffffff', '#FFFFFF', 1); /* for authentication of its users, you can define your userID (add &userID={login}) */ </script>-->
     </body>
+    
 </html>

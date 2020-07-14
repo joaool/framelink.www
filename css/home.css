@@ -150,6 +150,19 @@ section {
   margin-left:5vw;
   float:left;
 }
+.homepage-collecting-image {
+  background-image: url(../img/homepage-1.png);
+  background-repeat: no-repeat;
+  /*width: 400px;
+  height: 324px;*/
+  width: 27vw;
+  height: 19vw;
+  background-size: cover;
+  margin-top:5px;
+  display: inline-block;
+  margin-left:5vw;
+  float:left;
+}
 .homepage-email-gif {
   background-image: url(../img/fl_2email_fast_min.gif);
   background-repeat: no-repeat;
