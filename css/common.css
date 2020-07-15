@@ -124,6 +124,7 @@ button {
 
 /* change the link color */
 /* change the background color */
+
 .navbar-custom {
   background-color: #ff5500;
 }
@@ -133,7 +134,6 @@ button {
 .navbar-brand {
   margin-left: -15px !important;
 }
-/* Add a grey background color to dropdown links on hover */
 .navbar .dropdown-menu {
   background-color: #425dd4;
   color: red;
