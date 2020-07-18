@@ -332,6 +332,9 @@ section {
   height:100%;
 }
 @media screen and (max-width: 770px) {
+  .carousel-wrap {
+    display: none;
+  }
   .homepage-main {
     margin-left:auto;
   }
@@ -489,12 +492,6 @@ section {
     /*margin: -10px 0 4px 0;*/
     display: block;
     font-size: 5vw;
-  }
-  .carousel-container {
-    /*visibility:hidden;*/
-    /*width: 100%;  full width */
-    /*height: 160px;  height of carousel */
-    /*margin-right: 10px;*/
   }
 }
 @media screen and (max-width: 670px) {
