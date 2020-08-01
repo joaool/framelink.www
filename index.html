@@ -57,6 +57,10 @@
                 border-bottom: 1px dotted #000;
                 text-decoration: none;
              }
+             li{
+                 margin-left: 10px;
+                 list-style-type: square;
+             }
             .responsive{
               width:100%;
               height:0;
@@ -142,37 +146,37 @@
         
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="guide.html">Guide<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown" >
-                    <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        What's it for?
-                    </a>
-                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="emails.html">Send Emails/SMSs</a>
-                        <a class="dropdown-item" href="collecting.html">Share and Collect Data</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="team.html">Create a unique workspace</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown" >
-                    <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Who it's for?
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="smallbiz.html">Any Small Business</a>
-                        <a class="dropdown-item" href="startups.html">StartUps</a>
-                        <a class="dropdown-item" href="incubators.html">Incubators</a>
-                        <a class="dropdown-item" href="associations.html">Associations</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="cust_reviews.html">Customer Reviews</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pricing.html">Pricing</a>
-                </li>
+                  <li class="nav-item dropdown" >
+                      <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          What's it for?
+                        </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="emails.html">Send Emails/SMSs</a>
+                            <a class="dropdown-item" href="collecting.html">Share and Collect Data</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="team.html">Create a unique workspace</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown" >
+                        <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Who it's for?
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="smallbiz.html">Any Small Business</a>
+                            <a class="dropdown-item" href="startups.html">StartUps</a>
+                            <a class="dropdown-item" href="incubators.html">Incubators</a>
+                            <a class="dropdown-item" href="associations.html">Associations</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cust_reviews.html">Customer Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="guide.html">Guide<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
                 <li class="nav-item">
                   <a class="nav-link" href="aboutus.html">About us</a>
                 </li>
@@ -194,7 +198,7 @@
                             <!-- <div>A platform that manages, displays and connects your business data in any way you need.</div></br> -->
                             <div>A  platform that makes it simple to understand and visualize 
                                 data within your organization to accomplish your specific work goals. </div></br>
-                            <div>Let your customers and Partners directly update relevant data on the platform through customizable accesses.</div>
+                            <div>Let your Customers and Partners directly update relevant data on the platform through customizable accesses.</div>
                             <a target="_blank" href="contact.html">
                                 <button style="margin-top:25px;" class="action action-big">
                                     CONTACT US
@@ -244,10 +248,18 @@
                 <div class="homepage-block-services">
                     <div class="homepage-features-title">
                         <div class="homepage-block-center-text">
-                                <h2 style="margin-top:2vw;">Fully Customizable for Any Business</h2>
-                                <div>No need for technical expertise. Streamline your processes and save time and money. Check what you can do with FrameLink since day one.
+                                <h2 style="margin-top:2vw;">Critical questions for any business:</h2>
+                                <div style="text-align:left;margin-top:0.5vw">
+                                    <ul style="font-size:18px">
+                                        <li> Can my Customer and Partners exchange information with my company without forcing us to extract 
+                                            data from their emails? 
+                                            - <a class="btn btn-info btn-xs" href="collecting.html" role="button">Yes You Can!</a></li>
+                                        <li> Can I make changes on the go as my business needs change?
+                                            - <a class="btn btn-info btn-xs" href="crm.html" role="button">Yes You Can!</a></li>
+                                        <li> Can my team and I get access to a unique all-in-one platform?
+                                            - <a class="btn btn-info btn-xs" href="team.html" role="button">Yes You Can!</a></li>
+                                    </ul>
                                 </div>
-                                <!-- <a href="cust_reviews.html" class="link"><b>our clients</b></a> -->
                         </div>
                     </div>
                     <div class="homepage-main" style="margin-left: 4%">
@@ -259,10 +271,11 @@
                             </div>
                             <div class="homepage-block-feature-text">
                                 <!-- <h1>Send Emails &amp; SMS</h1> -->
-                                <h1>Send Emails in Bulk</h1>
+                                <h1>Never Write an Email Again!</h1>
                                 <!-- <div>Convert your old spreadsheet into a powerful engine to send personalized Emails and SMSs.</div>  -->
                                 <!-- <div>Use your current business operations data to send personalized Emails and SMSs. Data not yet in FrameLink? Get it ready in 3 steps:</div>  -->
-                                <div>Send personalised business related emails and automatize your email flow.</div> 
+                                <div>Define your messages (Email and SMS) once and FrameLink will send the right 
+                                content for every recipient. Always ready to go.</div> 
                                 <div style="padding:0 0 0 20px">
                                     <!-- <li> Stop exporting CSVs — FrameLink is always up-to-date.
                                     <li> Send hundreds of Emails/SMSs with one click.
@@ -270,12 +283,12 @@
                                     <!-- <li> Step 1 - <b>Import</b> your spreadsheet into FrameLink. -->
                                     <!-- <li> Step 2 - <b>Select</b> recipients, <b>Define</b> email and <b>Send</b>. -->
                                     <!-- <li> <b>Result:</b> All emails sent &amp; template ready for next time. -->
-                                    <li> Automatize your natural business email workflows, such as pre- and post-sales emails, warm lead follow-ups, etc.
+                                    <li> Automatize your business email workflows, such as pre- and post-sales emails, warm lead follow-ups, etc.
                                     <li> Include Videos, Documents, Meeting Requests and Forms to collect data from each recipient.
-                                    <li> Save your created templates and send future emails in an instant.
+                                    <li> Ask for confirmations through Emails or SMSs. Responses go directly into your database.
                                     </br>
                                     <!-- <a target="_blank" class="underline" href="guide/send-emmisions.html">Learn more about sending Emails &amp; SMSs &rarr;</a> -->
-                                    <a target="_blank" href="guide/send-emmisions.html">
+                                    <a target="_blank" href="emails.html">
                                         <button style="margin-top:25px;" class="action action-big">
                                             Learn more
                                         </button>
@@ -285,11 +298,12 @@
                     </div>
                     <div class="homepage-block-one">
                             <div class="homepage-block-feature-text" style="margin-left:6.2vw;margin-top:5vw;">
-                                <h1>Build your own CRM</h1>
+                                <h1>Adjust it to (all) your needs.</h1>
                                 <div style="padding: 5px 0 0 0px; margin-top:5px">
-                                    Begin with small steps from your spreadsheet to a powerful CRM that exactly fits your needs. Do what you need with the minimum information that makes sense. No more, no Less.</br>
+                                    Watch your current spreadsheet evolve to a system that perfectly fits 
+                                     your needs - perhaps a powerful CRM! Do what you need with the minimum information that makes sense. No more, no Less.</br>
                                     <!-- <a target="_blank" class="underline" href="guide.html">Learn more about FrameLink (Guide) &rarr;</a> -->
-                                    <a target="_blank" href="guide.html">
+                                    <a target="_blank" href="crm.html">
                                         <button style="margin-top:25px;" class="action action-big">
                                             Learn more
                                         </button>
@@ -304,7 +318,7 @@
                                 <h1>Share Your Data</h1>
                                 <div style="margin-top:5px">Give every member of your team the right permissions and access. Keep your insights private while opening your data to your partners.</br>
                                 <!-- <a target="_blank" class="underline" href="guide/define-permissions.html">Learn more about securing your data &rarr;</a> -->
-                                <a target="_blank" href="guide/define-permissions.html">
+                                <a target="_blank" href="team.html">
                                     <button style="margin-top:25px;" class="action action-big">
                                         Learn more
                                     </button>
@@ -357,12 +371,12 @@
                         </div>
                     </div>
                     <div class="homepage-block-one-left" style="margin-top:2vw; margin-left:5vw;">
-                        <div class="homepage-freedom-image"></div>
+                        <div style="margin-left:-0vw;width:360px;height:330px;" class="homepage-freedom-image"></div>
                         <div  class="homepage-block-feature-text" style="margin-top:5vw;margin-left:10vw;">    
                             <h1>Easily Adjustable</h1>
                             <div>
-                                Who knows your business better than yourself? Don't wait or pay anyone to adapt FrameLink to your business  — be your own consultant and discover what really works for you.</br>
-                                <a target="_blank" class="underline" href="guide/adding-tables.html">More about adjusting FrameLink &rarr;</a>
+                                Who knows your business better than yourself? Don't wait for anyone to implement your business changes or new needs — be your own consultant and discover what really works for you.</br>
+                                <a target="_blank" class="underline" href="crm.html">More about adjusting FrameLink &rarr;</a>
                             </div>
                         </div>
                     </div>
