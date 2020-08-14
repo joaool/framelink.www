@@ -183,6 +183,11 @@ button.action.marigold {
 button.action.marigold:not([disabled]):hover {
   background-color: #f4ba00;
 }
+button.action.dark {
+  background-color: #000000;
+  color: #ffffff;
+  width: 200px;
+}
 button.action[disabled] {
   background-color: #cadce0;
 }
