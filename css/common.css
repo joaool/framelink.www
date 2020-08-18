@@ -217,6 +217,7 @@ button.action.marigold {
   line-height: 0.5;
   border-radius: 0.2rem;
 }
+
 /* Headers */
 h1,
 h2,
@@ -395,6 +396,221 @@ footer ul {
     position: absolute;
   }
 }
+.pricing-plans-wrapper .pricing-plans-heading {
+  margin-top: 40px;
+}
+
+.pricing-plans-wrapper .pricing-plans-heading {
+  color: #000;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.well {
+  margin-top 25px;
+}
+
+.pricing-plans-wrapper .pricing-plans-heading h1 {
+  text-align: left;
+  margin-top: 0;
+  font-size: 50px;
+  padding-left: 48px;
+}
+
+.pricing-plans-wrapper h1 {
+  font-size: 60px;
+  color: #323b40;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.top-content h2,p {
+  text-align: left;
+}
+
+.pricing-item1 p a {
+    background-color: #0489b7;
+    color: #fff;
+}
+.pricing-item p a {
+    padding: 12px 50px !important;
+}
+.pricing-item .pricing-box .btn {
+    padding: 12px 106px !important;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+.pricing-item .pricing-box.pricing-boxes2 .btn {
+    color: #2e9bc1;
+}
+.pricing-item .pricing-box.pricing-boxes2 .btn {
+    color: rgb(66, 16, 88);
+    /* color: #7832ac; */
+}
+.btn.btn-white {
+    background-color: #fff;
+    color: #434343;
+}
+
+.inside-content p {
+  text-align: left;
+  padding: 0 40px;
+}
+/* TOOLTIPS */
+.pricing-wrapper section.pricing-boxes {
+  margin-bottom: 80px;
+}
+
+.pricing-wrapper section.pricing-boxes {
+  margin: 20px 0 40px;
+}
+
+.pricing-wrapper section.pricing-boxes .pricing-item {
+  background-color: #efefef;
+}
+
+.pricing-wrapper section.pricing-boxes .pricing-item {
+  background-color: #f5f5f5;
+  font-size: 20px;
+}
+
+.pricing-item .pricing-box {
+  padding: 10px 0 40px;
+}
+
+.outside-content.top-content {
+  -webkit-user-select: auto;
+  padding-bottom: 1em;
+  background-image: -webkit-repeating-radial-gradient(center center, rgba(0, 0, 0, .1), rgba(0, 0, 0, .1) 1px, transparent 1px, transparent 100%);
+  background-image: -moz-repeating-radial-gradient(center center, rgba(0, 0, 0, .1), rgba(0, 0, 0, .1) 1px, transparent 1px, transparent 100%);
+  background-image: -ms-repeating-radial-gradient(center center, rgba(0, 0, 0, .1), rgba(0, 0, 0, .1) 1px, transparent 1px, transparent 100%);
+  background-image: repeating-radial-gradient(center center, rgba(0, 0, 0, .1), rgba(0, 0, 0, .1) 1px, transparent 1px, transparent 100%);
+  -webkit-background-size: 3px 3px;
+  -moz-background-size: 3px 3px;
+  background-size: 8px 8px;
+}
+
+.pricing-wrapper section.pricing-boxes .pricing-item h2 {
+  font-size: 31px;
+  letter-spacing: 0;
+  font-weight: 400;
+  padding-top: 20px;
+  color: #323b40;
+  text-align: left;
+}
+
+.pricing-wrapper section.pricing-boxes .pricing-item h2 {
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 33px;
+}
+
+.pricing-wrapper section.pricing-boxes .pricing-item.pricing-item1 p.price,
+.pricing-wrapper section.pricing-boxes .pricing-item.pricing-item1 p.price span,
+.pricing-wrapper section.pricing-boxes .pricing-item.pricing-item1 p,
+.pricing-wrapper section.pricing-boxes .pricing-item.pricing-item1 .box-server,
+.pricing-wrapper section.pricing-boxes .pricing-item.pricing-item1 ul li {
+  color: #323b40;
+}
+
+.pricing-wrapper section.pricing-boxes .pricing-item p.price {
+  font-weight: 200;
+  line-height: 22px;
+  margin: 30px 0 10px;
+}
+
+.pricing-wrapper section.pricing-boxes .pricing-item p,
+.pricing-wrapper section.pricing-boxes .pricing-item p.price,
+.pricing-plans-wrapper .boxes-container .plans-boxes p.price {
+  text-align: left;
+}
+
+.pricing-wrapper section.pricing-boxes {
+  margin-bottom: 80px;
+}
+
+.pricing-wrapper section.pricing-boxes {
+  margin: 20px 0 40px;
+}
+
+.pricing-wrapper section.pricing-boxes .pricing-item {
+  background-color: #efefef;
+}
+
+.pricing-wrapper section.pricing-boxes .pricing-item {
+  background-color: #f5f5f5;
+  font-size: 20px;
+}
+
+.pricing-item .pricing-box {
+  padding: 10px 0 40px;
+}
+
+.outside-content.top-content {
+  -webkit-user-select: auto;
+  padding-bottom: 1em;
+  background-image: -webkit-repeating-radial-gradient(center center, rgba(0, 0, 0, .1), rgba(0, 0, 0, .1) 1px, transparent 1px, transparent 100%);
+  background-image: -moz-repeating-radial-gradient(center center, rgba(0, 0, 0, .1), rgba(0, 0, 0, .1) 1px, transparent 1px, transparent 100%);
+  background-image: -ms-repeating-radial-gradient(center center, rgba(0, 0, 0, .1), rgba(0, 0, 0, .1) 1px, transparent 1px, transparent 100%);
+  background-image: repeating-radial-gradient(center center, rgba(0, 0, 0, .1), rgba(0, 0, 0, .1) 1px, transparent 1px, transparent 100%);
+  -webkit-background-size: 3px 3px;
+  -moz-background-size: 3px 3px;
+  background-size: 8px 8px;
+}
+
+.outside-content {
+  padding: 0 40px;
+}
+
+.pricing-wrapper section.pricing-boxes .pricing-item h2 {
+  font-size: 31px;
+  letter-spacing: 0;
+  font-weight: 400;
+  padding-top: 20px;
+  color: #323b40;
+  text-align: left;
+}
+
+.pricing-wrapper section.pricing-boxes .pricing-item h2 {
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 33px;
+}
+.pricing-item .pricing-box.pricing-boxes2 .btn {
+    color: #2e9bc1;
+}
+.pricing-wrapper .inside-content {
+    background-color: #f5f5f5;
+    padding: 20px 40px;
+}
+.pricing-wrapper section.pricing-boxes .pricing-item1 p a {
+    background-color: #0489b7;
+    color: #fff;
+}
+.pricing-item.pricing-item2 .pricing-box.pricing-boxes2 {
+    background-color: #eeeeee;
+}
+.pricing-wrapper .inside-content {
+    background-color: #f5f5f5;
+    padding: 20px 40px;
+}
+.pricing-item .pricing-box.pricing-boxes2 .btn {
+    color: #2e9bc1;
+}
+
+.qtip-div {
+    margin-bottom: -4px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-size: contain;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+}
+/* END OF TOOTIPS */
 @media (max-width: 750px) and (min-width: 550px) {
   /*@media screen and (max-width: 750px) {*/
   footer {

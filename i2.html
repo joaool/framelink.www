@@ -11,8 +11,12 @@
         <link rel="icon" href="img/framelink.ico" type="image/x-icon">
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/css/bootstrap.css" > -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="libs/css/owl.carousel.min.css"> 
         <link rel="stylesheet" href="libs/css/owl.theme.default.min.css"> 
+        <!-- <script src="libs/js/jquery.min.js"></script> -->
        <script>
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -64,6 +68,43 @@
             ga('send', 'pageview');
         </script>
         <style type="text/css">
+            .bs-tooltip-auto[x-placement^=bottom] .arrow::before,
+            .bs-tooltip-bottom .arrow::before {
+                border-bottom-color: #f00; /* Red */
+            }
+            .tooltip-main {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            font-weight: 700;
+            background: #6b3333;
+            border: 1px solid #737373;
+            color: #737373;
+            margin: 4px 121px 0 5px;
+            float: right;
+            text-align: left !important;
+            }
+
+            .tooltip-qm {
+            float: left;
+            margin: -2px 0px 3px 4px;
+            font-size: 16px;
+            }
+
+            .tooltip-inner {
+            max-width: 350px !important;
+            height: 130px;
+            font-size: 14px;
+            padding: 10px 15px 10px 20px;
+            background:#f8f8f2;
+            color: gray;
+            border: 1px solid #737373;
+            text-align: left;
+            }
+
+            .tooltip.show {
+            opacity: 1;
+            }
             body .html5-video-player {
               background-color: #fff;
             }
@@ -214,7 +255,9 @@
                 <div  class="row d-sm" style="margin-left:-36px;">
                     <div style="margin-top:3vw;"  class="col-sm-7 float-left">
                         <div>
-                            Get dynamic data (no typing) from your Customers and Partners, at work, home, or on the road. 
+                            Get <a href="#" data-toggle="tooltip" data-placement="top" data-html="true" title="<b style='font-size:18px;color:gray;'>Dynamic data: </b>
+                                Data you don’t need to create or update - <i>no typing required</i>.</br>
+                                With FrameLink you set the rules defining <b>who</b> can update, <b>what</b> can be updated and <b>how</b> do you want the update to be done.">dynamic data</a> from your Customers and Partners, at work, home, or on the road. 
                             Save hours reading and answering Emails or Slack messages. 
                             Produce immediate actions with no errors. 
                         </div>
@@ -498,9 +541,10 @@
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> -->
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/js/bootstrap.js" ></script> -->
         <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
-        <script src="libs/js/jquery.min.js"></script>
+        <!-- <script src="libs/js/jquery.min.js"></script> -->
         <script>
             $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip(); 
                 $(".owl-carousel").owlCarousel({
                     loop:true,
                     autoplay:true,
@@ -529,8 +573,8 @@
                 });
             }); 
         </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> -->
+        <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
         <script src="libs/js/owl.carousel.min.js"></script>
         <link href="css/common.css" rel="stylesheet" />
         <link href="css/home.css" rel="stylesheet" />
