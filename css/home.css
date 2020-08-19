@@ -106,7 +106,7 @@ section {
   top:0;
   left:5vw;
   width:80%;
-  height:49%;
+  height:84%;
 }
 .homepage-block-center-text {
   text-align: center;
@@ -344,7 +344,10 @@ section {
   width:100%;
   height:100%;
 }
-@media screen and (max-width: 770px) {
+.special-margin-top{
+  margin-top: 5vw;
+}
+@media screen and (max-width: 376px) {
   .carousel-wrap {
     display: none;
   }
@@ -420,7 +423,7 @@ section {
     /*margin-left:-15vw;*/
     padding-bottom:56.25%;
     padding-top:30px;
-    height:200vw;
+    height:117vw;
     overflow:hidden;
     margin-left:0vw;
     margin-right:1vw;
@@ -429,7 +432,7 @@ section {
   .homepage-video object,
   .homepage-video embed{
     position:absolute;
-    top:106vw;
+    margin-top:3vw;
     /*float: left;*/
     left:0vw;
     width:100%;
@@ -506,6 +509,15 @@ section {
     display: block;
     font-size: 5vw;
   }
+  .homepage-inoutbound-image {
+    display: none;
+  }
+  .special-margin-top{
+    margin-top: -44vw;
+  }
+  .framelink-features{
+    display: none;
+  }
 }
 @media screen and (max-width: 670px) {
   .homepage-email-gif {
@@ -530,6 +542,11 @@ section {
   .homepage-email-image {
     display: none;
   }
+  .homepage-video iframe,
+  .homepage-video object,
+  .homepage-video embed{
+    margin-top:2vw;
+  }
 }  
 @media (max-width: 810px) and (min-width:660px) {
   .homepage-email-gif {
@@ -543,7 +560,7 @@ section {
   .homepage-video object,
   .homepage-video embed{
     position:absolute;
-    top:197w;
+    margin-top:5w;
   }
   .homepage-freedom-image {
     display: none;
