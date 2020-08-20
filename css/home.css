@@ -138,12 +138,12 @@ section {
   float: right;
 }
 .homepage-inoutbound-image {
-  background-image: url(../img/home2.jpg);
+  background-image: url(../img/home3.jpg);
   background-repeat: no-repeat;
   /*width: 400px;
   height: 324px;*/
-  width: 32vw;
-  height: 23vw;
+  width: 27vw;
+  height: 28vw;
   background-size: cover;
   margin-top:5px;
   display: inline-block;
