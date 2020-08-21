@@ -150,6 +150,18 @@ section {
   margin-left:5vw;
   float:left;
 }
+.homepage-stop_do-image {
+  background-image: url(../img/stop_do.jpg);
+  background-repeat: no-repeat;
+  /*width: 400px;
+  height: 324px;*/
+  width: 41vw;
+  height: 24vw;
+  background-size: cover;
+  margin-top:5px;
+  display: inline-block;
+  float:left;
+}
 .homepage-email-image {
   background-image: url(../img/homepage_img2.jpg);
   background-repeat: no-repeat;
