@@ -524,6 +524,12 @@ section {
   .homepage-inoutbound-image {
     display: none;
   }
+  .homepage-stop_do-image {
+    /* height: auto; */
+    display:inline-block;
+    width: 99vw;
+    height: 60vw;
+  }
   .special-margin-top{
     margin-top: -44vw;
   }
