@@ -9,6 +9,8 @@
         <meta name="p:domain_verify" content="5d037a9546cf4d54e971c807ebaae81a"/>
         <title>We get people working together</title>
         <link rel="icon" href="img/framelink.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
+ 
         <!-- Facebook Pixel Code -->
         <script>
             !function(f,b,e,v,n,t,s)
@@ -48,39 +50,50 @@
         </script>
     </head>
     <body>
-        <div class="main-menu-mobile">
-            <div class="main-menu-mobile-top">
-                <div class="main-menu-logo"></div>
-                <div class="main-menu-mobile-close"></div>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html"><div class="main-menu-logo"></div></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto flex-nowrap">
+                    <li class="nav-item">
+                        <a class="nav-link" href="platform.html">Platform</a>
+                    </li>
+                    <li class="nav-item dropdown" >
+                        <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Who it's for?
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="smallbiz.html">Any Small Business</a>
+                            <a class="dropdown-item" href="startups.html">StartUps</a>
+                            <a class="dropdown-item" href="incubators.html">Incubators</a>
+                            <a class="dropdown-item" href="associations.html">Associations</a>
+                        </div>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="cust_reviews.html">Customer Reviews</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="guide.html">Resources&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sr-only">(current)</span></a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li> -->
+              </ul>
+              <a target="_blank" href="app">
+                  <button class="action action-big marigold">Sign In</button>
+              </a>
             </div>
-            <div class="main-menu-mobile-content">
-                <a href="./" class="link">What is it?</a>
-                <a href="cust_reviews.html" class="link">Customer Reviews</a>
-                <a href="guide.html" class="link">Guide</a>
-                <a href="pricing.html" class="link">Pricing</a>
-                <a href="javascript:void(0);" disabled class="link active">About Us</a>
-                <a href="contact.html" class="link">Contact</a>
-                <div class="main-menu-mobile-bottom">
-                    <a target="_blank" href="app">
-                        <button class="action action-big marigold">
-                            START NOW
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <header class="main-menu">
-            <a href="index.html" class="main-menu-logo"></a>
-            <div class="main-menu-links">
-                <a href="./">What is it?</a>
-                <a href="cust_reviews.html" class="link">Customer Reviews</a>
-                <a href="guide.html" class="link">Guide</a>
-                <a href="pricing.html">Pricing</a>
-                <a href="javascript:void(0);" disabled class="active">About us</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            <div class="main-menu-hamburger"></div>
-        </header>
+        </nav>
         <section>
             <div class="aboutus-block-one">
                 <h1>Our passion:</h1>
